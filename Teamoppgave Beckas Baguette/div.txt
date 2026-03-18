@@ -1,0 +1,12 @@
+
+
+Besvare tre spørsmål for hvert skjermbilde
+
+
+1: Hvilke data trenger vi i modellen for å tegne opp dette skjermbildet?
+
+2: Bruker inputs, tekstfelt, sortering => viewState/inputs
+
+3: Hva kan ev. brukeren gjøre på denne siden - og hva trenger vi i modellen for det? Eksempel: kjøpe et produkt på komplett.no
+
+

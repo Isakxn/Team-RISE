@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      const model = {
+        app: {
+          currentPage: "list",
+        },
+        viewState: {
+          frontPage: {},
+
+          add: {
+            name: "",
+            phone: "",
+            email: "",
+          },
+          edit: {
+            id: null,
+            name: "",
+            phone: "",
+            email: "",
+          },
+        },
+        contacts: [
+          { id: 1, name: "Terje", phone: "123", email: "terje@ghjgh" },
+          { id: 2, name: "Per", phone: "456", email: "per@ghjgh" },
+          { id: 3, name: "Pål", phone: "789", email: "paal@ghjgh" },
+        ],
+      };
+    </script>
+  </body>
+</html>
