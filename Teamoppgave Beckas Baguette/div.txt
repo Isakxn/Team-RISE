@@ -10,3 +10,10 @@ Besvare tre spørsmål for hvert skjermbilde
 3: Hva kan ev. brukeren gjøre på denne siden - og hva trenger vi i modellen for det? Eksempel: kjøpe et produkt på komplett.no
 
 
+frontpage:
+- handlevogn
+- produkter
+- kjøp knapp
+- slides
+
+
