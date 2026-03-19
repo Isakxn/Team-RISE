@@ -58,70 +58,18 @@ const model = {
           id: 1,
           name: "Latte",
           price: 30,
-          modifications: [
-            {
-              name: "Uten melk",
-              price: 0,
-            },
-            {
-              name: "Ekstra melk",
-              price: 5,
-            },
-            {
-              name: "Uten sukker",
-              price: 0,
-            },
-            {
-              name: "Ekstra sukker",
-              price: 5,
-            },
-          ],
+          
         },
         {
           id: 2,
           name: "Espresso",
           price: 25,
-          modifications: [
-            {
-              name: "Uten melk",
-              price: 0,
-            },
-            {
-              name: "Ekstra melk",
-              price: 5,
-            },
-            {
-              name: "Uten sukker",
-              price: 0,
-            },
-            {
-              name: "Ekstra sukker",
-              price: 5,
-            },
-          ],
+          
         },
         {
           id: 3,
           name: "Macchiato",
           price: 35,
-          modifications: [
-            {
-              name: "Uten melk",
-              price: 0,
-            },
-            {
-              name: "Ekstra melk",
-              price: 5,
-            },
-            {
-              name: "Uten sukker",
-              price: 0,
-            },
-            {
-              name: "Ekstra sukker",
-              price: 5,
-            },
-          ],
         },
       ],
       baguette: [
@@ -129,83 +77,18 @@ const model = {
           id: 4,
           name: "Grov baguette",
           price: 40,
-          modifications: [
-            {
-              name: "Uten løk",
-              price: 0,
-            },
-            {
-              name: "Ekstra skinke",
-              price: 5,
-            },
-            {
-              name: "Ekstra ost",
-              price: 5,
-            },
-            {
-              name: "Uten salat",
-              price: 0,
-            },
-            {
-              name: "Ekstra salat",
-              price: 5,
-            },
-          ],
         },
 
         {
           id: 5,
           name: "Fin baguette",
           price: 45,
-          modifications: [
-            {
-              name: "Uten løk",
-              price: 0,
-            },
-            {
-              name: "Ekstra skinke",
-              price: 5,
-            },
-            {
-              name: "Ekstra ost",
-              price: 5,
-            },
-            {
-              name: "Uten salat",
-              price: 0,
-            },
-            {
-              name: "Ekstra salat",
-              price: 5,
-            },
-          ],
         },
         {
           id: 6,
           name: "Loff baguette",
           price: 35,
-          modifications: [
-            {
-              name: "Uten løk",
-              price: 0,
-            },
-            {
-              name: "Ekstra skinke",
-              price: 5,
-            },
-            {
-              name: "Ekstra ost",
-              price: 5,
-            },
-            {
-              name: "Uten salat",
-              price: 0,
-            },
-            {
-              name: "Ekstra salat",
-              price: 5,
-            },
-          ],
+          
         },
       ],
 
@@ -223,5 +106,50 @@ const model = {
         { id: 14, name: "Marsipan Kake", price: 100 },
       ],
     },
+
+    modifications: {
+        kaffeModifications: [
+            {
+              name: "Uten melk",
+              price: 0,
+            },
+            {
+              name: "Ekstra melk",
+              price: 5,
+            },
+            {
+              name: "Uten sukker",
+              price: 0,
+            },
+            {
+              name: "Ekstra sukker",
+              price: 5,
+            },
+        ],
+    
+        baguetteModifications: [
+          {
+              name: "Uten løk",
+              price: 0,
+          },
+          {
+              name: "Ekstra skinke",
+              price: 5,
+          },
+          {
+              name: "Ekstra ost",
+              price: 5,
+          },
+          {
+              name: "Uten salat",
+              price: 0,
+          },
+          {
+              name: "Ekstra salat",
+              price: 5,
+          },
+        ],
+    }
+    
   },
 };
