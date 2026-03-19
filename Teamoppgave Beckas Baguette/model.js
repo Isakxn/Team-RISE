@@ -3,13 +3,16 @@ const model = {
     currentPage: "frontPage",
 
     shoppingCart: {
-      cartList: [],
-      totalPrice: 0,
-    },
+        cartList: [],
+        totalPrice: 0,
+      },
   },
 
   viewState: {
-    frontPage: {},
+    frontPage: {
+        selectedCategory: "",
+        searchInput:""
+    },
 
     productPage: {
       product: "",
@@ -20,51 +23,28 @@ const model = {
     },
 
     cakePage: {
-      product: "kake",
+      product: "",
       id: Number,
       modifications: [],
       specialInstructions: "",
       totalPrice: 0,
     },
 
-    checkoutPage: {
-      items: [
-        {
-          id: 4,
-          name: "Grov baguette",
-          amount: 0,
-          modifications: {
-            removals: [
-              {
-                name: "uten løk",
-                price: 0,
-              },
-            ],
-            additions: [
-              {
-                name: "ekstra skinke",
-                price: 5,
-              },
-            ],
-          },
-        },
-      ],
-      totalPrice: 0,
+    checkoutPage: {},
+      
     },
-
+    
     product: {
       kaffe: [
         {
           id: 1,
           name: "Latte",
           price: 30,
-          
         },
         {
           id: 2,
           name: "Espresso",
           price: 25,
-          
         },
         {
           id: 3,
@@ -88,7 +68,6 @@ const model = {
           id: 6,
           name: "Loff baguette",
           price: 35,
-          
         },
       ],
 
@@ -108,48 +87,97 @@ const model = {
     },
 
     modifications: {
-        kaffeModifications: [
-            {
-              name: "Uten melk",
-              price: 0,
-            },
-            {
-              name: "Ekstra melk",
-              price: 5,
-            },
-            {
-              name: "Uten sukker",
-              price: 0,
-            },
-            {
-              name: "Ekstra sukker",
-              price: 5,
-            },
-        ],
-    
-        baguetteModifications: [
-          {
-              name: "Uten løk",
-              price: 0,
-          },
-          {
-              name: "Ekstra skinke",
-              price: 5,
-          },
-          {
-              name: "Ekstra ost",
-              price: 5,
-          },
-          {
-              name: "Uten salat",
-              price: 0,
-          },
-          {
-              name: "Ekstra salat",
-              price: 5,
-          },
-        ],
-    }
-    
-  },
+      kaffeModifications: [
+        {
+          name: "Uten melk",
+          price: 0,
+        },
+        {
+          name: "Ekstra melk",
+          price: 5,
+        },
+        {
+          name: "Uten sukker",
+          price: 0,
+        },
+        {
+          name: "Ekstra sukker",
+          price: 5,
+        },
+      ],
+
+      baguetteModifications: [
+        {
+          name: "Uten løk",
+          price: 0,
+        },
+        {
+          name: "Ekstra skinke",
+          price: 5,
+        },
+        {
+          name: "Ekstra ost",
+          price: 5,
+        },
+        {
+          name: "Uten salat",
+          price: 0,
+        },
+        {
+          name: "Ekstra salat",
+          price: 5,
+        },
+      ],
+    },
 };
+
+
+const model2 = {
+  app: {
+    currentPage: "frontPage",
+    shoppingCart: {
+      items: [],
+      totalPrice: 0,
+    },
+  },
+
+  viewState: {
+    productPage: {
+      selectedProductId: null,
+      amount: 1,
+      optionsInput:""
+    },
+
+    cakePage: {
+      selectedProductId: null,
+      specialInstructions: "",
+    },
+  },
+
+  data: {
+    products: {
+      kaffe: [
+        {
+          id:1,
+          name:"Cappucino",
+          price:35,
+          options:""
+        },
+      ],
+      baguette: [],
+      kakeStykke: [],
+      bestillingsKake: [],
+    },
+  }
+};
+
+
+
+function createModel() {
+    model.app.innerHTML = "<div> model.products.kaffe </div>";
+    
+
+  //onclick => model.app.viewState.selectedCategory = "Kaffe"
+  //onclick => model.app.viewState.selectedCategory = "Kake"
+  //onclick => tegn ved å bruke =>  model.app.viewState.products.coffee 
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }    
+
+    .backup {
+      border: 1px solid black;
+      width: 200px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+  <body>
+    <div id="app" class="container"></div>
+    
+    <script>
+      const app = document.getElementById("app");
+
+      const model = {
+        product: {
+          coffee: [
+            {
+              id: 1,
+              name: "Latte",
+              price: 30,
+            },
+            {
+              id: 2,
+              name: "Espresso",
+              price: 25,
+            },
+            {
+              id: 3,
+              name: "Macchiato",
+              price: 35,
+            },
+          ],
+          baguette: [
+            {
+              id: 4,
+              name: "Grov baguette",
+              price: 40,
+            },
+
+            {
+              id: 5,
+              name: "Fin baguette",
+              price: 45,
+            },
+            {
+              id: 6,
+              name: "Loff baguette",
+              price: 35,
+            },
+          ],
+        },
+      };
+
+      let currentPage = "pageCoffee";
+      let html = "";
+      
+      function updateView()
+      {
+        app.innerHTML = `
+        <button onclick=clickCoffee()> Klikk Kaffe </button> 
+        <button onclick=clickBaguette()> Klikk Baguette </button>
+        <button onclick="returnHome()"> Return Home </button>
+        ${html}
+        `;
+        showFrontPage();
+      }
+      
+      function returnHome()
+      {
+        currentPage = "";
+        showFrontPage();
+        updateView();
+      }
+
+      function showFrontPage()
+      {
+        if (currentPage == "pageCoffee")
+        {
+          html = "";
+          showCoffeeList();
+        }
+        else if (currentPage == "pageBaguette")
+        {
+          html  = "";
+          showBaguetteList();
+        }
+        else
+        {
+          html = "";
+          showCoffeeList();
+          showBaguetteList();
+        }
+      }
+  
+  function showCoffeeList() {
+    for (let i = 0; i < model.product.coffee.length; i++)
+     html += `
+  <div class="backup">
+    <h1>${model.product.coffee[i].name}</h1>
+    <h2>${model.product.coffee[i].price}kr</h2>
+    </div>`;
+  }
+      
+      function showBaguetteList() {
+        for (let i = 0; i < model.product.baguette.length; i++)
+        html += `
+      <div class="backup">
+        <h1>${model.product.baguette[i].name}</h1>
+        <h2>${model.product.baguette[i].price}kr</h2>
+      </div>`;
+    }
+    
+    //
+    function clickCoffee()
+    {
+      currentPage = "pageCoffee";
+      updateView();
+    }
+    
+    function clickBaguette()
+    {
+      currentPage = "pageBaguette";
+      updateView();
+    }
+    
+    
+    updateView();
+    
+    </script>
+  </body>
+  </html>
+  
