@@ -13,10 +13,10 @@
         background-color: grey;
       }
 
-      .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 2em;
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 5px;
       }
 
       .backup {
@@ -24,21 +24,23 @@
         border: 3px solid black;
         margin-top: 1em;
         border-radius: 1rem;
-        width: 150px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 8em;
+        height: 8em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      button {
+        width: 8em;
+        height: 3em;
+        align-self: center;
+        margin: 2em;
       }
     </style>
   </head>
 
   <body>
-    <div
-      id="app"
-      class="container"
-    ></div>
+    <div id="app"></div>
 
     <script>
       const app = document.getElementById("app");
@@ -65,29 +67,24 @@
         },
       };
 
-      let currentPage = "coffeePage";
+      let currentPage = "homePage";
       let html = "";
 
+      updateView();
       function updateView() {
         app.innerHTML = /*html*/ `
+          <h2 class="header">Becca's Baguette</h1>
           <button onclick="clickCoffee()"> Klikk Kaffe </button> 
           <button onclick="clickBaguette()"> Klikk Baguette </button>
           <button onclick="returnHome()"> Return Home </button>
         ${html}`;
-        showFrontPage();
+        showHomePage();
       }
 
-      function showFrontPage() {
-        if (currentPage == "coffeePage") {
+      function showHomePage() {
+        if (currentPage == "homePage") {
           html = "";
-          showCoffeeList();
-        } else if (currentPage == "baguettePage") {
-          html = "";
-          showBaguetteList();
-        } else {
-          html = "";
-          showCoffeeList();
-          showBaguetteList();
+          showHomePage;
         }
       }
 
@@ -110,21 +107,22 @@
       }
 
       function clickCoffee() {
-        currentPage = "coffeePage";
+        html = "";
+        currentPage == showCoffeeList();
         updateView();
       }
 
       function clickBaguette() {
-        currentPage = "baguettePage";
+        html = "";
+        currentPage == showBaguetteList();
         updateView();
       }
 
       function returnHome() {
-        currentPage = "";
-        showFrontPage();
+        html = "";
+        currentPage = showHomePage();
         updateView();
       }
-      updateView();
     </script>
   </body>
 </html>

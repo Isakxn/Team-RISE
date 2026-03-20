@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Document</title>
   </head>
 
@@ -12,6 +16,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }    
+    }
 
     .backup {
       border: 1px solid black;
@@ -27,6 +32,11 @@
   <body>
     <div id="app" class="container"></div>
     
+    <div
+      id="app"
+      class="container"
+    ></div>
+
     <script>
       const app = document.getElementById("app");
 
@@ -72,9 +82,8 @@
 
       let currentPage = "pageCoffee";
       let html = "";
-      
-      function updateView()
-      {
+
+      function updateView() {
         app.innerHTML = `
         <button onclick=clickCoffee()> Klikk Kaffe </button> 
         <button onclick=clickBaguette()> Klikk Baguette </button>
@@ -83,69 +92,57 @@
         `;
         showFrontPage();
       }
-      
-      function returnHome()
-      {
+
+      function returnHome() {
         currentPage = "";
         showFrontPage();
         updateView();
       }
 
-      function showFrontPage()
-      {
-        if (currentPage == "pageCoffee")
-        {
+      function showFrontPage() {
+        if (currentPage == "pageCoffee") {
           html = "";
           showCoffeeList();
-        }
-        else if (currentPage == "pageBaguette")
-        {
-          html  = "";
+        } else if (currentPage == "pageBaguette") {
+          html = "";
           showBaguetteList();
-        }
-        else
-        {
+        } else {
           html = "";
           showCoffeeList();
           showBaguetteList();
         }
       }
-  
-  function showCoffeeList() {
-    for (let i = 0; i < model.product.coffee.length; i++)
-     html += `
+
+      function showCoffeeList() {
+        for (let i = 0; i < model.product.coffee.length; i++)
+          html += `
   <div class="backup">
     <h1>${model.product.coffee[i].name}</h1>
     <h2>${model.product.coffee[i].price}kr</h2>
     </div>`;
-  }
-      
+      }
+
       function showBaguetteList() {
         for (let i = 0; i < model.product.baguette.length; i++)
-        html += `
+          html += `
       <div class="backup">
         <h1>${model.product.baguette[i].name}</h1>
         <h2>${model.product.baguette[i].price}kr</h2>
       </div>`;
-    }
-    
-    //
-    function clickCoffee()
-    {
-      currentPage = "pageCoffee";
+      }
+
+      //
+      function clickCoffee() {
+        currentPage = "pageCoffee";
+        updateView();
+      }
+
+      function clickBaguette() {
+        currentPage = "pageBaguette";
+        updateView();
+      }
+
       updateView();
-    }
-    
-    function clickBaguette()
-    {
-      currentPage = "pageBaguette";
-      updateView();
-    }
-    
-    
-    updateView();
-    
     </script>
   </body>
-  </html>
-  
+</html>
