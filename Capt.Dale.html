@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: grey;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 2em;
+      }
+
+      .backup {
+        background-color: blanchedalmond;
+        border: 3px solid black;
+        margin-top: 1em;
+        border-radius: 1rem;
+        width: 150px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="app"
+      class="container"
+    ></div>
+
+    <script>
+      const app = document.getElementById("app");
+
+      const model = {
+        product: {
+          coffee: [
+            { id: 1, name: "Caffe Latte", price: 30 },
+            { id: 2, name: "Espresso", price: 25 },
+            { id: 3, name: "Macchiato", price: 35 },
+            { id: 4, name: "Americano", price: 30 },
+            { id: 5, name: "White Top", price: 25 },
+            { id: 6, name: "Husets kaffe", price: 35 },
+          ],
+
+          baguette: [
+            { id: 1, name: "Grov baguette", price: 40 },
+            { id: 2, name: "Fin baguette", price: 45 },
+            { id: 3, name: "Loff baguette", price: 35 },
+            { id: 4, name: "Surdeigs baguette", price: 40 },
+            { id: 5, name: "Flerkorn baguette", price: 45 },
+            { id: 6, name: "Gårsdagens baguette", price: 5 },
+          ],
+        },
+      };
+
+      let currentPage = "coffeePage";
+      let html = "";
+
+      function updateView() {
+        app.innerHTML = /*html*/ `
+          <button onclick="clickCoffee()"> Klikk Kaffe </button> 
+          <button onclick="clickBaguette()"> Klikk Baguette </button>
+          <button onclick="returnHome()"> Return Home </button>
+        ${html}`;
+        showFrontPage();
+      }
+
+      function showFrontPage() {
+        if (currentPage == "coffeePage") {
+          html = "";
+          showCoffeeList();
+        } else if (currentPage == "baguettePage") {
+          html = "";
+          showBaguetteList();
+        } else {
+          html = "";
+          showCoffeeList();
+          showBaguetteList();
+        }
+      }
+
+      function showCoffeeList() {
+        for (let i = 0; i < model.product.coffee.length; i++)
+          html += /*html*/ `
+          <div class="backup">
+            <h3>${model.product.coffee[i].name}</h1>
+            <h3>${model.product.coffee[i].price}kr</h2>
+          </div>`;
+      }
+
+      function showBaguetteList() {
+        for (let i = 0; i < model.product.baguette.length; i++)
+          html += /*html*/ `
+          <div class="backup">
+            <h3>${model.product.baguette[i].name}</h1>
+            <h3>${model.product.baguette[i].price}kr</h2>
+          </div>`;
+      }
+
+      function clickCoffee() {
+        currentPage = "coffeePage";
+        updateView();
+      }
+
+      function clickBaguette() {
+        currentPage = "baguettePage";
+        updateView();
+      }
+
+      function returnHome() {
+        currentPage = "";
+        showFrontPage();
+        updateView();
+      }
+      updateView();
+    </script>
+  </body>
+</html>
