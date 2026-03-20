@@ -13,6 +13,12 @@
         background-color: grey;
       }
 
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
       h2 {
         font-size: 2rem;
         text-align: center;
@@ -26,9 +32,10 @@
         border-radius: 1rem;
         width: 8em;
         height: 8em;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
       button {
         width: 8em;
@@ -74,9 +81,11 @@
       function updateView() {
         app.innerHTML = /*html*/ `
           <h2 class="header">Becca's Baguette</h1>
+          <div class="container">
           <button onclick="clickCoffee()"> Klikk Kaffe </button> 
           <button onclick="clickBaguette()"> Klikk Baguette </button>
           <button onclick="returnHome()"> Return Home </button>
+          </div>
         ${html}`;
         showHomePage();
       }
@@ -89,21 +98,25 @@
       }
 
       function showCoffeeList() {
+        html += /*html*/ `<div class="container">`;
         for (let i = 0; i < model.product.coffee.length; i++)
           html += /*html*/ `
           <div class="backup">
             <h3>${model.product.coffee[i].name}</h1>
             <h3>${model.product.coffee[i].price}kr</h2>
           </div>`;
+        html += /*html*/ `</div>`;
       }
 
       function showBaguetteList() {
+        html += /*html*/ `<div class="container">`;
         for (let i = 0; i < model.product.baguette.length; i++)
           html += /*html*/ `
           <div class="backup">
             <h3>${model.product.baguette[i].name}</h1>
             <h3>${model.product.baguette[i].price}kr</h2>
           </div>`;
+        html += /*html*/ `</div>`;
       }
 
       function clickCoffee() {
