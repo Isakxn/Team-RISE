@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+- page: admin or user/general
+    - admin; username + password
+
+- viewState / temp info
+    - city, region
+    - establishment type
+    - log activity:
+        - purple link after clicked
+        - stars/likes
+
+- store all reviews, including:
+    - product pictures
+    - type of establishment; cafe etc
+    - breakfast, lunch, dinner
+        - product type
+    - city, region
+    - username (w/o login)
+    - like amount
+
+- establishment:
+    - type
+    - pictures
+    - address
+    - contact info, phone etc
+    - average review score
+    - review amount
+    - link
+
