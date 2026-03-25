@@ -33,7 +33,7 @@ const model =
          },
 
          loginPage: {
-            
+
             inputs: {
                 
                 username: "",
@@ -55,9 +55,9 @@ const model =
 
         },
 
-    ]
+    ],
 
-    establishment:
+    store:
     [ 
       {
           reviews:
