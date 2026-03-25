@@ -13,33 +13,25 @@ const model =
         frontPage:
         {
             citySelection: "",
-            reviews: []
 
         },
 
         selectionPage:
         {
-            city: "",
-            establishmentSelection: [],
+            storeType : "",
 
         },
 
         storeFrontPage: {
-            city: "",
-            establishment: {},
-            reviews: [],
 
+            storeSelection: "",
+            
         },
 
         writeReviewPage: {
-            city: "",
             userScore: 0,
             userReview: "",
             userPicture: ["",],
-
-            establishmentName: "",      // sjekk med Kenneth om vi burde
-                                        //  lage en viewState-kopi for ikke å endre på datasettet
-
          },
 
          loginPage: {
@@ -48,6 +40,8 @@ const model =
          },
 
     },
+
+    city: [],
 
     establishment:
     [ 
