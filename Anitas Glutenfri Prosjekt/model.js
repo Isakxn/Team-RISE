@@ -44,47 +44,52 @@ const model =
 
     },
 
-    credentials: 
-    [
-        {
-            admin: 
+    data: 
+    {
+
+        credentials: 
+        [
             {
-            name: "anita",
-            password: "anita",
-            }
+                admin: 
+                {
+                name: "anita",
+                password: "anita",
+                }
 
-        },
+            },
 
-    ],
+        ],
 
-    store:
-    [ 
-      {
-          reviews:
-           [
-              {
-                name: "",
+        store:
+        [ 
+        {
+            reviews:
+            [
+                {
+                    name: "",
+                    pictures: [],
+                    score: 0,
+                    reviewText: "",
+                    date: "",
+                    likes: 0,
+                }
+            ],
+
+            info:
+            {
+                city: "",
+                storeName: "",
+                type: "",       // bakery, cafe, street stand, 
                 pictures: [],
-                score: 0,
-                reviewText: "",
-                date: "",
-                likes: 0,
-               }
-           ],
+                address: "",
+                phone: 0,
+                email: "",
+                averageScore: 0,
+                reviewAmount: 0,
+                link: ""
+            }
+            }
+        ]
 
-         info:
-         {
-               city: "",
-               storeName: "",
-               type: "",       // bakery, cafe, street stand, 
-               pictures: [],
-               address: "",
-               phone: 0,
-               email: "",
-               averageScore: 0,
-               reviewAmount: 0,
-               link: ""
-         }
-        }
-    ]
+    }
 };
