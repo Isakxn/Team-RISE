@@ -25,20 +25,11 @@
             function viewStartPage()
             {
                 return /*HTML*/ `
-                <button onclick="toggleCityList()">Byer</button>
+                    <select>
+                        <option>Bergen</option>
+                        <option>Budapest</option>
+                    </select>
                 `;
-            }
-
-            function toggleCityList()
-            {
-                html += `
-                    <details>
-                        <div>Bergen</div>
-                        <div>Budapest</div>
-                    </details>
-                `;
-                // model.viewState.frontPage.citySelection = "Bergen";
-                updateView();
             }
 
             updateView ();
