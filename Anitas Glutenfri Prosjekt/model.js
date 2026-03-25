@@ -2,10 +2,8 @@ const model =
 {
     app:
     {
-        admin: "",
-        password: "",
         adminLoggedIn: false,
-        currentPage: frontPage,          // selectionPage, storeFrontPage, writeReviewPage, loginPage, adminPage, 
+        currentPage: "frontPage",          // selectionPage, storeFrontPage, writeReviewPage, loginPage, adminPage, 
     },
 
     viewState:
@@ -35,13 +33,29 @@ const model =
          },
 
          loginPage: {
-            username: "",
-            userPassword: "",
+            
+            inputs: {
+                
+                username: "",
+                userPassword: "",
+
+            }
          },
 
     },
 
-    city: [],
+    credentials: 
+    [
+        {
+            admin: 
+            {
+            name: "anita",
+            password: "anita",
+            }
+
+        },
+
+    ]
 
     establishment:
     [ 
@@ -60,9 +74,10 @@ const model =
 
          info:
          {
-              storeName: "",
-              type: "",       // bakery, cafe, street stand, 
-              pictures: [],
+               city: "",
+               storeName: "",
+               type: "",       // bakery, cafe, street stand, 
+               pictures: [],
                address: "",
                phone: 0,
                email: "",
