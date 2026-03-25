@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="model.js"></script>
+    </head>
+
+    <body>
+        <div id="app"></div>
+        <script>
+
+            let html = "";
+            const app = document.getElementById("app");   
+            
+            function updateView (){
+                
+                html = viewStartPage();
+                app.innerHTML = html;
+            }
+
+            function addCityList()
+            {
+                let tempString = "<select>";
+                for (let c = 0; c < model.cities.length; c++)
+                {
+                    tempString += `<option>${model.cities[c].name}</option>`;
+                }
+                tempString += "</select>";
+                return tempString;
+            }
+
+            function viewStartPage()
+            {
+                let cityList = addCityList();
+                console.log(cityList);
+                return cityList;
+            }
+
+            updateView ();
+        </script>
+    </body>
+</html>
+
