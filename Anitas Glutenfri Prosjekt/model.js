@@ -43,9 +43,7 @@ const model =
          },
 
     },
-
-    data: 
-    {
+    // data
 
         credentials: 
         [
@@ -88,8 +86,7 @@ const model =
                 reviewAmount: 0,
                 link: ""
             }
-            }
+        },
+        
         ]
-
-    }
 };
