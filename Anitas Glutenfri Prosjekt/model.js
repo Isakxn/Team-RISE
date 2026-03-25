@@ -2,8 +2,11 @@ const model =
 {
     app:
     {
+        // app: document.getElementById("app"),
         adminLoggedIn: false,
-        currentPage: "frontPage",          // selectionPage, storeFrontPage, writeReviewPage, loginPage, adminPage, 
+        currentPage: "frontPage",          // selectionPage, storeFrontPage, writeReviewPage, loginPage, adminPage,
+        pages: ['frontPage', 'selectionPage', 'storeFrontPage', 'writeReviewPage', 'loginPage', 'adminPage',]
+        // currentUser: "",
     },
 
     viewState:
@@ -11,47 +14,42 @@ const model =
         frontPage:
         {
             citySelection: "",
-
         },
 
         selectionPage:
         {
-            storeType : "",
-
+            storeType: "",
         },
 
-        storeFrontPage: {
-
+        storeFrontPage: 
+        {
             storeSelection: "",
-            
         },
 
-        writeReviewPage: {
+        writeReviewPage: 
+        {
             userScore: 0,
             userReview: "",
             userPicture: ["",],
-         },
+        },
 
-         loginPage: {
-
-            inputs: {
-                
-                username: "",
-                userPassword: "",
-
-            }
-         },
-
+        loginPage: 
+        {
+            username: "",
+            userPassword: "",
+        },
     },
-    // data
 
-        credentials: 
+    // data
+    data:
+    {
+        credentials:
         [
             {
-                admin: 
+                admin:
                 {
-                name: "anita",
-                password: "anita",
+                    name: "anita",
+                    password: "anita",
                 }
 
             },
@@ -59,34 +57,43 @@ const model =
         ],
 
         store:
-        [ 
-        {
-            reviews:
-            [
-                {
-                    name: "",
-                    pictures: [],
-                    score: 0,
-                    reviewText: "",
-                    date: "",
-                    likes: 0,
-                }
-            ],
-
-            info:
+        [
             {
-                city: "",
-                storeName: "",
-                type: "",       // bakery, cafe, street stand, 
-                pictures: [],
-                address: "",
-                phone: 0,
-                email: "",
-                averageScore: 0,
-                reviewAmount: 0,
-                link: ""
-            }
-        },
-        
+                reviews:
+                    [
+                        {
+                            name: "",
+                            pictures: [],
+                            score: 0,
+                            reviewText: "",
+                            date: "",
+                            likes: 0,
+                        }
+                    ],
+
+                info:
+                {
+                    city: "",
+                    storeName: "",
+                    type: "",       // bakery, cafe, street stand, 
+                    pictures: [],
+                    address: "",
+                    phone: 0,
+                    email: "",
+                    averageScore: 0,
+                    reviewAmount: 0,
+                    link: ""
+                }
+            },
+        ],
+
+        cities: 
+        [
+            { name: "Bergen", },
+            { name: "Hamar", },
+            { name: "Kirkenes", },
+            { name: "Lillestrøm", },
+            { name: "Ålesund", },
         ]
+    }
 };

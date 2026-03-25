@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <script src="model.js"></script>
     </head>
 
     <body>
@@ -19,26 +20,22 @@
                 app.innerHTML = html;
             }
 
-
-            
-            
-            function viewStartPage()
+            function addCityList()
             {
-                return /*HTML*/ `
-                <button onclick="toggleCityList()">Byer</button>
-                `;
+                let tempString = "<select>";
+                for (let c = 0; c < model.cities.length; c++)
+                {
+                    tempString += `<option>${model.cities[c].name}</option>`;
+                }
+                tempString += "</select>";
+                return tempString;
             }
 
-            function toggleCityList()
+            function viewStartPage()
             {
-                html += `
-                    <details>
-                        <div>Bergen</div>
-                        <div>Budapest</div>
-                    </details>
-                `;
-                // model.viewState.frontPage.citySelection = "Bergen";
-                updateView();
+                let cityList = addCityList();
+                console.log(cityList);
+                return cityList;
             }
 
             updateView ();
