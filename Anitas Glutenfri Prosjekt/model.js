@@ -236,6 +236,12 @@ const model = {
   },
     ],
 
-    cities: [{ name: "Bergen" }, { name: "Hamar" }, { name: "Kirkenes" }, { name: "Lillestrøm" }, { name: "Ålesund" }],
+    cities: [
+      { name: "Bergen" }, 
+      { name: "Hamar" }, 
+      { name: "Kirkenes" }, 
+      { name: "Lillestrøm" }, 
+      { name: "Ålesund" }
+    ],
   },
 };
