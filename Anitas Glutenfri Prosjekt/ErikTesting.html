@@ -110,11 +110,46 @@
                 return tempString;
             }
 
+            function addNewestReviews()
+            {
+                let stores = model.data.store;
+                let all = [];       // temp array to store newest reviews across stores
+
+                for (let i = 0; i < stores.length; i++)
+                {
+                    let reviews = stores[i].reviews;
+                    if (Array.isArray(reviews))
+                    {
+                        for (var j = 0; j < reviews.length; j++)
+                        {
+                            all.push(reviews[j]);
+                        }
+                    }
+                }
+
+                // sort combined list newest-first
+                all.sort(
+                    function(a, b)
+                    {
+                        return new Date(b.date) - new Date(a.date);
+                    }
+                );
+
+                let returnString = "";
+                for (let r = 0; r < all.length; r++)
+                {
+                    returnString += "<div>" + all[r].date + "</div>";
+                }
+                return returnString;
+            }
+
+
             function viewStartPage()
             {
                 let main = "<div class='cssMain'>";
                 let cityList = addCityList();
-                return cityList;
+                let newestReviews = addNewestReviews();
+                return cityList + newestReviews;
             }
 
             updateView ();
