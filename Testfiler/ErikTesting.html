@@ -71,8 +71,18 @@
                 min-width: 220px;        /* prevents it collapsing too small on narrow screens */            
             }
 
+            .reviewBox 
+            {
+                background: #fff;
+                border: 1px solid #e5dce3;
+                border-radius: 1.2rem;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
         </style>
     </head>
+
 
     <body>
         <div id="app"></div>
@@ -112,10 +122,10 @@
 
             function addNewestReviews()
             {
+                let all = [];       // temp array to store newest reviews across stores
                 for (let c = 0; c < model.data.cities.length; c++)
                 {
                     let stores = model.data.cities[c].store;
-                    let all = [];       // temp array to store newest reviews across stores
 
                     for (let i = 0; i < stores.length; i++)
                     {
@@ -138,10 +148,20 @@
                     }
                 );
 
+                // 
                 let returnString = "";
-                for (let r = 0; r < all.length; r++)
+                for (let s = 1; s < all.length; s++)
                 {
-                    returnString += "<div>" + all[r].date + "</div>";
+                    returnString += `
+                        <div class="reviewBox">
+                        <h2>${all[s].name}</h2>
+                        <h5>${all[s].date}</h5>
+                        <p>${all[s].reviewText}</p>
+                        ${all[s].score} Stjerner.
+                        <br>
+                        (${all[s].likes})<button>Liker</button>
+                        </div>
+                    `;
                 }
                 return returnString;
             }
