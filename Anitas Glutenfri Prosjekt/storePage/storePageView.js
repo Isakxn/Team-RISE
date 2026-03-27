@@ -6,7 +6,7 @@
                 app.innerHTML = 
                 /*HTML*/`
                         <div class="container">
-                        <div class="side">
+                        <div class="leftside">
                             <h3>${storeId.info.city}</h2>
                             <h1>${storeId.info.storeName}</h5>
                             <div ><img class="pictureInfo" src="${storeId.info.pictures}"></div>
@@ -72,8 +72,9 @@
                             for (let index = 1; index < cityStore.length; index++) {
                                 const s = cityStore[index];
                                 storeSelectionArr.push(`
-                                <div class="storeBox"  onclick="storePage(${index})">
-                                ${s.info.storeName}
+                                <div class="storeBox" onclick="storePage(${index})">
+                                <div class="storeBoxName">${s.info.storeName}</div>
+                                <img class= "pictureSelect" src="${s.info.pictures}">
                                 </div>
                                 `);
                             };
