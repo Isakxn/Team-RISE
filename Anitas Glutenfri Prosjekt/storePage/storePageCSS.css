@@ -1,47 +1,95 @@
-       * {
+ * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* Column container */
-.container {  
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f5f0;
+  color: #333;
+}
+
+.container {
   display: flex;
-  flex-wrap: nowrap;
-  height: 100vh;
+  flex-wrap: nowrap; /* keep on one row */
+  align-items: flex-start;
+  gap: 1rem;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
-/* Sidebar/left column */
 .side {
-  flex: 20vh;
-  background-color: #f1f1f1;
-  padding: 2rem;
+  flex: 0 0 260px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 1rem;
+  height: calc(100vh - 2rem);
+  overflow-y: auto;
 }
 
-/* Main column */
 .main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
+  flex: 1;
+  background: rgba(255,255,255,0.95);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 2rem);
 }
+
 .rightside {
-  flex: 20vh;
-  padding: 2rem;
+  flex: 0 0 220px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 2rem);
 }
-.reviewBox {
-  border: 4px solid red;
-  max-width: 70%;
-}
-.storeBox{
-  width: 15vh;
+
+/* cards inside rightside */
+.storeBox {
+  background: #fafafa;
+  border: 1px solid #e0dfe7;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
   height: 15vh;
-  border: 4px solid red;
 }
-.userReviewBox{
-  height: 20vh;
-  width: 20vh;
-  border: 3px solid red;
 
+.storeBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.13);
 }
-.pictureInfo{
-  width: 200px;
-  height: 200px;
 
+.reviewBox {
+  background: #fff;
+  border: 1px solid #e5dce3;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
+
+.userReviewBox {
+  width: 100%;
+  min-height: 8rem;
+  border: 1px solid #c5b7c8;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+/* image style */
+.pictureInfo {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 1rem;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+

@@ -20,8 +20,6 @@
                                 ${storeId.info.email}
                                 <br>
                                 ${storeId.info.averageScore} ⭐⭐⭐⭐ (${storeId.info.reviewAmount}) Anmeldelser
-                                <br>
-
 
                                 </p>
                             
