@@ -73,7 +73,12 @@
                                 const s = cityStore[index];
                                 storeSelectionArr.push(`
                                 <div class="storeBox" onclick="storePage(${index})">
-                                <div class="storeBoxName">${s.info.storeName}</div>
+                                <div class="storeBoxName">
+                                ${s.info.storeName} 
+                                <br>
+                                ${s.info.averageScore}
+                                </div>
+                                
                                 <img class= "pictureSelect" src="${s.info.pictures}">
                                 </div>
                                 `);
