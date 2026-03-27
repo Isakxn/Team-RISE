@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="app"></div>
+        <script>
+
+            let html = "";
+            const app = document.getElementById("app");   
+            
+            function updateView (){
+                
+                html = viewStartPage();
+                app.innerHTML = html;
+            }
+
+
+            
+            
+            function viewStartPage()
+            {
+                return /*HTML*/ `
+                <button onclick="toggleCityList()">Byer</button>
+                `;
+            }
+
+            function toggleCityList()
+            {
+                html += `
+                    <details>
+                        <div>Bergen</div>
+                        <div>Budapest</div>
+                    </details>
+                `;
+                // model.viewState.frontPage.citySelection = "Bergen";
+                updateView();
+            }
+
+            updateView ();
+        </script>
+    </body>
+</html>
+
