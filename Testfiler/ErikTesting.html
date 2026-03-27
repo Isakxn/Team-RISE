@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="model.js"></script>
+        <script src="../Anitas Glutenfri Prosjekt/model.js"></script>
 
         <style>
             #app
@@ -112,7 +112,7 @@
 
             function addNewestReviews()
             {
-                let stores = model.data.store;
+                let stores = model.data.cities[0].store;
                 let all = [];       // temp array to store newest reviews across stores
 
                 for (let i = 0; i < stores.length; i++)
