@@ -39,7 +39,7 @@
                     
                     
                     function showStoreReviews(Id) {
-                        const storeReviews = model.data.store[Id].reviews;
+                        const storeReviews = model.data.cities[0].store[Id].reviews;
                         const storeReviewsArr = []
                         
                         for (let i = 0; i < storeReviews.length; i++) {
