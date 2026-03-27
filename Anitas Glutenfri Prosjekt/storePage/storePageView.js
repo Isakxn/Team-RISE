@@ -1,6 +1,6 @@
 
             function storePage(Id){
-                const storeId = model.data.store[Id];
+                const storeId = model.data.cities[0].store[Id];
                 const app = document.getElementById("app");   
 
                 app.innerHTML = 
@@ -59,4 +59,4 @@
                             }
                             document.getElementById("storeReviews").innerHTML = storeReviewsArr.join('')
                         }
-                        storePage(5);
+                        storePage(1);
