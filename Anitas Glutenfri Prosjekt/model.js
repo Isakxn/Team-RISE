@@ -103,7 +103,7 @@ const model = {
                 city: "Oslo",
                 storeName: "Nordlys Kafé",
                 type: "cafe",
-                pictures: ["cafe1.jpg", "cafe2.jpg"],
+                pictures: ["../media/cafeFolder/Cafe.jpg"],
                 address: "Karl Johans gate 15",
                 phone: 22334455,
                 email: "kontakt@nordlyskafe.no",
