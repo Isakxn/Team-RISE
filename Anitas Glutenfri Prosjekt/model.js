@@ -235,8 +235,12 @@ const model = {
         ], 
       },
 
-    { name: "Bergen",
-      store: [
+   
+   
+      {   name:   "Bergen",
+    
+    
+        store: [
           {
             reviews: [
               {
@@ -276,7 +280,7 @@ const model = {
               city: "Bergen",
               storeName: "Solglimt Bakeri",
               type: "bakery",
-              pictures: [],
+              pictures: ["../media/cafeFolder/Cafe (7).jpg"],
               address: "Bryggen 12",
               phone: 55512345,
               email: "post@solglimt.no",
@@ -325,7 +329,7 @@ const model = {
               city: "Bergen",
               storeName: "Fjellro Kafé",
               type: "cafe",
-              pictures: [],
+              pictures: ["../media/cafeFolder/Cafe (9).jpg"],
               address: "Torgallmenningen 5",
               phone: 55567890,
               email: "hei@fjellro.no",
@@ -374,7 +378,7 @@ const model = {
               city: "Bergen",
               storeName: "Bryggen Restaurant",
               type: "restaurant",
-              pictures: [],
+              pictures: ["../media/cafeFolder/Cafe (10).jpg"],
               address: "Bryggen 25",
               phone: 55511223,
               email: "booking@bryggenrest.no",
@@ -423,7 +427,7 @@ const model = {
               city: "Bergen",
               storeName: "Bybakeriet",
               type: "bakery",
-              pictures: [],
+              pictures: ["../media/cafeFolder/Cafe (11).jpg"],
               address: "Marken 8",
               phone: 55533445,
               email: "kontakt@bybakeriet.no",
@@ -472,7 +476,7 @@ const model = {
               city: "Bergen",
               storeName: "Vestkanten Grill",
               type: "restaurant",
-              pictures: [],
+              pictures: ["../media/cafeFolder/Cafe (12).jpg"],
               address: "Vestkanten 3",
               phone: 55566778,
               email: "post@vestkantengrill.no",
