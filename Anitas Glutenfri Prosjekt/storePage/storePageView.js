@@ -19,7 +19,7 @@
                                 <br>
                                 ${storeId.info.email}
                                 <br>
-                                ${storeId.info.averageScore} ⭐⭐⭐⭐ (${storeId.info.reviewAmount}) Anmeldelser
+                               <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
 
                                 </p>
                             
@@ -66,17 +66,23 @@
                         
                         function showStoreSelections() {
                             
-                            const cityStore = model.data.cities[0].store;
+                            const globalCityStore = model.data.cities[0].store;
+                            const cityStore = [...globalCityStore];
                             const storeSelectionArr = [];
                             
-                            for (let index = 1; index < cityStore.length; index++) {
+
+                           cityStore.sort((a, b) => b.info.averageScore - a.info.averageScore)
+
+                            
+                            
+                            for (let index = 0; index < cityStore.length - 1; index++) {
                                 const s = cityStore[index];
                                 storeSelectionArr.push(`
                                 <div class="storeBox" onclick="storePage(${index})">
                                 <div class="storeBoxName">
                                 ${s.info.storeName} 
                                 <br>
-                                ${s.info.averageScore}
+                                <div class="star-rating" style="--val: ${s.info.averageScore};"></div>
                                 </div>
                                 
                                 <img class= "pictureSelect" src="${s.info.pictures}">
@@ -84,6 +90,7 @@
                                 `);
                             };
                              document.getElementById("storeSelection").innerHTML = storeSelectionArr.join('')
+                             console.log(cityStore)
                         }
                         
                         storePage(1);
