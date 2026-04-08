@@ -122,5 +122,13 @@ body {
   display: block;
   margin-bottom: 0.8rem;
 }
-
+.star-rating {
+        --size: 1rem;
+        height: var(--size);
+        width: calc(5 * var(--size));
+        border: 0;
+        background: linear-gradient(90deg, gold calc(var(--val) / 5 * 100%), lightgray calc(var(--val) / 5 * 100%));
+        mask-image: url("/Anitas%20Glutenfri%20Prosjekt/media/star/star.svg");
+        mask-size: contain;
+}
 
