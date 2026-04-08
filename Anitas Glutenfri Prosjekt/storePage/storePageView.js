@@ -75,10 +75,11 @@
 
                             
                             
-                            for (let index = 0; index < cityStore.length - 1; index++) {
+                            for (let index = 0; index < cityStore.length; index++) {
                                 const s = cityStore[index];
+                                const g = globalCityStore.indexOf(s);
                                 storeSelectionArr.push(`
-                                <div class="storeBox" onclick="storePage(${index})">
+                                <div class="storeBox" onclick="storePage(${g})">
                                 <div class="storeBoxName">
                                 ${s.info.storeName} 
                                 <br>
@@ -90,7 +91,6 @@
                                 `);
                             };
                              document.getElementById("storeSelection").innerHTML = storeSelectionArr.join('')
-                             console.log(cityStore)
                         }
                         
                         storePage(1);
