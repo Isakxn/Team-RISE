@@ -1,6 +1,6 @@
 
-            function storePage(Id){
-                const storeId = model.data.cities[0].store[Id];
+            function storePage(Id, cityId){
+                const storeId = model.data.cities[cityId].store[Id];
                 const app = document.getElementById("app");   
 
                 app.innerHTML = 
@@ -37,13 +37,13 @@
                         </div>
                         
                         `;
-                        showStoreReviews(Id)
-                        showStoreSelections()
+                        showStoreReviews(Id, cityId)
+                        showStoreSelections(cityId)
                     }
                     
                     
-                    function showStoreReviews(Id) {
-                        const storeReviews = model.data.cities[0].store[Id].reviews;
+                    function showStoreReviews(Id, cityId) {
+                        const storeReviews = model.data.cities[cityId].store[Id].reviews;
                         const storeReviewsArr = [];
                         
                         for (let i = 0; i < storeReviews.length; i++) {
@@ -64,21 +64,22 @@
                             document.getElementById("storeReviews").innerHTML = storeReviewsArr.join('')
                         }
                         
-                        function showStoreSelections() {
+                        function showStoreSelections(cityId) {
                             
-                            const globalCityStore = model.data.cities[0].store;
+                            const globalCityStore = model.data.cities[cityId].store;
                             const cityStore = [...globalCityStore];
                             const storeSelectionArr = [];
                             
-
-                           cityStore.sort((a, b) => b.info.averageScore - a.info.averageScore)
-
+                            
+                            cityStore.sort((a, b) => b.info.averageScore - a.info.averageScore)
                             
                             
-                            for (let index = 0; index < cityStore.length - 1; index++) {
+                            
+                            for (let index = 0; index < cityStore.length; index++) {
                                 const s = cityStore[index];
+                                const g = globalCityStore.indexOf(s);
                                 storeSelectionArr.push(`
-                                <div class="storeBox" onclick="storePage(${index})">
+                                <div class="storeBox" onclick="storePage(${g},${cityId})">
                                 <div class="storeBoxName">
                                 ${s.info.storeName} 
                                 <br>
@@ -90,7 +91,6 @@
                                 `);
                             };
                              document.getElementById("storeSelection").innerHTML = storeSelectionArr.join('')
-                             console.log(cityStore)
                         }
                         
-                        storePage(1);
+                        storePage(1, 1);
