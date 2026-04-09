@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="frontPage/frontPageCSS.css"">
     </head>
 
     <body>
         <div id="app"></div>
-        <script>
+        <script src="model.js"></script>
+        <script src="frontPage/frontPageView.js"></script>
 
+        <script>
             let html = "";
             const app = document.getElementById("app");   
             
@@ -18,18 +21,22 @@
                 html = viewStartPage();
                 app.innerHTML = html;
             }
-
-
             
             
             function viewStartPage()
             {
-                return /*HTML*/ `
-                    <select>
-                        <option>Bergen</option>
-                        <option>Budapest</option>
-                    </select>
-                `;
+                if (model.app.currentPage === "frontPage")
+                {
+                    let main = "<div class='cssMain'>";
+                    let cityList = addCityList();
+                    let newestReviews = addNewestReviews();
+                    return `
+                        <div class="container">
+                            ${cityList}
+                            ${newestReviews}
+                        </div>
+                    `
+                }
             }
 
             updateView ();

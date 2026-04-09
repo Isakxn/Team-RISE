@@ -1,0 +1,146 @@
+            #app
+            {
+                background-color: #775;
+            }
+            .cssCityList
+            {
+                background-color: #ccc;
+                border: 1px solid rgb(112, 112, 112);       /* thin border so rounding is visible */
+                border-radius: 6px;           /* slight rounding; use e.g. 4px–10px */
+                padding: 6px 8px;             /* spacing inside the select */
+                font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-size: 16px;              /* adjust as desired */
+                appearance: none;             /* optional: remove native dropdown arrow styling (may vary by browser) */
+            }
+
+            .headerSearch
+            {
+                font-style: italic;
+                font-family: "Bebas Neue", sans-serif;
+            }
+
+            .buttonSearch
+            {
+                background-color: #c0e763;
+                border: 1px solid rgb(112, 112, 112);       /* thin border so rounding is visible */
+                border-radius: 6px;           /* slight rounding; use e.g. 4px–10px */
+                padding: 6px 12px;             /* spacing inside the select */
+                font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-size: 16px;              /* adjust as desired */
+            }
+
+            .imgCity
+            {
+                width: 160px;
+                height: 160px;
+                object-fit: cover; /* cover, contain, or fill depending on desired crop behavior */
+                border-radius: 6px; /* optional to match other elements */
+                display:block;
+                margin-top: 24px;   /* space above the image */
+                margin-left: 0;     /* optional: adjust horizontal spacing */
+                margin-bottom: 0;   /* optional */
+            }
+
+            /* Isak */
+            /* Column container */
+            .container {
+                display: flex;
+                flex-wrap: nowrap; /* keep on one row */
+                align-items: flex-start;
+                gap: 1rem;
+                min-height: 100vh;
+                padding: 1rem;
+            }
+
+            .leftside {
+                flex: 0 0 260px;
+                background: #fff;
+                border-radius: 1rem;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+                padding: 1rem;
+                height: calc(100vh - 2rem);
+                overflow-y: auto;
+            }
+
+            /* Sidebar/left column */
+            .side 
+            {
+                flex: 0 0 33.33%;        /* fixed one-third column */
+                box-sizing: border-box;  /* include padding in width */
+                background-color: #f1f1f1;
+                padding: 20px;
+                border: 1px solid #ccc;  /* visible border to delineate the section */
+                border-radius: 8px;      /* slight rounding */
+                margin: 12px;            /* spacing from the page edges and neighbors */
+                min-width: 220px;        /* prevents it collapsing too small on narrow screens */            
+            }
+
+            .main {
+            flex: 1;
+            background: rgba(255,255,255,0.95);
+            border-radius: 1rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            padding: 1rem;
+            overflow-y: auto;
+            max-height: calc(100vh - 2rem);
+            }
+
+            .rightside {
+            flex: 0 0 220px;
+            border-radius: 1rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            padding: 1rem;
+            overflow-y: auto;
+            max-height: calc(100vh - 2rem);
+            }
+
+            /* cards inside rightside */
+            .storeBox {
+                position: relative;
+                background: #fafafa;
+                border: 1px solid #e0dfe7;
+                border-radius: 1rem;
+                margin-bottom: 0.8rem;
+                cursor: pointer;
+                transition: transform .2s, box-shadow .2s;
+                height: 15vh;
+                overflow: hidden;
+            }
+
+            .storeBox img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .storeBox:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+            }
+
+            .storeBoxName{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                color: white;
+                font-weight: bold;
+                font-size: 1.2rem;
+                text-align: center;
+
+                background: rgba(0, 0, 0, 0.4);
+                padding: 0.3rem 0.6rem;
+                border-radius: 0.5rem;
+
+            }
+
+            .reviewBox 
+            {
+                background: #fff;
+                border: 1px solid #e5dce3;
+                border-radius: 1.2rem;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
