@@ -7,7 +7,7 @@
                 /*HTML*/`
                         <div class="container">
                         <div class="leftside">
-                            <h3>${storeId.info.city}</h2>
+                            <select id="citySelectId"></select>
                             <h1>${storeId.info.storeName}</h5>
                             <div ><img class="pictureInfo" src="${storeId.info.pictures}"></div>
                                 <p>
@@ -39,6 +39,7 @@
                         `;
                         showStoreReviews(Id, cityId)
                         showStoreSelections(cityId)
+                        selectCity(cityId)
                     }
                     
                     
@@ -91,6 +92,25 @@
                                 `);
                             };
                              document.getElementById("storeSelection").innerHTML = storeSelectionArr.join('')
+                        }
+
+
+
+                        function selectCity(selectedCityIndex){
+                            const city = model.data.cities;
+                            const cityArray = [];
+
+                            for (let index = 0; index < city.length; index++) {
+                                cityArray.push(`
+                                    <option value="${index}" ${index === selectedCityIndex ? 'selected' : ''} onclick="storePage(0,${index})">${city[index].name}</option>
+
+                                    `)
+                                
+                            }
+                            
+                            document.getElementById("citySelectId").innerHTML = cityArray.join('');
+
+
                         }
                         
                         storePage(1, 1);

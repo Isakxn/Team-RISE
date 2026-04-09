@@ -131,4 +131,12 @@ body {
         mask-image: url("/Anitas%20Glutenfri%20Prosjekt/media/star/star.svg");
         mask-size: contain;
 }
-
+#citySelectId {
+    background-color: transparent;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    border: hidden;
+    text-overflow: '';
+}
