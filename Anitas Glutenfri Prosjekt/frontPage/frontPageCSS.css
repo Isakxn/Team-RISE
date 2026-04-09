@@ -76,22 +76,26 @@
             }
 
             .main {
-            flex: 1;
-            background: rgba(255,255,255,0.95);
-            border-radius: 1rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-            padding: 1rem;
-            overflow-y: auto;
-            max-height: calc(100vh - 2rem);
+                flex: 1 1 auto;                 /* grow/shrink as needed */
+                max-width: 600px;               /* stops expanding beyond this width */
+                width: 100%;                    /* lets it shrink below max-width */
+                margin-left: auto;       /* center within the remaining flex area */
+                margin-right: auto;
+                background: rgba(255,255,255,0.95);
+                border-radius: 1rem;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+                padding: 1rem;
+                overflow-y: auto;
+                max-height: calc(100vh - 2rem);
             }
 
             .rightside {
-            flex: 0 0 220px;
-            border-radius: 1rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            padding: 1rem;
-            overflow-y: auto;
-            max-height: calc(100vh - 2rem);
+                flex: 0 0 220px;
+                border-radius: 1rem;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+                padding: 1rem;
+                overflow-y: auto;
+                max-height: calc(100vh - 2rem);
             }
 
             /* cards inside rightside */
