@@ -7,7 +7,15 @@
                 /*HTML*/`
                         <div class="container">
                         <div class="leftside">
+                        <img class="backbutton" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/corner/corner.svg">
+                        <a href="/Anitas%20Glutenfri%20Prosjekt/index.html">
+                           <img class="backbuttonarrow" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/corner/arrowback.svg" >
+                           </a>
                             <select id="citySelectId"></select>
+                            <img class="hometab" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/hometab/hometabv2.svg">
+                            <a href="/Anitas%20Glutenfri%20Prosjekt/index.html">
+                            <img class="hometabimg" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/hometab/homeimg.svg">
+                            </a>
                             <h1>${storeId.info.storeName}</h5>
                             <div ><img class="pictureInfo" src="${storeId.info.pictures}"></div>
                                 <p>
@@ -20,7 +28,6 @@
                                 ${storeId.info.email}
                                 <br>
                                <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
-
                                 </p>
                             
                             <textarea class="userReviewBox"></textarea>
