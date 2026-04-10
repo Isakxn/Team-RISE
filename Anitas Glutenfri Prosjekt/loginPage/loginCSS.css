@@ -14,12 +14,12 @@
     background-color: #fe6;
     border: 1px solid rgb(112, 112, 112);
     /* thin border so rounding is visible */
-    border-radius: 6px;
+    border-radius: 8px;
     /* slight rounding; use e.g. 4px–10px */
-    padding: 6px 12px;
+    padding: 10px 16px;
     /* spacing inside the select */
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
     /* adjust as desired */
 }
 
