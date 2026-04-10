@@ -54,6 +54,7 @@
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/pastryshop/pastry.svg"></div>
                            </div>
                            <div> <textarea placeholder="Skriv her"class="userReviewBox"></textarea> </div>
+                           <br>
 
                            <div class="reviewbtn">Legg til Anmeldelser</div>
                            `;
