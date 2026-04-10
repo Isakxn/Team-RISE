@@ -50,9 +50,9 @@
                     }
                     
                     
-                    function showStoreReviews(Id, cityId) {
-                        const storeReviews = model.data.cities[cityId].store[Id].reviews;
-                        const storeReviewsArr = [];
+                         function showStoreReviews(Id, cityId) {
+                            const storeReviews = model.data.cities[cityId].store[Id].reviews;
+                            const storeReviewsArr = [];
                         
                         for (let i = 0; i < storeReviews.length; i++) {
                             const r = storeReviews[i]
