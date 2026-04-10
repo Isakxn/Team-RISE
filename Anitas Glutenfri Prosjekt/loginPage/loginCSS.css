@@ -1,0 +1,28 @@
+.buttonLogin
+{
+    background-color: #c0e763;
+    border: 1px solid rgb(112, 112, 112);
+    /* thin border so rounding is visible */
+    border-radius: 6px;
+    /* slight rounding; use e.g. 4px–10px */
+    padding: 6px 12px;
+    /* spacing inside the select */
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    /* adjust as desired */
+}
+
+.inputLogin
+{
+    background-color: #ccc;
+    border: 1px solid rgb(112, 112, 112);
+    /* thin border so rounding is visible */
+    border-radius: 4px;
+    /* slight rounding; use e.g. 4px–10px */
+    padding: 6px 8px;
+    /* spacing inside the select */
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    /* adjust as desired */
+
+}
