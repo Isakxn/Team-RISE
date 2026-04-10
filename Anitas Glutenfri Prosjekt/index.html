@@ -6,6 +6,11 @@
         <title>Document</title>
         <link rel="stylesheet" href="frontPage/frontPageCSS.css"">
         <link rel="stylesheet" href="loginPage/loginCSS.css"">
+
+        <!-- Google font embeds-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metal+Mania&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -47,15 +52,18 @@
                 else if (model.app.currentPage === "loginPage")
                 {
                     return `
-                        <button class="buttonLogin" onclick="buttonLogin()">Logg inn</button>
-                        <br>
-                        <div style="color: #eee;">Brukernavn:</div>
-                        <input class="inputLogin" oninput="updateUsername(this.value)">
-                        <br>
-                        <div style="color: #eee;">Passord:</div>
-                        <input class="inputLogin" oninput="updatePassword(this.value)">
-                        <br>
-                        ${model.viewState.loginPage.loginInvalid}
+                        <div class="containerLogin">
+                            <br>
+                            <div style="color: #eee;">Brukernavn:</div>
+                            <input class="inputLogin" oninput="updateUsername(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
+                            <div style="color: #eee;">Passord:</div>
+                            <input class="inputLogin" oninput="updatePassword(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
+                            <br>
+                            <button class="buttonLogin" onclick="buttonLogin()">Logg inn</button>
+                            <div class="inputLoginFail">
+                                ${model.viewState.loginPage.loginInvalid}
+                            </div>
+                        </div>
                     `;
                 }
             }
