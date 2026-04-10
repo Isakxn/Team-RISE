@@ -10,7 +10,7 @@
         <!-- Google font embeds-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metal+Mania&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Metal+Mania&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -51,23 +51,10 @@
 
                 else if (model.app.currentPage === "loginPage")
                 {
-                    return `
-                        <div class="containerLogin">
-                            <br>
-                            <div style="color: #eee;">Brukernavn:</div>
-                            <input class="inputLogin" oninput="updateUsername(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
-                            <div style="color: #eee;">Passord:</div>
-                            <input class="inputLogin" oninput="updatePassword(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
-                            <br>
-                            <button class="buttonLogin" onclick="buttonLogin()">Logg inn</button>
-                            <div class="inputLoginFail">
-                                ${model.viewState.loginPage.loginInvalid}
-                            </div>
-                        </div>
-                    `;
+                    return viewLoginPage();
                 }
             }
-
+//
             updateView ();
         </script>
     </body>
