@@ -18,8 +18,7 @@
             let html = "";
             const app = document.getElementById("app");
             // TESTING / MIDLERTIDIG!!
-            // model.app.currentPage = "loginPage";
-            // let loginInvalid = "";
+            model.app.currentPage = "loginPage";
             //
 
             function updateView (){
@@ -53,7 +52,7 @@
                         Passord:
                         <input oninput="updatePassword(this.value)">
                         <br>
-                        ${loginInvalid}
+                        ${model.viewState.loginPage.loginInvalid}
                     `;
                 }
             }

@@ -13,16 +13,19 @@ function buttonLogin()
 {
     if (model.viewState.loginPage.username !== model.data.credentials[0].admin.name)
     {
-        loginInvalid = "Feil brukernavn!";
+        model.app.viewState.loginPage.loginInvalid = "Feil brukernavn!";
+        updateView();
         return;
     }
     if (model.viewState.loginPage.userPassword !== model.data.credentials[0].admin.password)
     {
-        loginInvalid = "Feil passord!";
+        model.app.viewState.loginPage.loginInvalid = "Feil passord!";
+        updateView();
         return;
     }
 
-    loginInvalid = "";
+    model.app.viewState.loginPage.loginInvalid = "";
+    model.app.adminLoggedIn = true;
     model.app.currentPage = "frontPage";
     updateView();
 }

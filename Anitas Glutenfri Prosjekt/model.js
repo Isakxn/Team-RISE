@@ -26,6 +26,7 @@ const model = {
     loginPage: {
       username: "",
       userPassword: "",
+      loginInvalid: "",
     },
   },
 
