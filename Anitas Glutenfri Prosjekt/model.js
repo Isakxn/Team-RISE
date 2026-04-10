@@ -4,14 +4,11 @@ const model = {
     adminLoggedIn: false,
     currentPage: "frontPage", // selectionPage, storeFrontPage, writeReviewPage, loginPage, adminPage,
     pages: ["frontPage", "selectionPage", "storeFrontPage", "writeReviewPage", "loginPage", "adminPage"],
+    currentCity: 0,
     // currentUser: "",
   },
 
   viewState: {
-    frontPage: {
-      citySelection: "",
-    },
-
     selectionPage: {
       storeType: "",
     },
@@ -29,6 +26,7 @@ const model = {
     loginPage: {
       username: "",
       userPassword: "",
+      loginInvalid: "",
     },
   },
 

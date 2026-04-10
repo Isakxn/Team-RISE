@@ -5,17 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="frontPage/frontPageCSS.css"">
+        <link rel="stylesheet" href="loginPage/loginCSS.css"">
+
+        <!-- Google font embeds-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metal+Mania&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div id="app"></div>
         <script src="model.js"></script>
         <script src="frontPage/frontPageView.js"></script>
+        <script src="loginPage/loginView.js"></script>
+        <script src="loginPage/loginController.js"></script>
 
         <script>
             let html = "";
-            const app = document.getElementById("app");   
-            
+            const app = document.getElementById("app");
+            // TESTING / MIDLERTIDIG!!
+            model.app.currentPage = "loginPage";
+            //
+
             function updateView (){
                 
                 html = viewStartPage();
@@ -36,6 +47,24 @@
                             ${newestReviews}
                         </div>
                     `
+                }
+
+                else if (model.app.currentPage === "loginPage")
+                {
+                    return `
+                        <div class="containerLogin">
+                            <br>
+                            <div style="color: #eee;">Brukernavn:</div>
+                            <input class="inputLogin" oninput="updateUsername(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
+                            <div style="color: #eee;">Passord:</div>
+                            <input class="inputLogin" oninput="updatePassword(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
+                            <br>
+                            <button class="buttonLogin" onclick="buttonLogin()">Logg inn</button>
+                            <div class="inputLoginFail">
+                                ${model.viewState.loginPage.loginInvalid}
+                            </div>
+                        </div>
+                    `;
                 }
             }
 

@@ -77,7 +77,7 @@
 
             .main {
                 flex: 1 1 auto;                 /* grow/shrink as needed */
-                max-width: 600px;               /* stops expanding beyond this width */
+                max-width: 30rem;               /* stops expanding beyond this width */
                 width: 100%;                    /* lets it shrink below max-width */
                 margin-left: auto;       /* center within the remaining flex area */
                 margin-right: auto;
