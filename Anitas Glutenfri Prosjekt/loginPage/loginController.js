@@ -14,6 +14,7 @@ function buttonLogin()
     if (model.viewState.loginPage.username !== model.data.credentials[0].admin.name)
     {
         model.viewState.loginPage.loginInvalid = "Feil brukernavn!";
+        // document.getElementById("app").innerHTML += `<div class="inputLoginFail">Feil brukernavn!</div>`;
         updateView();
         return;
     }
