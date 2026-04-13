@@ -1,0 +1,46 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f5f0;
+  color: #333;
+  
+}
+
+.selectionPageMain{
+
+}
+
+.citySelectionHeader{
+  border: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealContainer{
+  display: flex;
+  flex-wrap: nowrap; /* keep on one row */
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.563);
+  border-radius: 8px;
+}
+
+.bakeryButn{
+
+}
+
+.lunchButn{
+
+}
+
+.dinnerButn{
+
+}
+
+.dessertButn{
+
+}
