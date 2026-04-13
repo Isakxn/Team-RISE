@@ -2,11 +2,11 @@
 function viewLoginPage() 
 {
     return `
-        <div class="containerLogin">
+        <div class="containerLogin" style="background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/congAdmin.png');">
             <br>
-            <div style="color: #000000;">Brukernavn:</div>
+            <div style="color: #feffa6;">Brukernavn:</div>
             <input class="inputLogin" oninput="updateUsername(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
-            <div style="color: #000000;">Passord:</div>
+            <div style="color: #feffa6;">Passord:</div>
             <input class="inputLogin" type="password" oninput="updatePassword(this.value)" onkeydown="if(event.key==='Enter'){ buttonLogin(); }">
             <br>
             <button class="buttonLogin" onclick="buttonLogin()">Logg inn</button>
