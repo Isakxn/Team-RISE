@@ -59,3 +59,12 @@ function addNewestReviews() {
     return returnString;
 }
 
+
+function viewLoginButton()
+{
+    return `
+        <button>
+            <img class="loginButton" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/login/login.svg">
+        </button>
+    `;
+}

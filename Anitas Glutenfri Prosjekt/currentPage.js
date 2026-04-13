@@ -17,6 +17,7 @@ function viewCurrentPage()
             <div class="container">
                 ${cityList}
                 ${newestReviews}
+                ${viewLoginButton()}
             </div>
         `;
     }
