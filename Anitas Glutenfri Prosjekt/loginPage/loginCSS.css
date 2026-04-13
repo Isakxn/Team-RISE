@@ -54,6 +54,11 @@
     height: 2.5rem;       /* keep square or use auto for aspect */
     object-fit: contain;   /* ensures it scales without distortion */
 }
+.loginBackButton:hover img
+{
+    transform: scale(1.1);
+    filter: grayscale(1) brightness(0.6) contrast(0.9);
+}
 
 .inputLoginFail
 {
