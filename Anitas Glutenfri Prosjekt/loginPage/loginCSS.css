@@ -38,6 +38,23 @@
 
 }
 
+.loginBackButton
+{
+    background-color: #cccccc00;
+    border: 0px;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    width: 2rem;
+    height: auto;
+}
+.loginBackButton img
+{
+    width: 2.5rem;
+    height: 2.5rem;       /* keep square or use auto for aspect */
+    object-fit: contain;   /* ensures it scales without distortion */
+}
+
 .inputLoginFail
 {
     font-family: "Metal Mania", system-ui;
