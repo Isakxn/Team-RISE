@@ -1,3 +1,4 @@
+
 function updateView()
 {
     html = viewCurrentPage();
