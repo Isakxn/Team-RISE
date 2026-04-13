@@ -29,18 +29,8 @@ button {
   border-radius: 8px;
 }
 
-.bakeryButn{
-
-}
-
-.lunchButn{
-
-}
-
-.dinnerButn{
-
-}
-
-.dessertButn{
-
+button:hover{
+  transition-duration: 0.3s;
+  cursor: pointer;
+  background-color: #c5923a;
 }
