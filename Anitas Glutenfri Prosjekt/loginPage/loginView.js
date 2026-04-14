@@ -1,6 +1,23 @@
 
+function loggedInUser()
+{
+    return model.app.adminLoggedIn;
+}
+
+function checkUsername()
+{
+    return model.viewState.loginPage.username === model.data.credentials[0].admin.name;
+}
+function checkUserPassword()
+{
+    return model.viewState.loginPage.userPassword === model.data.credentials[0].admin.password;
+}
+
 function viewLoginPage() 
 {
+    const correctLogin = loggedInUser();
+    const correctUsername = checkUsername();
+    const correctPassword = checkUserPassword();
     return `
         <div class="containerLogin" style="background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/congAdmin.png');">
 
@@ -18,9 +35,19 @@ function viewLoginPage()
             <br>
             <button class="buttonLogin" onclick="buttonLogin()">Logg inn</button>
 
-            <div class="inputLoginFail">
-                ${model.viewState.loginPage.loginInvalid}
-            </div>
+            ${correctLogin ? `` :
+                `
+                ${correctUsername ? `` : `
+                    <div class="inputLoginFail">
+                        Feil brukernavn!
+                    </div>
+                `}
+                ${correctPassword ? `` : `
+                    <div class="inputLoginFail">
+                        Feil passord!
+                    </div>
+                `}
+            `}
 
         </div>
     `;

@@ -14,7 +14,7 @@ function viewCurrentPage()
         let cityList = addCityList();
         let newestReviews = addNewestReviews();
         return `
-            <div class="container">
+            <div class="container" style="background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/Cafe (7) dark.jpg');">
                 ${cityList}
                 ${newestReviews}
                 ${viewLoginButton()}

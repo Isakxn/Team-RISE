@@ -1,16 +1,20 @@
 
-function addCityList() {
+function addCityList()
+{
     let tempString = /*HTML*/ `
         <div class="leftside">
             <h2 class="headerSearch">Hvor vil du søke?</h2>
-            <select class="cssCityList">
+            <div class="searchElements">
+                <select class="cssCityList">
         `;
-    for (let c = 0; c < model.data.cities.length; c++) {
+    for (let c = 0; c < model.data.cities.length; c++)
+    {
         tempString += `<option>${model.data.cities[c].name}</option>`;
     }
     tempString += /*HTML*/ `
-            </select>
-            <button class="buttonSearch">Søk</button>
+                </select>
+                <button class="buttonSearch">Søk</button>
+            </div>
             <img class="imgCity" src="https://media.istockphoto.com/id/586924460/vector/city-map-with-various-buildings.jpg?s=170667a&w=0&k=20&c=byybSCRNdSffgm4i8PRjUV4rrz6NgKkK8J8otiXRgqc=">
         </div>
         `;
@@ -18,7 +22,8 @@ function addCityList() {
 }
 
 
-function addNewestReviews() {
+function addNewestReviews()
+{
     let all = [];       // temp array to store newest reviews across stores
     for (let c = 0; c < model.data.cities.length; c++) {
         let stores = model.data.cities[c].store;
