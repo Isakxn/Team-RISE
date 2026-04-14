@@ -1,17 +1,4 @@
 
-function loggedInUser()
-{
-    return model.app.adminLoggedIn;
-}
-
-function checkUsername()
-{
-    return model.viewState.loginPage.username === model.data.credentials[0].admin.name;
-}
-function checkUserPassword()
-{
-    return model.viewState.loginPage.userPassword === model.data.credentials[0].admin.password;
-}
 
 function viewLoginPage() 
 {

@@ -1,4 +1,18 @@
 
+function frontPage()
+{
+    let main = "<div class='cssMain'>";
+    let cityList = addCityList();
+    let newestReviews = addNewestReviews();
+    app.innerHTML = `
+        <div class="container_frontPage" style="background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/Cafe (7) dark.jpg');">
+            ${cityList}
+            ${newestReviews}
+            ${viewLoginButton()}
+        </div>
+    `;
+}
+
 function addCityList()
 {
     let tempString = /*HTML*/ `

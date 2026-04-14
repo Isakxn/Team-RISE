@@ -83,6 +83,17 @@
                 overflow-y: auto;
             }
 
+            .middleSection_frontPage
+            {
+                flex: 1;
+                background: rgba(255,255,255,0.95);
+                border-radius: 1rem;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+                padding: 1rem;
+                overflow-y: auto;
+                max-height: calc(100vh - 2rem);
+            }
+
             .searchElements
             {
                 display:flex;
