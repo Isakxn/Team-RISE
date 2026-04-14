@@ -272,3 +272,39 @@ body {
     transform: translateY(-2px);
 }
 
+.user-rating {
+  --size: 2.5rem;
+  --val: 2.5;
+  height: var(--size);
+  width: calc(5 * var(--size));
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: linear-gradient(90deg, gold calc(var(--val) / 5 * 100%), #ddd calc(var(--val) / 5 * 100%));
+  mask-image: url("/Anitas%20Glutenfri%20Prosjekt/media/icons/star/star.svg");
+  mask-size: contain;
+  cursor: pointer;
+}
+
+/* Hide the slider thumb for Chrome/Safari */
+.user-rating::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+/* Hide the slider thumb for Firefox */
+.user-rating::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.user-rating::-moz-range-track {
+  background: transparent;
+  border: none;
+}
