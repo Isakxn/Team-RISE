@@ -16,25 +16,25 @@ function selectionPage(){
 
           <div class="bakeryButn">
               <button onclick="">
-                <img src="../media/cafeFolder/icons/bakeryImg.svg">
+                <img src="Media/icons/bakery/bakery.svg">
               </button>
           </div>
       
           <div class="lunchButn">
               <button onclick="">
-                <img src="../media/cafeFolder/icons/lunchImg.svg">
+                <img src="Media/icons/cafe/lunch.svg">
               </button>
           </div>
       
           <div class="dinnerButn">
               <button onclick="">
-                <img src="../media/cafeFolder/icons/dinnerImg.svg">
+                <img src="Media/icons/restaurant/restaurant.svg">
               </button>
           </div>
       
           <div class="dessertButn">
               <button onclick="">
-                <img src="../media/cafeFolder/icons/dessertImg.svg">
+                <img src="Media/icons/pastryshop/pastry.svg">
               </button>
           </div>
 
