@@ -35,20 +35,9 @@ function viewLoginPage()
             <br>
             <button class="buttonLogin" onclick="buttonLogin()">Logg inn</button>
 
-            ${correctLogin ? `` :
-                `
-                ${correctUsername ? `` : `
-                    <div class="inputLoginFail">
-                        Feil brukernavn!
-                    </div>
-                `}
-                ${correctPassword ? `` : `
-                    <div class="inputLoginFail">
-                        Feil passord!
-                    </div>
-                `}
-            `}
-
+            <div class="inputLoginFail">
+                ${model.viewState.loginPage.loginInvalid}
+            </div>
         </div>
     `;
 }
