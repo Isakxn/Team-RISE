@@ -46,7 +46,7 @@ function addNewestReviews()
     );
 
     // 
-    let returnString = `<div class="main">`;
+    let returnString = `<div class="middleSection_frontPage">`;
     for (let s = 1; s < all.length; s++) {
         returnString += 
         `
