@@ -22,9 +22,9 @@ function viewCurrentPage()
         `;
     }
 
-    else if (model.app.currentPage === "loginPage")
+    else if (model.app.currentPage === "storePage")
     {
-        return viewLoginPage();
+        return storePage(0,0);
     }
 }
 
