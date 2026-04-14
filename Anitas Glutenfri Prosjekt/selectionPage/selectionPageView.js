@@ -42,4 +42,3 @@ function selectionPage(){
   </div>
   `;
 }
-selectionPage()
