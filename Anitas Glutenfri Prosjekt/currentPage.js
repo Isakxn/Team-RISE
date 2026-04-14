@@ -1,8 +1,8 @@
 
 function updateView()
 {
-    html = viewCurrentPage();
-    app.innerHTML = html;
+    app.innerHTML = viewCurrentPage();
+    
 }
 
 
