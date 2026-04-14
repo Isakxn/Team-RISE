@@ -31,13 +31,14 @@
         <script src="selectionPage/selectionPageController.js"></script>
 
         <script src="storePage/storePageController.js"></script>
-        <script src="selectionPage/selectionPageView.js"></script>
+        <script src="storePage/storePageView.js"></script>
         <script>
             const app = document.getElementById("app");
             // TESTING / MIDLERTIDIG!!
-            model.app.currentPage = "storePage";
             //
             updateView ();
+            model.app.currentPage = "storePage";
+            storePage(0, 0);
         </script>
     </body>
 </html>
