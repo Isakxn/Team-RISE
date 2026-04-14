@@ -1,7 +1,7 @@
 
 function updateView()
 {
-    app.innerHTML = viewCurrentPage();
+    viewCurrentPage();
     
 }
 
