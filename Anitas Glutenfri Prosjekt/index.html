@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="selectionPage/selectionPageCSS.css">
         <link rel="stylesheet" href="frontPage/frontPageCSS.css"">
         <link rel="stylesheet" href="loginPage/loginCSS.css"">
-        <link rel="stylesheet" href="storePage/storePageCSS.css"">
+        <link rel="stylesheet" href="storePageCSS.css"">
         
     </head>
 
@@ -31,13 +31,13 @@
         <script src="selectionPage/selectionPageController.js"></script>
 
         <script src="storePage/storePageController.js"></script>
-        <script src="storePage/storePageView.js"></script>
+        <script src="selectionPage/selectionPageView.js"></script>
         <script>
             const app = document.getElementById("app");
             // TESTING / MIDLERTIDIG!!
-            model.app.currentPage = "selectionPage";
+            model.app.currentPage = "loginPage";
             //
-            updateView();
+            updateView ();
         </script>
     </body>
 </html>

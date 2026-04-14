@@ -2,7 +2,7 @@
 
 function viewLoginPage() 
 {
-    return `
+app.innerHTML = `
         <div class="containerLogin" style="background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/congAdmin.png');">
 
             <button type="button" class="loginBackButton" onclick="model.app.currentPage='storePage'; updateView();">
