@@ -21,7 +21,10 @@ function viewCurrentPage()
             </div>
         `;
     }
-
+    else if (model.app.currentPage === "selectionPage")
+    {
+        return selectionPage();
+    }
     else if (model.app.currentPage === "storePage")
     {
         return storePage(0, 0);
