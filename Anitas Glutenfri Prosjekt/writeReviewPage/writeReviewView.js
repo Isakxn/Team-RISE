@@ -16,7 +16,7 @@
                             <a href="/Anitas%20Glutenfri%20Prosjekt/index.html">
                             <img class="hometabimg" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/hometab/homeimg.svg">
                             </a>
-                            <h1>${storeId.info.storeName}</h5>
+                            <h1>${storeId.info.storeName}</h1>
                             <div ><img class="pictureInfo" src="${storeId.info.pictures}"></div>
                                 <p>
                                 ${storeId.info.address}
@@ -34,19 +34,17 @@
                         </div>
                         
                         `;
-                        showWriteReview()
+                        showWriteReview(Id, cityId)
                         selectCity(cityId)
                     }
                     
                     
-                         function showWriteReview() {
+                         function showWriteReview(Id, cityId) {
+                           const storeId = model.data.cities[cityId].store[Id];
                            const writeReview = document.getElementById("storeReviews");
                            writeReview.innerHTML= 
                             /*HTML*/`
-                           <p>Write your review</p>
-                           <div class="starcontainer">
-                           <div class="star-rating" style="--size: 2rem; --val: 4;"></div>
-                           </div>
+                           <h1>${storeId.info.storeName}</h1>
                            <div class="darkborder">
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/bakery/bakery.svg"></div>
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/cafe/coffee.svg"></div>
@@ -55,8 +53,23 @@
                            </div>
                            <div> <textarea placeholder="Skriv her"class="userReviewBox"></textarea> </div>
                            <br>
-
+                            <div class="starcontainer">
+                           <input 
+                            type="range"
+                            min="0.5"
+                            max="5"
+                            step="0.5"
+                            value="2.5"
+                            class="user-rating"
+                            style="--val: 2.5"
+                            oninput="this.style.setProperty('--val', this.value)"
+                            >
+                           </div>
+                           <br>
                            <div class="reviewbtn">Legg til Anmeldelser</div>
+                           <br>
+                           <p>Legg til bilder<p>
+                          <input   type="file" accept="image/*"  onchange="handleImageUpload(this.files)">
                            `;
                         }
                         
