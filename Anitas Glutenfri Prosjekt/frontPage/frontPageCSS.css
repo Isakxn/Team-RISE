@@ -1,7 +1,7 @@
-            #app
+            /* #app
             {
                 background-color: #ddb;
-            }
+            } */
 
             .cssCityList
             {
@@ -56,9 +56,8 @@
                 /* optional */
             }
 
-            /* Isak */
             /* Column container */
-            .container
+            .container_frontPage
             {
                 display: flex;
                 flex-wrap: nowrap;
@@ -69,7 +68,7 @@
                 padding: 1rem;
             }
 
-            .leftside
+            .leftside_frontPage
             {
                 display: flex;
                 flex-direction: column; /* or 'row' if children should line up horizontally */
@@ -84,109 +83,6 @@
                 overflow-y: auto;
             }
 
-            /* Sidebar/left column */
-            .side
-            {
-                flex: 0 0 33.33%;
-                /* fixed one-third column */
-                box-sizing: border-box;
-                /* include padding in width */
-                background-color: #f1f1f1;
-                padding: 20px;
-                border: 1px solid #ccc;
-                /* visible border to delineate the section */
-                border-radius: 8px;
-                /* slight rounding */
-                margin: 12px;
-                /* spacing from the page edges and neighbors */
-                min-width: 220px;
-                /* prevents it collapsing too small on narrow screens */
-            }
-
-            .main
-            {
-                flex: 1 1 auto;
-                /* grow/shrink as needed */
-                max-width: 30rem;
-                /* stops expanding beyond this width */
-                width: 100%;
-                /* lets it shrink below max-width */
-                margin-left: auto;
-                /* center within the remaining flex area */
-                margin-right: auto;
-                background: rgba(255, 255, 255, 0.95);
-                border-radius: 1rem;
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-                padding: 1rem;
-                overflow-y: auto;
-                max-height: calc(100vh - 2rem);
-            }
-
-            .rightside
-            {
-                flex: 0 0 220px;
-                border-radius: 1rem;
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-                padding: 1rem;
-                overflow-y: auto;
-                max-height: calc(100vh - 2rem);
-            }
-
-            /* cards inside rightside */
-            .storeBox
-            {
-                position: relative;
-                background: #fafafa;
-                border: 1px solid #e0dfe7;
-                border-radius: 1rem;
-                margin-bottom: 0.8rem;
-                cursor: pointer;
-                transition: transform .2s, box-shadow .2s;
-                height: 15vh;
-                overflow: hidden;
-            }
-
-            .storeBox img
-            {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .storeBox:hover
-            {
-                transform: translateY(-2px);
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.13);
-            }
-
-            .storeBoxName
-            {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
-                color: white;
-                font-weight: bold;
-                font-size: 1.2rem;
-                text-align: center;
-
-                background: rgba(0, 0, 0, 0.4);
-                padding: 0.3rem 0.6rem;
-                border-radius: 0.5rem;
-
-            }
-
-            .reviewBox
-            {
-                background: #fff;
-                border: 1px solid #e5dce3;
-                border-radius: 1.2rem;
-                padding: 1rem;
-                margin-bottom: 1rem;
-            }
-
-            /* Erik */
             .searchElements
             {
                 display:flex;
