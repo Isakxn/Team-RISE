@@ -2,13 +2,10 @@
 
 function viewLoginPage() 
 {
-    const correctLogin = loggedInUser();
-    const correctUsername = checkUsername();
-    const correctPassword = checkUserPassword();
     return `
         <div class="containerLogin" style="background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/congAdmin.png');">
 
-            <button type="button" class="loginBackButton" onclick="model.app.currentPage='frontPage'; updateView();">
+            <button type="button" class="loginBackButton" onclick="model.app.currentPage='storePage'; updateView();">
                 <img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/login/arrow_back_ios_new.svg" alt="" width="16" height="16" aria-hidden="true">
            </button>
 
