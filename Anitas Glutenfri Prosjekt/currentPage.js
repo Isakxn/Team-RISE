@@ -26,5 +26,9 @@ function viewCurrentPage()
     {
         return storePage(0,0);
     }
+    else if (model.app.currentPage === "loginPage")
+    {
+        return viewLoginPage();
+    }
 }
 
