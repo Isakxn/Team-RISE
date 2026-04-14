@@ -2,7 +2,7 @@
 function addCityList()
 {
     let tempString = /*HTML*/ `
-        <div class="leftside">
+        <div class="leftside_frontPage">
             <h2 class="headerSearch">Hvor vil du søke?</h2>
             <div class="searchElements">
                 <select class="cssCityList">
@@ -15,7 +15,7 @@ function addCityList()
                 </select>
                 <button class="buttonSearch">Søk</button>
             </div>
-            <img class="imgCity" src="https://media.istockphoto.com/id/586924460/vector/city-map-with-various-buildings.jpg?s=170667a&w=0&k=20&c=byybSCRNdSffgm4i8PRjUV4rrz6NgKkK8J8otiXRgqc=">
+            <img class="imgCity" src="https://www.svgrepo.com/show/12439/street-map.svg">
         </div>
         `;
     return tempString;
