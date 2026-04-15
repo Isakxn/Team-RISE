@@ -33,7 +33,7 @@ function addCityList()
     }
     tempString += /*HTML*/ `
                 </select>
-                <button class="buttonSearch">Søk</button>
+                <button class="buttonSearch" onclick="goForward()">Søk</button>
             </div>
             <br>
             <img class="imgCity" src="https://www.svgrepo.com/show/12439/street-map.svg">
