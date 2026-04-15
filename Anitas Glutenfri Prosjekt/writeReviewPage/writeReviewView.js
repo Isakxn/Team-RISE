@@ -8,7 +8,7 @@
                         <div class="container">
                         <div class="leftside">
                         <img class="backbutton" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/corner/corner.svg">
-                        <a href="/Anitas%20Glutenfri%20Prosjekt/index.html">
+                        <a onclick="goBack()">
                            <img class="backbuttonarrow" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/corner/arrowback.svg" >
                            </a>
                             <select id="citySelectId"></select>
