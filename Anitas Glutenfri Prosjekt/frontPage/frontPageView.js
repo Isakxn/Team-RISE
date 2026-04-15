@@ -5,10 +5,15 @@ function frontPage()
     let cityList = addCityList();
     let newestReviews = addNewestReviews();
     app.innerHTML = `
-        <div class="container_frontPage" style="background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/Cafe (7) dark.jpg');">
-            ${cityList}
-            ${newestReviews}
-            ${viewLoginButton()}
+        <div class="container_frontPage_all">
+            <div class="container_frontPage_header">
+                <h3> Anitas Glutenfrie Prosjekt</h3>
+                ${viewLoginButton()}
+            </div>
+            <div class="container_frontPage">
+                ${cityList}
+                ${newestReviews}
+            </div>
         </div>
     `;
 }
@@ -18,6 +23,7 @@ function addCityList()
     let tempString = /*HTML*/ `
         <div class="leftside_frontPage">
             <h2 class="headerSearch">Hvor vil du søke?</h2>
+            <br>
             <div class="searchElements">
                 <select class="cssCityList">
         `;
@@ -29,6 +35,7 @@ function addCityList()
                 </select>
                 <button class="buttonSearch">Søk</button>
             </div>
+            <br>
             <img class="imgCity" src="https://www.svgrepo.com/show/12439/street-map.svg">
         </div>
         `;
@@ -82,7 +89,7 @@ function addNewestReviews()
 function viewLoginButton()
 {
     return `
-        <button class="iconLogin">
+        <button class="iconLogin" onclick="goBack()">
             <img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/login/login.svg">
         </button>
     `;

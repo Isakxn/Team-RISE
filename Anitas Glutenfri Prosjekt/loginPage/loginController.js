@@ -31,3 +31,11 @@ function buttonLogin()
     updateView();
 }
 
+
+function buttonLogout()
+{
+    model.viewState.loginPage.loginInvalid = "";
+    model.app.adminLoggedIn = false;
+    model.app.currentPage = "frontPage";
+    updateView();
+}
