@@ -7,7 +7,7 @@ function frontPage()
     app.innerHTML = `
         <div class="container_frontPage_all">
             <div class="container_frontPage_header">
-                <h3> Anitas Glutenfrie Prosjekt</h3>
+                <h3>Anitas Glutenfrie Prosjekt</h3>
                 ${viewLoginButton()}
             </div>
             <div class="container_frontPage">
@@ -29,7 +29,7 @@ function addCityList()
         `;
     for (let c = 0; c < model.data.cities.length; c++)
     {
-        tempString += `<option>${model.data.cities[c].name}</option>`;
+        tempString += `<option onclick="changeCity(${c})">${model.data.cities[c].name}</option>`;
     }
     tempString += /*HTML*/ `
                 </select>
