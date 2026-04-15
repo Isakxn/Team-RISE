@@ -38,11 +38,7 @@
                                 <br>
                                <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
                                 </p>
-                            <div onclick="goForward()">
-                            <textarea class="userReviewBox"></textarea>
-                            <br>
-                            <button>Legg til Anmeldelser</button>
-                            </div>
+                                ${writeReviewBtn()}
                         </div>
                         <div class="main" id="storeReviews">
                             
@@ -125,6 +121,18 @@
                             document.getElementById("citySelectId").innerHTML = cityArray.join('');
 
 
+                        }
+                        function writeReviewBtn(){
+                            if (model.app.currentPage === "storePage")
+                            {return `
+                            <div onclick="goForward()">
+                            <textarea class="userReviewBox"></textarea>
+                            <br>
+                            <button>Legg til Anmeldelser</button>
+                            </div>
+                            `}
+                            return "";
+                            
                         }
 
 

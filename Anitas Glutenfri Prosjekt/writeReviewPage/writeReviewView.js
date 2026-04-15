@@ -18,8 +18,10 @@
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/restaurant/restaurant.svg"></div>
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/pastryshop/pastry.svg"></div>
                            </div>
+                           <input type="text" placeholder="Navn" class="nameInput">
                            <div> <textarea placeholder="Skriv her"class="userReviewBox"></textarea> </div>
                            <br>
+                           <label class="ratingLabel">Din vurdering:</label>
                             <div class="starcontainer">
                            <input 
                             type="range"
@@ -35,9 +37,22 @@
                            <br>
                            <div class="reviewbtn">Legg til Anmeldelser</div>
                            <br>
-                           <p>Legg til bilder<p>
-                          <input   type="file" accept="image/*"  onchange="handleImageUpload(this.files)">
-                           `;
+                           `;       
+                           showImageUploadSection();
                         }
                         
-                        writeReviewPage()
+                        function showImageUploadSection() {
+                            const storeSelection = document.getElementById("storeSelection");
+                            storeSelection.innerHTML = `
+                                <div class="imageUploadSection">
+                                    <h3>Legg til bilder</h3>
+                                    <input type="file" accept="image/*" multiple class="imageFileInput" onchange="handleImageUpload(this.files)">
+                                    <div class="imagePreviewGrid" id="imagePreviewGrid">
+                                        <div class="imagePreviewBox">+ Bilde 1</div>
+                                        <div class="imagePreviewBox">+ Bilde 2</div>
+                                        <div class="imagePreviewBox">+ Bilde 3</div>
+                                        <div class="imagePreviewBox">+ Bilde 4</div>
+                                    </div>
+                                </div>
+                            `;
+                        }
