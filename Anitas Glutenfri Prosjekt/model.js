@@ -16,7 +16,7 @@ const model = {
     storeFrontPage: {
       selectedCity: 0,
       selectedStore: 0,
-      admin: "",
+      admin: "delete me",
     },
 
     writeReviewPage: {
