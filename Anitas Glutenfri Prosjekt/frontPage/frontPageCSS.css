@@ -57,6 +57,24 @@
             }
 
             /* Column container */
+            .container_frontPage_all
+            {
+                background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/Cafe (7) dark.jpg');
+            }
+            .container_frontPage_header
+            {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column; /* or 'row' if children should line up horizontally */
+                align-items: center;
+                gap: 1rem;
+                min-height: 8vh;
+                padding: 1rem;
+
+                font-family: "Metal Mania", system-ui;
+                font-size: 2.5rem;
+                color: rgb(255, 229, 143);
+            }
             .container_frontPage
             {
                 display: flex;
