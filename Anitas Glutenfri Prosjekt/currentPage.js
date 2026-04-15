@@ -24,6 +24,10 @@ function viewCurrentPage()
     {
         return viewLoginPage();
     }
+     else if (model.app.currentPage === "writeReviewPage")
+    {
+        return writeReviewPage();
+    }
 }
 
 function goBack (){

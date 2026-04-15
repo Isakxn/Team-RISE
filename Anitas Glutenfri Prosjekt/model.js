@@ -14,7 +14,8 @@ const model = {
     },
 
     storeFrontPage: {
-      storeSelection: "",
+      selectedCity: 0,
+      selectedStore: 0,
     },
 
     writeReviewPage: {

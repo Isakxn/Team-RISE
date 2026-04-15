@@ -1,6 +1,6 @@
 
-            function storePage(Id, cityId){
-                const storeId = model.data.cities[cityId].store[Id];
+            function storePage(){
+                const storeId = model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore];
                 const app = document.getElementById("app");   
 
                 app.innerHTML = 
@@ -32,7 +32,7 @@
                             
                             <textarea class="userReviewBox"></textarea>
                             <br>
-                            <button>Legg til Anmeldelser</button>
+                            <button onclick="goForward()">Legg til Anmeldelser</button>
                         </div>
                         <div class="main" id="storeReviews">
                             
@@ -44,14 +44,14 @@
                         </div>
                         
                         `;
-                        showStoreReviews(Id, cityId)
-                        showStoreSelections(cityId)
-                        selectCity(cityId)
+                        showStoreReviews()
+                        showStoreSelections()
+                        selectCity()
                     }
                     
                     
-                         function showStoreReviews(Id, cityId) {
-                            const storeReviews = model.data.cities[cityId].store[Id].reviews;
+                         function showStoreReviews() {
+                            const storeReviews = model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore].reviews;
                             const storeReviewsArr = [];
                         
                         for (let i = 0; i < storeReviews.length; i++) {
@@ -72,9 +72,9 @@
                             document.getElementById("storeReviews").innerHTML = storeReviewsArr.join('')
                         }
                         
-                        function showStoreSelections(cityId) {
+                        function showStoreSelections() {
                             
-                            const globalCityStore = model.data.cities[cityId].store;
+                            const globalCityStore = model.data.cities[model.viewState.storeFrontPage.selectedCity].store;
                             const cityStore = [...globalCityStore];
                             const storeSelectionArr = [];
                             
@@ -87,7 +87,7 @@
                                 const s = cityStore[index];
                                 const g = globalCityStore.indexOf(s);
                                 storeSelectionArr.push(`
-                                <div class="storeBox" onclick="storePage(${g},${cityId})">
+                                <div class="storeBox" onclick="changeStore(${g}); storePage();">
                                 <div class="storeBoxName">
                                 ${s.info.storeName} 
                                 <br>
@@ -103,13 +103,13 @@
 
 
 
-                        function selectCity(selectedCityIndex){
+                        function selectCity(){
                             const city = model.data.cities;
                             const cityArray = [];
 
                             for (let index = 0; index < city.length; index++) {
                                 cityArray.push(`
-                                    <option value="${index}" ${index === selectedCityIndex ? 'selected' : ''} onclick="storePage(0,${index})">${city[index].name}</option>
+                                    <option value="${index}" ${index === model.viewState.storeFrontPage.selectedCity ? 'selected' : ''} onclick="changeCity(${index}); storePage();" >${city[index].name}</option>
 
                                     `)
                                 
@@ -119,5 +119,6 @@
 
 
                         }
+
 
                         
