@@ -1,5 +1,14 @@
 
             function storePage(){
+
+                storeFront()
+                showStoreReviews()
+                showStoreSelections()
+                selectCity()
+            
+            }
+            
+            function storeFront(){
                 const storeId = model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore];
                 const app = document.getElementById("app");   
 
@@ -13,7 +22,7 @@
                            </a>
                             <select id="citySelectId"></select>
                             <img class="hometab" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/hometab/hometabv2.svg">
-                            <a href="/Anitas%20Glutenfri%20Prosjekt/index.html">
+                            <a onclick="goHome()">
                             <img class="hometabimg" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/hometab/homeimg.svg">
                             </a>
                             <h1>${storeId.info.storeName}</h5>
@@ -29,10 +38,7 @@
                                 <br>
                                <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
                                 </p>
-                            
-                            <textarea class="userReviewBox"></textarea>
-                            <br>
-                            <button onclick="goForward()">Legg til Anmeldelser</button>
+                                ${writeReviewBtn()}
                         </div>
                         <div class="main" id="storeReviews">
                             
@@ -44,9 +50,6 @@
                         </div>
                         
                         `;
-                        showStoreReviews()
-                        showStoreSelections()
-                        selectCity()
                     }
                     
                     
@@ -118,6 +121,18 @@
                             document.getElementById("citySelectId").innerHTML = cityArray.join('');
 
 
+                        }
+                        function writeReviewBtn(){
+                            if (model.app.currentPage === "storePage")
+                            {return `
+                            <div onclick="goForward()">
+                            <textarea class="userReviewBox"></textarea>
+                            <br>
+                            <button>Legg til Anmeldelser</button>
+                            </div>
+                            `}
+                            return "";
+                            
                         }
 
 
