@@ -11,18 +11,14 @@ function adminStorePage(){
       <button onclick="adminDeleteRewview()"></button>`;
     }
     
-    <button onclick="adminDeleteStore()"></button>
+// <button onclick="adminDeleteStore()"></button>
 
 
 
 
 function adminDeleteRewview(){
-    if(){
-
-    }
 }
 
 
 function adminDeleteStore(){
-
 }
