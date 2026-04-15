@@ -99,6 +99,9 @@
                                 
                                 <img class= "pictureSelect" src="${s.info.pictures}">
                                 </div>
+                                <div onclick="deleteMe()">
+                                        ${model.viewState.storeFrontPage.admin}
+                                </div>
                                 `);
                             };
                              document.getElementById("storeSelection").innerHTML = storeSelectionArr.join('')
