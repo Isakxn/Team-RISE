@@ -99,7 +99,7 @@
                                 
                                 <img class= "pictureSelect" src="${s.info.pictures}">
                                 </div>
-                                <div onclick="deleteMe()">
+                                <div onclick="adminDeleteStore()" style="font-size: 40px; color: red;">
                                         ${model.viewState.storeFrontPage.admin}
                                 </div>
                                 `);
