@@ -36,17 +36,20 @@
                                 <br>
                                 ${storeId.info.email}
                                 <br>
-                               <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
+                                <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
                                 </p>
-                                ${writeReviewBtn()}
-                        </div>
-                        <div class="main" id="storeReviews">
-                            
-                        </div>
-
-                        <div class="rightside" id="storeSelection">
-                            
-                        </div>
+                                ${writeReviewBtn()}|
+                                <div onclick="adminDeleteStore()" style="font-size: 40px; color: red;">
+                                        ${model.viewState.storeFrontPage.admin}
+                                </div>
+                                </div>
+                                <div class="main" id="storeReviews">
+                                
+                                </div>
+                                
+                                <div class="rightside" id="storeSelection">
+                                
+                                </div>
                         </div>
                         
                         `;
@@ -98,9 +101,6 @@
                                 </div>
                                 
                                 <img class= "pictureSelect" src="${s.info.pictures}">
-                                </div>
-                                <div onclick="adminDeleteStore()" style="font-size: 40px; color: red;">
-                                        ${model.viewState.storeFrontPage.admin}
                                 </div>
                                 `);
                             };
