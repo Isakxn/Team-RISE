@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="frontPage/frontPageCSS.css"">
         <link rel="stylesheet" href="loginPage/loginCSS.css"">
         <link rel="stylesheet" href="storePage/storePageCSS.css"">
+        <link rel="stylesheet" href="writeReviewPage/writeReviewCSS.css"">
         
     </head>
 
@@ -30,13 +31,15 @@
         <script src="selectionPage/selectionPageView.js"></script>
         <script src="selectionPage/selectionPageController.js"></script>
 
-        <script src="storePage/storePageModel.js"></script>
         <script src="storePage/storePageController.js"></script>
         <script src="storePage/storePageView.js"></script>
+
+        <script src="writeReviewPage/writeReviewView.js"></script>
+        <script src="writeReviewPage/writeReviewController.js"></script>
         <script>
             const app = document.getElementById("app");
             // TESTING / MIDLERTIDIG!!
-            model.app.currentPage = "storePage";
+            model.app.currentPage = "writeReviewPage";
             //
             updateView ();
         </script>

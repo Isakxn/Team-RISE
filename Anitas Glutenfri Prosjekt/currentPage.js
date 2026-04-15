@@ -72,4 +72,8 @@ function goForward() {
     }
 
 }
+function goHome (){
+        model.app.currentPage = "frontPage"
+        updateView();
+}
 
