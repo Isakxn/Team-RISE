@@ -7,7 +7,7 @@ function frontPage()
     app.innerHTML = /*HTML*/`
         <div class="container_frontPage_all">
             <h3 class="hacky_hacky">Anitas Glutenfrie Prosjekt</h3>
-            <div class="container_frontPage_header">
+            <div class="container_frontPage_header_alt">
                 ${viewLoginButton()}
             </div>
             <div class="container_frontPage">

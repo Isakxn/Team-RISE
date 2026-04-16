@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Google font embeds-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Metal+Mania&display=swap" rel="stylesheet">
+        
+        <!-- CSS  -->
+        <link rel="stylesheet" href="../selectionPage/selectionPageCSS.css">
+        <link rel="stylesheet" href="../frontPageTemp/frontPageCSS.css"">
+        <link rel="stylesheet" href="../loginPage/loginCSS.css"">
+        <link rel="stylesheet" href="../storePage/storePageCSS.css"">
+        <link rel="stylesheet" href="../writeReviewPage/writeReviewCSS.css"">
+        
+    </head>
+
+    <body>
+        <div id="app"></div>
+        <script src="../model.js"></script>
+        <script src="../currentPage.js"></script>
+
+        <script src="../frontPageTemp/frontPageView.js"></script>
+        <script src="../frontPageTemp/frontPageController.js"></script>
+
+        <script src="../loginPage/loginView.js"></script>
+        <script src="../loginPage/loginController.js"></script>
+        
+        <script src="../selectionPage/selectionPageView.js"></script>
+        <script src="../selectionPage/selectionPageController.js"></script>
+
+        <script src="../storePage/storePageController.js"></script>
+        <script src="../storePage/storePageView.js"></script>
+
+        <script src="../writeReviewPage/writeReviewView.js"></script>
+        <script src="../writeReviewPage/writeReviewController.js"></script>
+        <script>
+            const app = document.getElementById("app");
+            // TESTING / MIDLERTIDIG!!
+            model.app.currentPage = "frontPage";
+            //
+            updateView ();
+        </script>
+    </body>
+</html>
+
