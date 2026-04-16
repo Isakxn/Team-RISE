@@ -1,13 +1,9 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #5e5e5e;
-  color: #333;
   
 }
 
-.selectionPageMain{
-
-}
 
 .citySelectionHeader{
   border: 2em;
@@ -22,15 +18,4 @@ body {
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
-}
-
-button {
-  background-color: rgba(0, 0, 0, 0.563);
-  border-radius: 8px;
-}
-
-button:hover{
-  transition-duration: 0.3s;
-  cursor: pointer;
-  background-color: #c5923a;
 }
