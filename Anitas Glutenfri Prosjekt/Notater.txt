@@ -1,8 +1,11 @@
 
 
+Etter kundemøte 16.04.2026
 
-
-
+- Tydeliggjøre at kommentarer/review's er knyttet til spesifikke spisesteder.
+- Oppdatere navn på nettside til "Glutify".
+- Anita likte best den enkle fremsiden.
+- Få på plass Admin funksjoner.
 
 
 
@@ -19,8 +22,8 @@
 - store all reviews, including:
     - product pictures
     - type of establishment; cafe etc
-    - breakfast, lunch, dinner
-        - product type
+    - product type
+      - breakfast, lunch, dinner
     - city, region
     - username (w/o login)
     - like amount
