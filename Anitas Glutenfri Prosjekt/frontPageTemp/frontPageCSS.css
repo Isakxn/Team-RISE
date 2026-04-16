@@ -12,8 +12,8 @@
                 /* slight rounding; use e.g. 4px–10px */
                 padding: 6px 8px;
                 /* spacing inside the select */
-                font-family: "Bebas Neue", Arial, sans-serif;
-                font-size: 24px;
+/*                font-family: "Bebas Neue", Arial, sans-serif;*/
+                font-size: 22px;
                 /* adjust as desired */
                 appearance: none;
                 /* optional: remove native dropdown arrow styling (may vary by browser) */
@@ -35,8 +35,8 @@
                 /* slight rounding; use e.g. 4px–10px */
                 padding: 6px 12px;
                 /* spacing inside the select */
-                font-family: "Bebas Neue", sans-serif;
-                font-size: 24px;
+/*                font-family: "Bebas Neue", sans-serif;*/
+                font-size: 22px;
                 /* adjust as desired */
             }
 
@@ -58,6 +58,20 @@
             }
 
             /* Column container */
+            .hacky_hacky
+            {
+                display: flex;
+                max-width: 520px;
+                min-height: 8vh;
+                padding: 1rem;
+                height: calc(60vh - 2rem);
+                transform: translate(100px, 80px);
+
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 7rem;
+                color: #eee;
+            }
+
             .container_frontPage_all
             {
                 background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/background/background.jpg');
@@ -66,15 +80,19 @@
             {
                 display: flex;
                 flex-wrap: nowrap;
-                flex-direction: column; /* or 'row' if children should line up horizontally */
+                flex-direction: row; /* or 'row' if children should line up horizontally */
                 align-items: center;
+                flex: 0 0 280px;
                 gap: 1rem;
+                max-width: 520px;
                 min-height: 8vh;
                 padding: 1rem;
+                height: calc(60vh - 2rem);
+                overflow-y: auto;
 
-                font-family: "Metal Mania", system-ui;
-                font-size: 2.5rem;
-                color: rgb(255, 229, 143);
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 7rem;
+                color: #eee;
             }
             .container_frontPage
             {
@@ -91,20 +109,21 @@
                 flex-direction: column; /* or 'row' if children should line up horizontally */
                 align-items: center;     /* horizontal centering when column; vertical when row */
                 justify-content: flex-start; /* keep vertical flow at top */
-                flex: 0 10 260px;
+                flex: 0 10 280px;
                 background: #ffffff00;
                 border-radius: 1rem;
                 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
                 padding: 2.5rem;
                 height: calc(50vh - 2rem);
                 overflow-y: auto;
+                transform: translate(120px, -480px);
             }
 
             .bottomside_frontPage
             {
                 position: absolute;
                 top: 1rem;
-                left: calc(260px + (100vw - 260px) / 2);
+                left: calc(280px + (100vw - 280px) / 2);
                 transform: translateX(-50%); /* place center of element at that point */
 
                 max-width: 60vw;   /* responsive width cap; change as needed */
