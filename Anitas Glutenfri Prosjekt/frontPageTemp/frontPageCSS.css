@@ -1,0 +1,168 @@
+            /* #app
+            {
+                background-color: #ddb;
+            } */
+
+            .cssCityList
+            {
+                background-color: #ccc;
+                border: 1px solid rgb(112, 112, 112);
+                /* thin border so rounding is visible */
+                border-radius: 6px;
+                /* slight rounding; use e.g. 4px–10px */
+                padding: 6px 8px;
+                /* spacing inside the select */
+/*                font-family: "Bebas Neue", Arial, sans-serif;*/
+                font-size: 22px;
+                /* adjust as desired */
+                appearance: none;
+                /* optional: remove native dropdown arrow styling (may vary by browser) */
+            }
+
+            .headerSearch
+            {
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 3rem;
+                color: #eeeeee;
+            }
+
+            .buttonSearch
+            {
+                background-color: rgb(214, 205, 135);
+                border: 1px solid rgb(112, 112, 112);
+                /* thin border so rounding is visible */
+                border-radius: 6px;
+                /* slight rounding; use e.g. 4px–10px */
+                padding: 6px 12px;
+                /* spacing inside the select */
+/*                font-family: "Bebas Neue", sans-serif;*/
+                font-size: 22px;
+                /* adjust as desired */
+            }
+
+            .imgCity
+            {
+                width: 160px;
+                height: 160px;
+                object-fit: cover;
+                /* cover, contain, or fill depending on desired crop behavior */
+                border-radius: 6px;
+                /* optional to match other elements */
+                display: block;
+                margin-top: 24px;
+                /* space above the image */
+                margin-left: 0;
+                /* optional: adjust horizontal spacing */
+                margin-bottom: 0;
+                /* optional */
+            }
+
+            /* Column container */
+            .hacky_hacky
+            {
+                display: flex;
+                max-width: 520px;
+                min-height: 8vh;
+                padding: 1rem;
+                height: calc(60vh - 2rem);
+                transform: translate(100px, 80px);
+
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 7rem;
+                color: #eee;
+            }
+
+            .container_frontPage_all
+            {
+                background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/background/background.jpg');
+            }
+            .container_frontPage_header
+            {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row; /* or 'row' if children should line up horizontally */
+                align-items: center;
+                flex: 0 0 280px;
+                gap: 1rem;
+                max-width: 520px;
+                min-height: 8vh;
+                padding: 1rem;
+                height: calc(60vh - 2rem);
+                overflow-y: auto;
+
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 7rem;
+                color: #eee;
+            }
+            .container_frontPage
+            {
+                position: relative;
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                min-height: 100vh;
+            }
+
+            .topside_frontPage
+            {
+                display: flex;
+                flex-direction: column; /* or 'row' if children should line up horizontally */
+                align-items: center;     /* horizontal centering when column; vertical when row */
+                justify-content: flex-start; /* keep vertical flow at top */
+                flex: 0 10 280px;
+                background: #ffffff00;
+                border-radius: 1rem;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                padding: 2.5rem;
+                height: calc(50vh - 2rem);
+                overflow-y: auto;
+                transform: translate(120px, -480px);
+            }
+
+            .bottomside_frontPage
+            {
+                position: absolute;
+                top: 1rem;
+                left: calc(280px + (100vw - 280px) / 2);
+                transform: translateX(-50%); /* place center of element at that point */
+
+                max-width: 60vw;   /* responsive width cap; change as needed */
+                width: 100%;
+                box-sizing: border-box;
+
+                background: rgba(255, 255, 255, 0.863);
+                border-radius: 1rem;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+                padding: 1rem;
+                overflow-y: auto;
+                max-height: calc(86vh - 2rem);
+            }
+
+            .searchElements
+            {
+                display:flex;
+                gap:0.5rem; /* spacing between them */
+                align-items:center;
+            }
+
+            /* icons */
+
+            .iconLogin
+            {
+                background-color: #00000000;
+                position: absolute;
+                border: 0px;
+                top: 0.8rem;
+                right: 1.9rem;
+                width: 2.4rem;
+                height: auto;
+
+                object-fit: cover;
+                display: block;
+                margin: 0;
+            }
+            .iconLogin:hover img
+            {
+                transform: scale(1.1);
+                filter: grayscale(1) brightness(0.6) contrast(0.9);
+            }
