@@ -48,10 +48,6 @@
                                     <h3>Legg til bilder</h3>
                                     <input type="file" accept="image/*" multiple class="imageFileInput" onchange="handleImageUpload(this.files)">
                                     <div class="imagePreviewGrid" id="imagePreviewGrid">
-                                        <div class="imagePreviewBox">+ Bilde 1</div>
-                                        <div class="imagePreviewBox">+ Bilde 2</div>
-                                        <div class="imagePreviewBox">+ Bilde 3</div>
-                                        <div class="imagePreviewBox">+ Bilde 4</div>
                                     </div>
                                 </div>
                             `;
