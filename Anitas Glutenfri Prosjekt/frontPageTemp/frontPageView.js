@@ -6,13 +6,13 @@ function frontPage()
     let newestReviews = addNewestReviews();
     app.innerHTML = /*HTML*/`
         <div class="container_frontPage_all">
+            <h3 class="hacky_hacky">Anitas Glutenfrie Prosjekt</h3>
             <div class="container_frontPage_header">
-                <h3>Anitas Glutenfrie Prosjekt</h3>
                 ${viewLoginButton()}
             </div>
             <div class="container_frontPage">
                 ${cityList}
- <!--               ${newestReviews}-->
+<!--               ${newestReviews}-->
             </div>
         </div>
     `;
