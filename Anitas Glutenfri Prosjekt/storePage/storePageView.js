@@ -38,7 +38,7 @@
                                 <br>
                                 <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
                                 </p>
-                                ${writeReviewBtn()}|
+                                ${writeReviewBtn()}
                                 <div onclick="adminDeleteStore()" style="font-size: 40px; color: red;">
                                         ${model.viewState.storeFrontPage.admin}
                                 </div>
