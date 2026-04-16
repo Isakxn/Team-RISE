@@ -44,7 +44,8 @@
                                 </div>
                                 </div>
                                 <div class="main" id="storeReviews">
-                                
+                                <div class="mainreview" id="storeReviews">
+                                </div>
                                 </div>
                                 
                                 <div class="rightside" id="storeSelection">

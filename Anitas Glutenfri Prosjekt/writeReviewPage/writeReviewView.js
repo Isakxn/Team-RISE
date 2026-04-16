@@ -11,6 +11,7 @@
                            const writeReview = document.getElementById("storeReviews");
                            writeReview.innerHTML= 
                             /*HTML*/`
+                           <div class="main review">
                            <h1>${storeId.info.storeName}</h1>
                            <div class="darkborder">
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/bakery/bakery.svg"></div>
@@ -37,6 +38,7 @@
                            <br>
                            <div class="reviewbtn">Legg til Anmeldelser</div>
                            <br>
+                           </div>
                            `;       
                            showImageUploadSection();
                         }
