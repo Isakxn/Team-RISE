@@ -1,7 +1,7 @@
 const model = {
   app: {
     // app: document.getElementById("app"),
-    adminLoggedIn: true,
+    adminLoggedIn: false,
     currentPage: "frontPage", // selectionPage, storeFrontPage, writeReviewPage, loginPage, adminPage,
     pages: ["frontPage", "selectionPage", "storeFrontPage", "writeReviewPage", "loginPage", "adminPage"],
     currentCity: 0,
