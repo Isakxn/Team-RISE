@@ -25,14 +25,17 @@ function addCityList()
             <h2 class="headerSearch">Velg by:</h2>
             <br>
             <div class="searchElements">
-                <select class="cssCityList">
+                <div class="cityList_dropdown">
+                    <button class="cityList_btn">${model.data.cities[model.viewState.storeFrontPage.selectedCity].name}</button>
+                    <div class="cityList_content">
         `;
     for (let c = 0; c < model.data.cities.length; c++)
     {
-        tempString += `<option onclick="changeCity(${c})">${model.data.cities[c].name}</option>`;
+        tempString += `<a onclick="changeCity(${c}); updateView()">${model.data.cities[c].name}</a>`;
     }
     tempString += /*HTML*/ `
-                </select>
+                    </div>
+                </div>
                 <button class="buttonSearch" onclick="goForward()">Søk</button>
             </div>
             <br>
@@ -42,6 +45,14 @@ function addCityList()
     return tempString;
 }
 
+{/* <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> */}
 
 function addNewestReviews()
 {
