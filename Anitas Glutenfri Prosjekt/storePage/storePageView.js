@@ -39,8 +39,8 @@
                                 <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
                                 </p>
                                 ${writeReviewBtn()}
-                                <div onclick="adminDeleteStore()" style="font-size: 40px; color: red;">
-                                        ${model.viewState.storeFrontPage.admin}
+                                <div onclick="adminDeleteStore()" style="color: red; font-size: 2rem; font-weight: bold; position: absolute; cursor: pointer;">
+                                        ${model.viewState.storeFrontPage.adminStore}
                                 </div>
                                 </div>
                                 <div class="main" id="storeReviews">
@@ -64,7 +64,6 @@
                         for (let i = 0; i < storeReviews.length; i++) {
                             const r = storeReviews[i]
                             storeReviewsArr.push(`
-                                
                                 <div class="reviewBox">
                                 <h2>${r.name}</h2>
                                 <h5>${r.date}</h5>
@@ -72,6 +71,11 @@
                                 ${r.score} Stjerner.
                                 <br>
                                 (${r.likes})<button>Liker</button>
+                                <div 
+                                style="color: red; font-size: 2rem; font-weight: bold; position: absolute; top: 1rem; right: 1rem; cursor: pointer;" 
+                                onclick="adminDeleteReview(${i})"> 
+                                ${model.viewState.storeFrontPage.adminReview}
+                                </div>
                                 </div>
                                 
                                 `);

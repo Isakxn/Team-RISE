@@ -1,16 +1,19 @@
 function adminControl(){
-    if(adminLoggedIn === true){
-      return {
-
-      }
+    if(model.app.adminLoggedIn === true){
+      model.viewState.storeFrontPage.adminReview = "X";
+      model.viewState.storeFrontPage.adminStore = "Slette meg"; 
     }
 }
 
-function adminDeleteRewview(){
+function adminDeleteReview(index){
+  const storeId = model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore];
+  storeId.reviews.splice(index, 1)
+  updateView()
+  
 }
 
 
 function adminDeleteStore(){
-  model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore]
-
+  const storeId = model.data.cities[model.viewState.storeFrontPage.selectedCity].store.splice(model.viewState.storeFrontPage.selectedStore, 1);
+  updateView()
 }

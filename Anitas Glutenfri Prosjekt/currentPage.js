@@ -2,7 +2,7 @@
 function updateView()
 {
     viewCurrentPage();
-    
+    adminControl();
 }
 
 
