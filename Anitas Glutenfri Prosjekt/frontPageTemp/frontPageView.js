@@ -6,8 +6,8 @@ function frontPage()
     let newestReviews = addNewestReviews();
     app.innerHTML = /*HTML*/`
         <div class="container_frontPage_all">
-            <h3 class="hacky_hacky">Anitas Glutenfrie Prosjekt</h3>
-            <div class="container_frontPage_header_alt">
+            <h3 class="logo_frontPage">Anitas Glutenfrie Prosjekt</h3>
+            <div class="container_frontPage_header">
                 ${viewLoginButton()}
             </div>
             <div class="container_frontPage">

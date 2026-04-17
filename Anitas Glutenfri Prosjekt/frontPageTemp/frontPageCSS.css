@@ -92,7 +92,7 @@
             }
 
             /* Column container */
-            .hacky_hacky
+            .logo_frontPage
             {
                 display: flex;
                 max-width: 520px;
@@ -110,7 +110,7 @@
             {
                 background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/background/background.jpg');
             }
-            .container_frontPage_header_alt
+            .container_frontPage_header
             {
                 display: flex;
                 flex-wrap: nowrap;
@@ -151,25 +151,6 @@
                 height: calc(50vh - 2rem);
                 overflow-y: auto;
                 transform: translate(120px, -480px);
-            }
-
-            .bottomside_frontPage
-            {
-                position: absolute;
-                top: 1rem;
-                left: calc(280px + (100vw - 280px) / 2);
-                transform: translateX(-50%); /* place center of element at that point */
-
-                max-width: 60vw;   /* responsive width cap; change as needed */
-                width: 100%;
-                box-sizing: border-box;
-
-                background: rgba(255, 255, 255, 0.863);
-                border-radius: 1rem;
-                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-                padding: 1rem;
-                overflow-y: auto;
-                max-height: calc(86vh - 2rem);
             }
 
             .searchElements
