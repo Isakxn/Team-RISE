@@ -65,13 +65,15 @@
                             const r = storeReviews[i]
                             storeReviewsArr.push(`
                                 <div class="reviewBox">
+                                <img class="reviewImage" src="${r.pictures}">
+                                <div>
+                                <div class="star-rating" style="--val: ${r.score};"></div>
                                 <h2>${r.name}</h2>
                                 <h5>${r.date}</h5>
-                                <p>${r.reviewText}</p>
-                                ${r.score} Stjerner.
-                                <br>
                                 (${r.likes})<button>Liker</button>
-                                <div><img class="reviewImage" src="${r.pictures}"></div> 
+                                </div>
+                                <p class="text">${r.reviewText}</p>
+                                <br>
                                 <div 
                                 style="color: red; font-size: 2rem; font-weight: bold; position: absolute; top: 1rem; right: 1rem; cursor: pointer;" 
                                 onclick="adminDeleteReview(${i})">

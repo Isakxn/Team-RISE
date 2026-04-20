@@ -145,12 +145,25 @@ body {
 }
 
 .reviewBox {
+  display: flex;
+  align-items: center;
   background: #fff;
-  border: 1px solid #e5dce3;
   border-radius: 1.2rem;
   padding: 1rem;
   margin-bottom: 1rem;
   position: relative;
+}
+p.text {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.reviewImage{
+  width: 9rem;
+  height: 9rem;
+  border-radius: 0.7rem;
+  object-fit: cover;
+  margin-right: 1rem; 
 }
 
 .userReviewBox {
@@ -162,12 +175,7 @@ body {
   margin-top: 0.8rem;
 }
 
-/* User Review Image */
-.reviewImage{
-  width: 6rem;
-  height: 8rem;
-  border-radius: 0.7rem;
-}
+
 
   
 /* image style */
@@ -350,13 +358,6 @@ body {
 }
 
 /* write Review under*/
-.reviewBox {
-  background: #fff;
-  border: 1px solid #e5dce3;
-  border-radius: 1.2rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
 
 .nameInput {
   width: 100%;
