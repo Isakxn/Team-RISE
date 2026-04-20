@@ -1,7 +1,6 @@
 
 function frontPage()
 {
-    let main = "<div class='cssMain'>";
     let cityList = addCityList();
     app.innerHTML = /*HTML*/`
         <div class="container_frontPage_all">
