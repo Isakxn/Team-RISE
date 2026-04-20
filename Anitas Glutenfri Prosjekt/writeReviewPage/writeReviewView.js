@@ -12,7 +12,7 @@
                            writeReview.innerHTML= 
                             /*HTML*/`
                            <div class="main review">
-                           <div style="color:red; font-size: 40px" id="wrongInput">dsdsds</div>
+                           <div style="color:red; font-size: 40px" id="wrongInput"></div>
                            <h1>${storeId.info.storeName}</h1>
                            <div class="darkborder">
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/bakery/bakery.svg"></div>
