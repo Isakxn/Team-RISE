@@ -18,7 +18,7 @@ function sendReview() {
         name: model.viewState.writeReviewPage.userName,
         pictures: [],
         score: model.viewState.writeReviewPage.userScore,
-        reviewText: "Fantastisk kaffe og hyggelig atmosfære!",
+        reviewText: model.viewState.writeReviewPage.userReview,
         date: newDate,
         likes: 0,
 
