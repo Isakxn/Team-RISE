@@ -47,7 +47,7 @@ const model = {
 
     cities: [
 
-      {   name: "Oslo",  
+      { name: "Oslo",  
       
           store: 
           [
@@ -56,7 +56,7 @@ const model = {
               [
                 {
                   name: "Anna Hansen",
-                  pictures: [],
+                  pictures: [""],
                   score: 5,
                   reviewText: "Fantastisk kaffe og hyggelig atmosfære!",
                   date: "2026-02-14",
@@ -64,7 +64,7 @@ const model = {
                 },
                 {
                   name: "Jonas Berg",
-                  pictures: [],
+                  pictures: ["Media/Cities/Oslo/Bakeri/Kundebilder/Kundebilde3.jpg"],
                   score: 4,
                   reviewText: "God cappuccino, men litt dyrt.",
                   date: "2026-02-10",
@@ -77,7 +77,7 @@ const model = {
                 city: "Oslo",
                 storeName: "Nordlys Kafé",
                 type: "cafe",
-                pictures: ["media/cafeFolder/Cafe.jpg"],
+                pictures: ["Media/Cities/Oslo/Bakeri/Bakeri4.jpg"],
                 address: "Karl Johans gate 15",
                 phone: 22334455,
                 email: "kontakt@nordlyskafe.no",
@@ -105,7 +105,7 @@ const model = {
               city: "Oslo",
               storeName: "Fjell Bakeri",
               type: "bakery",
-              pictures: ["media/cafeFolder/Cafe (1).jpg"],
+              pictures: [""],
               address: "Bryggen 8",
               phone: 55667788,
               email: "post@fjellbakeri.no",
@@ -141,7 +141,7 @@ const model = {
               city: "Oslo",
               storeName: "PizzaHjørnet",
               type: "restaurant",
-              pictures: ["media/cafeFolder/Cafe (3).jpg"],
+              pictures: [""],
               address: "Munkegata 12",
               phone: 77889900,
               email: "hei@pizzahjornet.no",
@@ -169,7 +169,7 @@ const model = {
               city: "Oslo",
               storeName: "Arktisk Søtt",
               type: "bakery",
-              pictures: ["media/cafeFolder/Cafe (2).jpg"],
+              pictures: [""],
               address: "Storgata 22",
               phone: 99887766,
               email: "kontakt@arktisksott.no",
@@ -197,7 +197,7 @@ const model = {
               city: "Oslo",
               storeName: "BurgerBua",
               type: "restaurant",
-              pictures: ["media/cafeFolder/Cafe (5).jpg"],
+              pictures: [""],
               address: "Øvre Holmegate 5",
               phone: 66778899,
               email: "post@burgerbua.no",
@@ -225,7 +225,7 @@ const model = {
               city: "Oslo",
               storeName: "Nord Kaffe",
               type: "cafe",
-              pictures: ["media/cafeFolder/Cafe (8).jpg"],
+              pictures: [""],
               address: "Markedsgata 3",
               phone: 11223344,
               email: "hei@nordkaffe.no",
@@ -236,7 +236,7 @@ const model = {
           },
         ], 
       },
-      {   name:   "Bergen",
+      { name: "Bergen",
     
     
         store: [

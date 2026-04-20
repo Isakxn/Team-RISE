@@ -162,6 +162,14 @@ body {
   margin-top: 0.8rem;
 }
 
+/* User Review Image */
+.reviewImage{
+  width: 6rem;
+  height: 8rem;
+  border-radius: 0.7rem;
+}
+
+  
 /* image style */
 .pictureInfo {
   width: 100%;

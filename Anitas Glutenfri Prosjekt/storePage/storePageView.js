@@ -71,9 +71,10 @@
                                 ${r.score} Stjerner.
                                 <br>
                                 (${r.likes})<button>Liker</button>
+                                <div><img class="reviewImage" src="${r.pictures}"></div> 
                                 <div 
                                 style="color: red; font-size: 2rem; font-weight: bold; position: absolute; top: 1rem; right: 1rem; cursor: pointer;" 
-                                onclick="adminDeleteReview(${i})"> 
+                                onclick="adminDeleteReview(${i})">
                                 ${model.viewState.storeFrontPage.adminReview}
                                 </div>
                                 </div>
