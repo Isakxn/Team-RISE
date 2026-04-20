@@ -64,10 +64,10 @@
                         for (let i = 0; i < storeReviews.length; i++) {
                             const r = storeReviews[i]
                             storeReviewsArr.push(`
-                                <div class="reviewBox">
-                                <img class="reviewImage" src="${r.pictures}">
+                                <div class="reviewBox" onclick="toggleCard(this)">
+                                <img src="${r.pictures}">
                                 <div>
-                                <div class="star-rating" style="--val: ${r.score};"></div>
+                                <div class="review star-rating" style="--val: ${r.score}; --size: 2rem; "></div>
                                 <h2>${r.name}</h2>
                                 <h5>${r.date}</h5>
                                 (${r.likes})<button>Liker</button>

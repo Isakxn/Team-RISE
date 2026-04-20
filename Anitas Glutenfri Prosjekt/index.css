@@ -146,7 +146,6 @@ body {
 
 .reviewBox {
   display: flex;
-  align-items: center;
   background: #fff;
   border-radius: 1.2rem;
   padding: 1rem;
@@ -158,12 +157,28 @@ p.text {
   margin-left: 1rem;
 }
 
-.reviewImage{
+.reviewBox img{
   width: 9rem;
   height: 9rem;
   border-radius: 0.7rem;
   object-fit: cover;
   margin-right: 1rem; 
+}
+/* expanded */
+.reviewBox.expanded {
+  transform: scale(1.02);
+  padding: 20px;
+}
+
+.reviewBox.expanded .review-content {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reviewBox.expanded img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 20px;
 }
 
 .userReviewBox {
@@ -410,15 +425,6 @@ p.text {
   object-fit: cover;
   display: block;
   margin-bottom: 0.8rem;
-}
-.star-rating {
-  --size: 1rem;
-  height: var(--size);
-  width: calc(5 * var(--size));
-  border: 0;
-  background: linear-gradient(90deg, gold calc(var(--val) / 5 * 100%), lightgray calc(var(--val) / 5 * 100%));
-  mask-image: url("/Anitas%20Glutenfri%20Prosjekt/media/icons/star/star.svg");
-  mask-size: contain;
 }
 .starcontainer {
     display: flex;
