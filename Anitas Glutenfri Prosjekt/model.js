@@ -821,7 +821,6 @@ const model = {
                     link: "https://sotfristelse.no",
                   },
                 },
-
               ], 
       },
       { name: "Stavanger",
