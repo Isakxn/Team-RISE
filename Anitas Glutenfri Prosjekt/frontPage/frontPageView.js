@@ -1,18 +1,15 @@
 
 function frontPage()
 {
-    let main = "<div class='cssMain'>";
     let cityList = addCityList();
-    let newestReviews = addNewestReviews();
-    app.innerHTML = `
+    app.innerHTML = /*HTML*/`
         <div class="container_frontPage_all">
+            <h3 class="logo_frontPage">Anitas Glutenfrie Prosjekt</h3>
             <div class="container_frontPage_header">
-                <h3>Anitas Glutenfrie Prosjekt</h3>
                 ${viewLoginButton()}
             </div>
             <div class="container_frontPage">
                 ${cityList}
-                ${newestReviews}
             </div>
         </div>
     `;
@@ -21,69 +18,29 @@ function frontPage()
 function addCityList()
 {
     let tempString = /*HTML*/ `
-        <div class="leftside_frontPage">
-            <h2 class="headerSearch">Hvor vil du søke?</h2>
+        <div class="topside_frontPage">
+            <h2 class="headerSearch">Velg by:</h2>
             <br>
             <div class="searchElements">
-                <select class="cssCityList">
+                <div class="cityList_dropdown">
+                    <button class="cityList_btn">${model.data.cities[model.viewState.storeFrontPage.selectedCity].name}</button>
+                    <div class="cityList_content">
         `;
     for (let c = 0; c < model.data.cities.length; c++)
     {
-        tempString += `<option onclick="changeCity(${c})">${model.data.cities[c].name}</option>`;
+        tempString += `<a onclick="changeCity(${c}); updateView()">${model.data.cities[c].name}</a>`;
     }
     tempString += /*HTML*/ `
-                </select>
+                    </div>
+                </div>
                 <button class="buttonSearch" onclick="goForward()">Søk</button>
             </div>
             <br>
-            <img class="imgCity" src="https://www.svgrepo.com/show/12439/street-map.svg">
         </div>
         `;
     return tempString;
 }
 
-
-function addNewestReviews()
-{
-    let all = [];       // temp array to store newest reviews across stores
-    for (let c = 0; c < model.data.cities.length; c++) {
-        let stores = model.data.cities[c].store;
-
-        for (let i = 0; i < stores.length; i++) {
-            let reviews = stores[i].reviews;
-            if (Array.isArray(reviews)) {
-                for (var j = 0; j < reviews.length; j++) {
-                    all.push(reviews[j]);
-                }
-            }
-        }
-    }
-
-    // sort combined list newest-first
-    all.sort(
-        function (a, b) {
-            return new Date(b.date) - new Date(a.date);
-        }
-    );
-
-    // 
-    let returnString = `<div class="middleSection_frontPage">`;
-    for (let s = 1; s < all.length; s++) {
-        returnString += 
-        `
-            <div class="reviewBox">
-                <h2>${all[s].name}</h2>
-                <h5>${all[s].date}</h5>
-                <p>${all[s].reviewText}</p>
-                ${all[s].score} Stjerner.
-                <br>
-                (${all[s].likes})<button>Liker</button>
-            </div>
-        `;
-    }
-    returnString += `</div>`;
-    return returnString;
-}
 
 
 function viewLoginButton()

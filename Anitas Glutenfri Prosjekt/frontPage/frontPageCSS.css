@@ -1,79 +1,109 @@
-            /* #app
-            {
-                background-color: #ddb;
-            } */
 
             .cssCityList
             {
                 background-color: #ccc;
                 border: 1px solid rgb(112, 112, 112);
-                /* thin border so rounding is visible */
                 border-radius: 6px;
-                /* slight rounding; use e.g. 4px–10px */
                 padding: 6px 8px;
-                /* spacing inside the select */
-                font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-                font-size: 16px;
-                /* adjust as desired */
+                font-size: 22px;
                 appearance: none;
-                /* optional: remove native dropdown arrow styling (may vary by browser) */
             }
+
+            .cityList_btn
+            {
+                background-color: #696969;
+                color: white;
+                padding: 16px;
+                font-size: 20px;
+                border: none;
+            }
+
+            .cityList_dropdown
+            {
+                position: relative;
+                display: inline-block;
+            }
+
+            .cityList_content
+            {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .cityList_content a
+            {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .cityList_content a:hover {background-color: #ddd;}
+
+            .cityList_dropdown:hover .cityList_content {display: block;}
+
+            .cityList_dropdown:hover .cityList_btn {background-color: #3f4442; }
+
 
             .headerSearch
             {
-                font-style: italic;
                 font-family: "Bebas Neue", sans-serif;
+                font-size: 3rem;
+                color: #eeeeee;
             }
 
             .buttonSearch
             {
-                background-color: rgb(214, 205, 135);
-                border: 1px solid rgb(112, 112, 112);
-                /* thin border so rounding is visible */
-                border-radius: 6px;
-                /* slight rounding; use e.g. 4px–10px */
-                padding: 6px 12px;
-                /* spacing inside the select */
-                font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-                font-size: 16px;
-                /* adjust as desired */
+                background-color: rgb(206, 194, 105);
+                padding: 16px;
+                font-size: 20px;
+                border: none;
             }
-
-            .imgCity
+            .buttonSearch:hover
             {
-                width: 160px;
-                height: 160px;
-                object-fit: cover;
-                /* cover, contain, or fill depending on desired crop behavior */
-                border-radius: 6px;
-                /* optional to match other elements */
-                display: block;
-                margin-top: 24px;
-                /* space above the image */
-                margin-left: 0;
-                /* optional: adjust horizontal spacing */
-                margin-bottom: 0;
-                /* optional */
+                background-color: rgb(255, 235, 120)
             }
 
             /* Column container */
+            .logo_frontPage
+            {
+                display: flex;
+                max-width: 520px;
+                min-height: 8vh;
+                padding: 1rem;
+                height: calc(60vh - 2rem);
+                transform: translate(100px, 80px);
+
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 7rem;
+                color: #eee;
+            }
+
             .container_frontPage_all
             {
-                background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/cafeFolder/Cafe (7) dark.jpg');
+                background-image: url('/Anitas%20Glutenfri%20Prosjekt/media/background/background.jpg');
             }
             .container_frontPage_header
             {
                 display: flex;
                 flex-wrap: nowrap;
-                flex-direction: column; /* or 'row' if children should line up horizontally */
+                flex-direction: row; /* or 'row' if children should line up horizontally */
                 align-items: center;
+                flex: 0 0 280px;
                 gap: 1rem;
+                max-width: 520px;
                 min-height: 8vh;
                 padding: 1rem;
+                height: calc(60vh - 2rem);
+                overflow-y: auto;
 
-                font-family: "Metal Mania", system-ui;
-                font-size: 2.5rem;
-                color: rgb(255, 229, 143);
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 7rem;
+                color: #eee;
             }
             .container_frontPage
             {
@@ -84,38 +114,20 @@
                 min-height: 100vh;
             }
 
-            .leftside_frontPage
+            .topside_frontPage
             {
                 display: flex;
                 flex-direction: column; /* or 'row' if children should line up horizontally */
                 align-items: center;     /* horizontal centering when column; vertical when row */
                 justify-content: flex-start; /* keep vertical flow at top */
-                flex: 0 10 260px;
-                background: #fff;
+                flex: 0 10 280px;
+                background: #ffffff00;
                 border-radius: 1rem;
                 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
                 padding: 2.5rem;
                 height: calc(50vh - 2rem);
                 overflow-y: auto;
-            }
-
-            .middleSection_frontPage
-            {
-                position: absolute;
-                top: 1rem;
-                left: calc(260px + (100vw - 260px) / 2);
-                transform: translateX(-50%); /* place center of element at that point */
-
-                max-width: 60vw;   /* responsive width cap; change as needed */
-                width: 100%;
-                box-sizing: border-box;
-
-                background: rgba(255,255,255,0.95);
-                border-radius: 1rem;
-                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-                padding: 1rem;
-                overflow-y: auto;
-                max-height: calc(86vh - 2rem);
+                transform: translate(120px, -480px);
             }
 
             .searchElements

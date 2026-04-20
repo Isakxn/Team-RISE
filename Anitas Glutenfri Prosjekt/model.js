@@ -486,8 +486,8 @@ const model = {
           },
         ],
 
-    }, 
-    { name: "Trondheim",
+      }, 
+      { name: "Trondheim",
       store: [
         {
           reviews: [
@@ -777,8 +777,8 @@ const model = {
           },
         },
       ],
-    },
-    { name: "Tromsø",
+      },
+      { name: "Tromsø",
         store: [
                 {
                   reviews: [
@@ -1052,8 +1052,8 @@ const model = {
                   },
                 },
               ], 
-     },
-    { name: "Stavanger",
+      },
+      { name: "Stavanger",
       store: [
               {
                 reviews: [
@@ -1391,8 +1391,8 @@ const model = {
                 },
               },
             ],
-    }, 
-    { name: "Alta",
+      }, 
+      { name: "Alta",
       store: [
               {
                 reviews: [
@@ -1713,7 +1713,7 @@ const model = {
                 },
               },
             ],
-    }, 
+      }, 
     ],
   },
 };
