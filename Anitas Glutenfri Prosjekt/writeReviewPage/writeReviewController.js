@@ -17,7 +17,7 @@ function sendReview() {
     let tempObj = {
         name: model.viewState.writeReviewPage.userName,
         pictures: [],
-        score: 5,
+        score: model.viewState.writeReviewPage.userScore,
         reviewText: "Fantastisk kaffe og hyggelig atmosfære!",
         date: newDate,
         likes: 0,
