@@ -163,6 +163,7 @@ p.text {
   border-radius: 0.7rem;
   object-fit: cover;
   margin-right: 1rem; 
+  border: 1px solid white;
 }
 /* expanded */
 .reviewBox.expanded {
