@@ -20,8 +20,8 @@
     /* spacing inside the select */
     font-family: "Bebas Neue", sans-serif;
     font-size: 24px;
-    /* adjust as desired */
-}
+    animation:opac 0.25s;
+}@keyframes opac{from{opacity:0} to{opacity:1}}
 
 .inputLogin
 {
@@ -34,9 +34,8 @@
     /* spacing inside the select */
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
-    /* adjust as desired */
-
-}
+     animation:opac 0.15s;
+}@keyframes opac{from{opacity:0} to{opacity:1}}
 
 .loginBackButton
 {
@@ -47,7 +46,9 @@
     left: 1rem;
     width: 2rem;
     height: auto;
-}
+    animation:opac 0.4s;
+}@keyframes opac{from{opacity:0} to{opacity:1}}
+
 .loginBackButton img
 {
     width: 2.5rem;
