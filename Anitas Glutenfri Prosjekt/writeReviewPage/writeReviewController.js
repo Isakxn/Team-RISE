@@ -27,7 +27,7 @@ function sendReview() {
     console.log(tempObj)
     storeId.reviews.push(tempObj)
 
-    const m = model = model.viewState.writeReviewPage;
+    const m = model.viewState.writeReviewPage;
       m.userScore = 0;
       m.userReview = "";
       m.userName = "";
