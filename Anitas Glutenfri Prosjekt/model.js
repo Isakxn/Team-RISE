@@ -49,10 +49,10 @@ const model = {
 
       { name: "Oslo",  
       
-          store: 
-          [
-              {
-                reviews: 
+        store: 
+        [
+          {
+            reviews: 
               [
                 {
                   name: "Anna Hansen",
@@ -70,9 +70,9 @@ const model = {
                   date: "2026-02-10",
                   likes: 5,
                 },
-              ],
+            ],
               
-              info: 
+            info: 
               {
                 city: "Oslo",
                 storeName: "Nordlys Kafé",
@@ -84,17 +84,17 @@ const model = {
                 averageScore: 4.5,
                 reviewAmount: 120,
                 link: "https://nordlyskafe.no",
-              },
             },
+          },
 
-            {
+          {
             reviews: 
             [
               {
                 name: "Maria Olsen",
-                pictures: [],
-                score: 5,
-                reviewText: "Beste kanelboller i byen!",
+                pictures: ["Media/Cities/Oslo/Bakeri/Kundebilder/Kundebilde1.jpg"],
+                score: 4,
+                reviewText: "Ok plass for lunch!",
                 date: "2026-01-20",
                 likes: 20,
               },
@@ -105,7 +105,7 @@ const model = {
               city: "Oslo",
               storeName: "Fjell Bakeri",
               type: "bakery",
-              pictures: [""],
+              pictures: ["Media/Cities/Oslo/Bakeri/Bakeri7.jpg"],
               address: "Bryggen 8",
               phone: 55667788,
               email: "post@fjellbakeri.no",
@@ -128,7 +128,7 @@ const model = {
               },
               {
                 name: "Lise Nilsen",
-                pictures: [],
+                pictures: ["Media/Cities/Oslo/Resturant/Kundebilder/Kundebilde4.jpg"],
                 score: 4,
                 reviewText: "God service og hyggelig personale.",
                 date: "2026-03-03",
@@ -141,7 +141,7 @@ const model = {
               city: "Oslo",
               storeName: "PizzaHjørnet",
               type: "restaurant",
-              pictures: [""],
+              pictures: ["Media/Cities/Oslo/Resturant/Resturant2.jpg"],
               address: "Munkegata 12",
               phone: 77889900,
               email: "hei@pizzahjornet.no",
@@ -156,7 +156,7 @@ const model = {
             [
               {
                 name: "Sofie Larsen",
-                pictures: [],
+                pictures: ["Media/Cities/Oslo/Bakeri/Kundebilder/Kundebilde4.jpg"],
                 score: 5,
                 reviewText: "Utrolig gode kaker og flott presentasjon!",
                 date: "2026-02-25",
@@ -169,7 +169,7 @@ const model = {
               city: "Oslo",
               storeName: "Arktisk Søtt",
               type: "bakery",
-              pictures: [""],
+              pictures: ["Media/Cities/Oslo/Bakeri/Bakeri8.jpg"],
               address: "Storgata 22",
               phone: 99887766,
               email: "kontakt@arktisksott.no",
@@ -184,7 +184,7 @@ const model = {
             [
               {
                 name: "Daniel Pedersen",
-                pictures: [],
+                pictures: [""],
                 score: 4,
                 reviewText: "Veldig bra burger og fries!",
                 date: "2026-03-10",
@@ -197,7 +197,7 @@ const model = {
               city: "Oslo",
               storeName: "BurgerBua",
               type: "restaurant",
-              pictures: [""],
+              pictures: ["Media/Cities/Oslo/Resturant/Resturant3.jpg"],
               address: "Øvre Holmegate 5",
               phone: 66778899,
               email: "post@burgerbua.no",
@@ -212,7 +212,7 @@ const model = {
             [
               {
                 name: "Henrik Solberg",
-                pictures: [],
+                pictures: ["Media/Cities/Oslo/Bakeri/Kundebilder/Kundebilde6.jpg"],
                 score: 5,
                 reviewText: "Perfekt sted for å jobbe og slappe av.",
                 date: "2026-03-15",
@@ -225,7 +225,7 @@ const model = {
               city: "Oslo",
               storeName: "Nord Kaffe",
               type: "cafe",
-              pictures: [""],
+              pictures: ["Media/Cities/Oslo/Bakeri/Bakeri22.jpg"],
               address: "Markedsgata 3",
               phone: 11223344,
               email: "hei@nordkaffe.no",
@@ -244,7 +244,7 @@ const model = {
             reviews: [
               {
                 name: "Maria L.",
-                pictures: [],
+                pictures: ["Media/Cities/Bergen/Bakeri/Kundebilder/Kundebilde7.jpg"],
                 score: 5,
                 reviewText: "Fantastiske boller og hyggelig personale!",
                 date: "2026-02-12",
@@ -252,15 +252,15 @@ const model = {
               },
               {
                 name: "Jonas K.",
-                pictures: [],
+                pictures: ["Media/Cities/Bergen/Bakeri/Kundebilder/Kundebilde8.jpg"],
                 score: 4,
-                reviewText: "God kaffe, litt travelt.",
+                reviewText: "God kaker her, litt travelt.",
                 date: "2026-01-20",
                 likes: 1,
               },
               {
                 name: "Ingrid S.",
-                pictures: [],
+                pictures: [""],
                 score: 5,
                 reviewText: "Elsker croissantene her!",
                 date: "2026-03-02",
@@ -268,7 +268,7 @@ const model = {
               },
               {
                 name: "Per H.",
-                pictures: [],
+                pictures: [""],
                 score: 4,
                 reviewText: "Koselig sted og gode priser.",
                 date: "2026-02-25",
@@ -279,7 +279,7 @@ const model = {
               city: "Bergen",
               storeName: "Solglimt Bakeri",
               type: "bakery",
-              pictures: ["media/cafeFolder/Cafe (7).jpg"],
+              pictures: ["Media/Cities/Bergen/Bakeri/Bakeri6.jpg"],
               address: "Bryggen 12",
               phone: 55512345,
               email: "post@solglimt.no",
@@ -293,7 +293,7 @@ const model = {
             reviews: [
               {
                 name: "Anne T.",
-                pictures: [],
+                pictures: [""],
                 score: 5,
                 reviewText: "Beste cappuccino i byen.",
                 date: "2026-03-01",
@@ -301,23 +301,15 @@ const model = {
               },
               {
                 name: "Lars E.",
-                pictures: [],
+                pictures: ["Media/Cities/Bergen/Bakeri/Kundebilder/Kundebilde10.jpg"],
                 score: 4,
                 reviewText: "Veldig bra atmosfære.",
                 date: "2026-02-14",
                 likes: 2,
               },
               {
-                name: "Kari N.",
-                pictures: [],
-                score: 4,
-                reviewText: "Hyggelig betjening.",
-                date: "2026-01-30",
-                likes: 1,
-              },
-              {
                 name: "Ole M.",
-                pictures: [],
+                pictures: [""],
                 score: 5,
                 reviewText: "Perfekt sted å jobbe fra.",
                 date: "2026-02-18",
@@ -328,7 +320,7 @@ const model = {
               city: "Bergen",
               storeName: "Fjellro Kafé",
               type: "cafe",
-              pictures: ["media/cafeFolder/Cafe (9).jpg"],
+              pictures: ["Media/Cities/Bergen/Bakeri/Bakeri12.jpg"],
               address: "Torgallmenningen 5",
               phone: 55567890,
               email: "hei@fjellro.no",
@@ -342,7 +334,7 @@ const model = {
             reviews: [
               {
                 name: "Sofie B.",
-                pictures: [],
+                pictures: ["Media/Cities/Bergen/Resturant/Kundebilder/Kundebilde9.jpg"],
                 score: 5,
                 reviewText: "Utrolig god pizza!",
                 date: "2026-03-03",
@@ -350,7 +342,7 @@ const model = {
               },
               {
                 name: "Daniel W.",
-                pictures: [],
+                pictures: [""],
                 score: 4,
                 reviewText: "God mat, litt lang ventetid.",
                 date: "2026-02-27",
@@ -358,26 +350,18 @@ const model = {
               },
               {
                 name: "Emma R.",
-                pictures: [],
+                pictures: [""],
                 score: 5,
                 reviewText: "Fantastisk service.",
                 date: "2026-02-10",
                 likes: 4,
-              },
-              {
-                name: "Henrik J.",
-                pictures: [],
-                score: 4,
-                reviewText: "Hyggelig atmosfære.",
-                date: "2026-01-22",
-                likes: 1,
               },
             ],
             info: {
               city: "Bergen",
               storeName: "Bryggen Restaurant",
               type: "restaurant",
-              pictures: ["media/cafeFolder/Cafe (10).jpg"],
+              pictures: ["Media/Cities/Bergen/Resturant/Resturant9.jpg"],
               address: "Bryggen 25",
               phone: 55511223,
               email: "booking@bryggenrest.no",
@@ -391,7 +375,7 @@ const model = {
             reviews: [
               {
                 name: "Mats O.",
-                pictures: [],
+                pictures: [""],
                 score: 4,
                 reviewText: "Veldig gode kaker.",
                 date: "2026-02-05",
@@ -399,7 +383,7 @@ const model = {
               },
               {
                 name: "Elise V.",
-                pictures: [],
+                pictures: ["Media/Cities/Bergen/Bakeri/Kundebilder/Kundebilde9.jpg"],
                 score: 5,
                 reviewText: "Beste bakeriet i Bergen!",
                 date: "2026-03-04",
@@ -407,7 +391,7 @@ const model = {
               },
               {
                 name: "Thomas G.",
-                pictures: [],
+                pictures: [""],
                 score: 4,
                 reviewText: "God kvalitet, litt dyrt.",
                 date: "2026-02-19",
@@ -415,7 +399,7 @@ const model = {
               },
               {
                 name: "Nora P.",
-                pictures: [],
+                pictures: [""],
                 score: 5,
                 reviewText: "Elsker utvalget her.",
                 date: "2026-01-28",
@@ -426,7 +410,7 @@ const model = {
               city: "Bergen",
               storeName: "Bybakeriet",
               type: "bakery",
-              pictures: ["media/cafeFolder/Cafe (11).jpg"],
+              pictures: ["Media/Cities/Bergen/Bakeri/Bakeri5.jpg"],
               address: "Marken 8",
               phone: 55533445,
               email: "kontakt@bybakeriet.no",
@@ -440,7 +424,7 @@ const model = {
             reviews: [
               {
                 name: "Fredrik L.",
-                pictures: [],
+                pictures: ["Media/Cities/Bergen/Resturant/Kundebilder/Kundebilde11.jpg"],
                 score: 5,
                 reviewText: "Fantastisk burger!",
                 date: "2026-03-06",
@@ -448,7 +432,7 @@ const model = {
               },
               {
                 name: "Sara D.",
-                pictures: [],
+                pictures: ["Media/Cities/Bergen/Resturant/Kundebilder/Kundebilde12.jpg"],
                 score: 4,
                 reviewText: "God mat og hyggelig sted.",
                 date: "2026-02-16",
@@ -456,7 +440,7 @@ const model = {
               },
               {
                 name: "Kristian F.",
-                pictures: [],
+                pictures: [""],
                 score: 4,
                 reviewText: "Bra service.",
                 date: "2026-01-19",
@@ -464,7 +448,7 @@ const model = {
               },
               {
                 name: "Julie A.",
-                pictures: [],
+                pictures: [""],
                 score: 5,
                 reviewText: "Kommer definitivt tilbake.",
                 date: "2026-02-28",
@@ -475,7 +459,7 @@ const model = {
               city: "Bergen",
               storeName: "Vestkanten Grill",
               type: "restaurant",
-              pictures: ["media/cafeFolder/Cafe (12).jpg"],
+              pictures: ["Media/Cities/Bergen/Resturant/Resturant7.jpg"],
               address: "Vestkanten 3",
               phone: 55566778,
               email: "post@vestkantengrill.no",
@@ -493,7 +477,7 @@ const model = {
           reviews: [
             {
               name: "Lars Nilsen",
-              pictures: [],
+              pictures: [""],
               score: 5,
               reviewText: "Veldig koselig sted og god kaffe!",
               date: "2026-03-01",
@@ -501,7 +485,7 @@ const model = {
             },
             {
               name: "Ingrid Solberg",
-              pictures: [],
+              pictures: [""],
               score: 4,
               reviewText: "Hyggelig service, men litt travelt.",
               date: "2026-02-25",
@@ -512,7 +496,7 @@ const model = {
             city: "Trondheim",
             storeName: "Fjord Kafé",
             type: "cafe",
-            pictures: [],
+            pictures: ["Media/Cities/Trondheim/Bakeri/Bakeri1.jpg"],
             address: "Munkegata 10",
             phone: 73567890,
             email: "post@fjordkafe.no",
@@ -526,7 +510,7 @@ const model = {
           reviews: [
             {
               name: "Ole Johansen",
-              pictures: [],
+              pictures: ["Media/Cities/Trondheim/Bakeri/Kundebilder/Kundebilde17.jpg"],
               score: 5,
               reviewText: "Beste bakverk i byen!",
               date: "2026-03-05",
@@ -537,7 +521,7 @@ const model = {
             city: "Trondheim",
             storeName: "Bakst & Glede",
             type: "bakery",
-            pictures: [],
+            pictures: ["Media/Cities/Trondheim/Bakeri/Bakeri2.jpg"],
             address: "Olav Tryggvasons gate 22",
             phone: 73881234,
             email: "hei@bakstoglede.no",
@@ -548,67 +532,10 @@ const model = {
         },
 
         {
-          reviews: [],
-          info: {
-            city: "Trondheim",
-            storeName: "Midtbyen Sushi",
-            type: "restaurant",
-            pictures: [],
-            address: "Søndre gate 5",
-            phone: 73990011,
-            email: "kontakt@midtbyensushi.no",
-            averageScore: 4.1,
-            reviewAmount: 34,
-            link: "https://midtbyensushi.no",
-          },
-        },
-
-        {
-          reviews: [
-            {
-              name: "Kari Olsen",
-              pictures: [],
-              score: 3,
-              reviewText: "Greit nok, men kunne vært bedre utvalg.",
-              date: "2026-02-20",
-              likes: 2,
-            },
-            {
-              name: "Per Hansen",
-              pictures: [],
-              score: 4,
-              reviewText: "Bra kvalitet på klærne.",
-              date: "2026-02-18",
-              likes: 6,
-            },
-            {
-              name: "Eva Lund",
-              pictures: [],
-              score: 5,
-              reviewText: "Elsker denne butikken!",
-              date: "2026-02-15",
-              likes: 9,
-            },
-          ],
-          info: {
-            city: "Trondheim",
-            storeName: "Trønder Stil",
-            type: "clothing",
-            pictures: [],
-            address: "Nordregate 12",
-            phone: 73551122,
-            email: "info@tronderstil.no",
-            averageScore: 4.4,
-            reviewAmount: 89,
-            link: "https://tronderstil.no",
-          },
-        },
-
-        {
           reviews: [
             {
               name: "Mats Eriksen",
-              pictures: [],
+              pictures: [""],
               score: 5,
               reviewText: "Fantastisk pizza!",
               date: "2026-03-02",
@@ -619,7 +546,7 @@ const model = {
             city: "Trondheim",
             storeName: "PizzaHjørnet",
             type: "restaurant",
-            pictures: [],
+            pictures: ["Media/Cities/Trondheim/Resturant/Resturant18.jpg"],
             address: "Kongens gate 30",
             phone: 73887766,
             email: "post@pizzahjornet.no",
@@ -633,7 +560,7 @@ const model = {
           reviews: [
             {
               name: "Sofie Aas",
-              pictures: [],
+              pictures: ["Media/Cities/Trondheim/Bakeri/Kundebilder/Kundebilde19.jpg"],
               score: 4,
               reviewText: "God kaffe, litt lite sitteplasser.",
               date: "2026-03-03",
@@ -641,7 +568,7 @@ const model = {
             },
             {
               name: "Henrik Dahl",
-              pictures: [],
+              pictures: [""],
               score: 5,
               reviewText: "Perfekt sted for studier.",
               date: "2026-03-01",
@@ -652,7 +579,7 @@ const model = {
             city: "Trondheim",
             storeName: "Student Kaféen",
             type: "cafe",
-            pictures: [],
+            pictures: ["Media/Cities/Trondheim/Bakeri/Bakeri19.jpg"],
             address: "Elgeseter gate 1",
             phone: 73559988,
             email: "kontakt@studentkafeen.no",
@@ -663,26 +590,10 @@ const model = {
         },
 
         {
-          reviews: [],
-          info: {
-            city: "Trondheim",
-            storeName: "TechHuset",
-            type: "electronics",
-            pictures: [],
-            address: "Brattørgata 8",
-            phone: 73880022,
-            email: "support@techhuset.no",
-            averageScore: 4.0,
-            reviewAmount: 45,
-            link: "https://techhuset.no",
-          },
-        },
-
-        {
           reviews: [
             {
               name: "Daniel Vik",
-              pictures: [],
+              pictures: ["Media/Cities/Trondheim/Resturant/Kundebilder/Kundebilde7.jpg"],
               score: 5,
               reviewText: "Utrolig gode burgere!",
               date: "2026-03-06",
@@ -690,7 +601,7 @@ const model = {
             },
             {
               name: "Ida Moe",
-              pictures: [],
+              pictures: [""],
               score: 4,
               reviewText: "Saftig burger, men litt ventetid.",
               date: "2026-03-04",
@@ -701,7 +612,7 @@ const model = {
             city: "Trondheim",
             storeName: "Burgerhjørnet",
             type: "restaurant",
-            pictures: [],
+            pictures: ["Media/Cities/Trondheim/Resturant/Resturant17.jpg"],
             address: "Thomas Angells gate 14",
             phone: 73995544,
             email: "hei@burgerhjornet.no",
@@ -714,33 +625,8 @@ const model = {
         {
           reviews: [
             {
-              name: "Nora Lie",
-              pictures: [],
-              score: 3,
-              reviewText: "Helt greit, men litt dyrt.",
-              date: "2026-02-28",
-              likes: 2,
-            },
-          ],
-          info: {
-            city: "Trondheim",
-            storeName: "Grønn Handel",
-            type: "grocery",
-            pictures: [],
-            address: "Bakkegata 5",
-            phone: 73553311,
-            email: "post@gronhandel.no",
-            averageScore: 3.9,
-            reviewAmount: 52,
-            link: "https://gronhandel.no",
-          },
-        },
-
-        {
-          reviews: [
-            {
               name: "Erik Strand",
-              pictures: [],
+              pictures: [""],
               score: 5,
               reviewText: "Beste kaffebønnene jeg har smakt!",
               date: "2026-03-07",
@@ -748,7 +634,7 @@ const model = {
             },
             {
               name: "Maria Haug",
-              pictures: [],
+              pictures: ["Media/Cities/Trondheim/Bakeri/Kundebilder/Kundebilde20.jpg"],
               score: 5,
               reviewText: "Fantastisk kvalitet og service.",
               date: "2026-03-05",
@@ -756,7 +642,7 @@ const model = {
             },
             {
               name: "Thomas Bye",
-              pictures: [],
+              pictures: [""],
               score: 4,
               reviewText: "Litt dyrt, men verdt det.",
               date: "2026-03-02",
@@ -767,7 +653,7 @@ const model = {
             city: "Trondheim",
             storeName: "Kaffebrenneriet Trondheim",
             type: "cafe",
-            pictures: [],
+            pictures: ["Media/Cities/Trondheim/Bakeri/Bakeri20.jpg"],
             address: "Nedre Bakklandet 20",
             phone: 73889977,
             email: "kontakt@kaffebrenneriet.no",
@@ -784,7 +670,7 @@ const model = {
                   reviews: [
                     {
                       name: "Maja Olsen",
-                      pictures: [],
+                      pictures: [""],
                       score: 5,
                       reviewText: "Helt fantastisk kaffe og utsikt!",
                       date: "2026-03-10",
@@ -792,7 +678,7 @@ const model = {
                     },
                     {
                       name: "Henrik Johansen",
-                      pictures: [],
+                      pictures: ["Media/Cities/Tromsø/Bakeri/Kundebilder/Kundebilde16.jpg"],
                       score: 2,
                       reviewText: "Altfor dyrt for det du får.",
                       date: "2026-03-08",
@@ -800,7 +686,7 @@ const model = {
                     },
                     {
                       name: "Silje Nilsen",
-                      pictures: [],
+                      pictures: [""],
                       score: 4,
                       reviewText: "God stemning, men litt kaldt inne.",
                       date: "2026-03-06",
@@ -811,7 +697,7 @@ const model = {
                     city: "Tromsø",
                     storeName: "Nordlys Kaffebar",
                     type: "cafe",
-                    pictures: [],
+                    pictures: ["Media/Cities/Tromsø/Bakeri/Bakeri22.png"],
                     address: "Storgata 22",
                     phone: 77665544,
                     email: "hei@nordlyskaffe.no",
@@ -825,7 +711,7 @@ const model = {
                   reviews: [
                     {
                       name: "Per Hansen",
-                      pictures: [],
+                      pictures: [""],
                       score: 1,
                       reviewText: "Dårlig service og kald mat.",
                       date: "2026-03-11",
@@ -833,7 +719,7 @@ const model = {
                     },
                     {
                       name: "Anna Berg",
-                      pictures: [],
+                      pictures: ["Media/Cities/Tromsø/Resturant/Kundebilder/Kundebilde21.jpg"],
                       score: 3,
                       reviewText: "Helt ok, men ikke noe spesielt.",
                       date: "2026-03-09",
@@ -844,7 +730,7 @@ const model = {
                     city: "Tromsø",
                     storeName: "Arktisk Bites",
                     type: "restaurant",
-                    pictures: [],
+                    pictures: ["Media/Cities/Tromsø/Resturant/Resturant14.jpg"],
                     address: "Grønnegata 10",
                     phone: 77889900,
                     email: "post@arktiskbites.no",
@@ -857,16 +743,8 @@ const model = {
                 {
                   reviews: [
                     {
-                      name: "Lars Vik",
-                      pictures: [],
-                      score: 5,
-                      reviewText: "Beste burgeren i Tromsø!",
-                      date: "2026-03-12",
-                      likes: 18,
-                    },
-                    {
                       name: "Ingrid Moe",
-                      pictures: [],
+                      pictures: [""],
                       score: 4,
                       reviewText: "Veldig god mat, litt lang ventetid.",
                       date: "2026-03-10",
@@ -874,7 +752,7 @@ const model = {
                     },
                     {
                       name: "Jonas Dahl",
-                      pictures: [],
+                      pictures: ["Media/Cities/Tromsø/Resturant/Kundebilder/Kundebilde19.jpg"],
                       score: 3,
                       reviewText: "Bra, men ikke wow.",
                       date: "2026-03-08",
@@ -882,7 +760,7 @@ const model = {
                     },
                     {
                       name: "Kari Lie",
-                      pictures: [],
+                      pictures: [""],
                       score: 5,
                       reviewText: "Elsker dette stedet!",
                       date: "2026-03-07",
@@ -893,7 +771,7 @@ const model = {
                     city: "Tromsø",
                     storeName: "Isbjørn Burger",
                     type: "restaurant",
-                    pictures: [],
+                    pictures: ["Media/Cities/Tromsø/Resturant/Resturant13.jpg"],
                     address: "Storgata 45",
                     phone: 77881122,
                     email: "hei@isbjornburger.no",
@@ -906,66 +784,8 @@ const model = {
                 {
                   reviews: [
                     {
-                      name: "Eva Strand",
-                      pictures: [],
-                      score: 2,
-                      reviewText: "Lite utvalg og høye priser.",
-                      date: "2026-03-05",
-                      likes: 5,
-                    },
-                  ],
-                  info: {
-                    city: "Tromsø",
-                    storeName: "Nord Handel",
-                    type: "grocery",
-                    pictures: [],
-                    address: "Langnesvegen 3",
-                    phone: 77661234,
-                    email: "post@nordhandel.no",
-                    averageScore: 2.5,
-                    reviewAmount: 31,
-                    link: "https://nordhandel.no",
-                  },
-                },
-
-                {
-                  reviews: [
-                    {
-                      name: "Thomas Berg",
-                      pictures: [],
-                      score: 5,
-                      reviewText: "Fantastisk atmosfære og gode drinker!",
-                      date: "2026-03-12",
-                      likes: 16,
-                    },
-                    {
-                      name: "Nora Aas",
-                      pictures: [],
-                      score: 4,
-                      reviewText: "Koselig sted, men litt høy musikk.",
-                      date: "2026-03-10",
-                      likes: 6,
-                    },
-                  ],
-                  info: {
-                    city: "Tromsø",
-                    storeName: "Aurora Bar",
-                    type: "bar",
-                    pictures: [],
-                    address: "Skippergata 12",
-                    phone: 77887766,
-                    email: "kontakt@aurorabar.no",
-                    averageScore: 4.4,
-                    reviewAmount: 98,
-                    link: "https://aurorabar.no",
-                  },
-                },
-
-                {
-                  reviews: [
-                    {
                       name: "Sofie Lund",
-                      pictures: [],
+                      pictures: ["Media/Cities/Tromsø/Bakeri/Kundebilder/Kundebilde14.jpg"],
                       score: 5,
                       reviewText: "Utrolig gode kaker!",
                       date: "2026-03-11",
@@ -973,7 +793,7 @@ const model = {
                     },
                     {
                       name: "Mats Eriksen",
-                      pictures: [],
+                      pictures: ["Media/Cities/Tromsø/Bakeri/Kundebilder/Kundebilde15.jpg"],
                       score: 4,
                       reviewText: "God smak, men litt dyrt.",
                       date: "2026-03-09",
@@ -981,7 +801,7 @@ const model = {
                     },
                     {
                       name: "Ida Hansen",
-                      pictures: [],
+                      pictures: [""],
                       score: 1,
                       reviewText: "Tørr kake og dårlig service.",
                       date: "2026-03-06",
@@ -992,7 +812,7 @@ const model = {
                     city: "Tromsø",
                     storeName: "Søt Fristelse",
                     type: "bakery",
-                    pictures: [],
+                    pictures: ["Media/Cities/Tromsø/Bakeri/Bakeri15.jpg"],
                     address: "Storgata 8",
                     phone: 77885533,
                     email: "hei@sotfristelse.no",
@@ -1002,55 +822,6 @@ const model = {
                   },
                 },
 
-
-                {
-                  reviews: [
-                    {
-                      name: "Ole Pedersen",
-                      pictures: [],
-                      score: 4,
-                      reviewText: "God sushi og hyggelig personale.",
-                      date: "2026-03-11",
-                      likes: 6,
-                    },
-                    {
-                      name: "Kari Berg",
-                      pictures: [],
-                      score: 2,
-                      reviewText: "Fisken var ikke fersk nok.",
-                      date: "2026-03-09",
-                      likes: 5,
-                    },
-                    {
-                      name: "Lena Aas",
-                      pictures: [],
-                      score: 5,
-                      reviewText: "Beste sushi i byen!",
-                      date: "2026-03-07",
-                      likes: 9,
-                    },
-                    {
-                      name: "Jon Eriksen",
-                      pictures: [],
-                      score: 3,
-                      reviewText: "Helt greit.",
-                      date: "2026-03-05",
-                      likes: 1,
-                    },
-                  ],
-                  info: {
-                    city: "Tromsø",
-                    storeName: "Fjord Sushi",
-                    type: "restaurant",
-                    pictures: [],
-                    address: "Grønnegata 25",
-                    phone: 77882211,
-                    email: "kontakt@fjordsushi.no",
-                    averageScore: 3.6,
-                    reviewAmount: 112,
-                    link: "https://fjordsushi.no",
-                  },
-                },
               ], 
       },
       { name: "Stavanger",
