@@ -33,5 +33,6 @@ function sendReview() {
       m.userName = "";
       m.userPicture = [];
     goBack()
+    updateView()
  
 }
