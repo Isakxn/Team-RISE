@@ -12,7 +12,7 @@ function userScore(input) {
 }
 function sendReview() {
     const d = new Date();
-    let newDate =`${d.getFullYear()} - ${d.getDate()} - ${d.getMonth()}`
+    let newDate =`${d.getFullYear()}-${d.getDate()}-${d.getMonth()}`
     const storeId = model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore];
     let tempObj = {
         name: model.viewState.writeReviewPage.userName,
@@ -33,6 +33,35 @@ function sendReview() {
       m.userName = "";
       m.userPicture = [];
     goBack()
-    updateView()
  
+}
+function validateReview () {
+    const wrongInput = document.getElementById("wrongInput")
+    let accepted = false;
+
+    if (model.viewState.writeReviewPage.userScore === undefined){
+        wrongInput.innerHTML = "Husk å velg hvor mange stjerner du vil gi";
+        accepted = false;
+        
+    }
+    if (model.viewState.writeReviewPage.userName === ""){
+        wrongInput.innerHTML = "Husk å skrive navn";
+        accepted = false;
+        
+    }
+    if (model.viewState.writeReviewPage.userReview === ""){
+        wrongInput.innerHTML = "Husk å skriv en anmeldelse";
+        accepted = false;
+        
+    }
+    if (model.viewState.writeReviewPage.userReview !== "",
+        model.viewState.writeReviewPage.userName !== "",
+        model.viewState.writeReviewPage.userScore !== undefined) {
+        accepted = true;
+        }
+    
+    if (accepted === true){
+        wrongInput.innerHTML = "";
+        sendReview()
+    }
 }

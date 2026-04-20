@@ -12,6 +12,7 @@
                            writeReview.innerHTML= 
                             /*HTML*/`
                            <div class="main review">
+                           <div style="color:red; font-size: 40px" id="wrongInput">dsdsds</div>
                            <h1>${storeId.info.storeName}</h1>
                            <div class="darkborder">
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/bakery/bakery.svg"></div>
@@ -37,7 +38,7 @@
                             >
                            </div>
                            <br>
-                           <div class="reviewbtn" onclick="sendReview()">Legg til Anmeldelser</div>
+                           <div class="reviewbtn" onclick="validateReview()">Legg til Anmeldelser</div>
                            <br>
                            </div>
                            `;       

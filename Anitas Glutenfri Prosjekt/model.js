@@ -21,7 +21,7 @@ const model = {
     },
 
     writeReviewPage: {
-      userScore: 0,
+      userScore: undefined,
       userReview: "",
       userName: "",
       userPicture: [],
