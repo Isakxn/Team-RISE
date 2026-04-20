@@ -23,7 +23,8 @@ const model = {
     writeReviewPage: {
       userScore: 0,
       userReview: "",
-      userPicture: [""],
+      userName: "",
+      userPicture: [],
     },
 
     loginPage: {

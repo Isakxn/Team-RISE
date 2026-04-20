@@ -1,4 +1,4 @@
-
+// ISAK
             function writeReviewPage(){
                         storeFront()
                         showWriteReview()
@@ -19,8 +19,8 @@
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/restaurant/restaurant.svg"></div>
                            <div><img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/pastryshop/pastry.svg"></div>
                            </div>
-                           <input type="text" placeholder="Navn" class="nameInput">
-                           <div> <textarea placeholder="Skriv her"class="userReviewBox"></textarea> </div>
+                           <input type="text" placeholder="Navn" class="nameInput" onchange="userReviewName(this.value)">
+                           <div> <textarea placeholder="Skriv her"class="userReviewBox" onchange="userText(this.value)"></textarea> </div>
                            <br>
                            <label class="ratingLabel">Din vurdering:</label>
                             <div class="starcontainer">
@@ -33,10 +33,11 @@
                             class="user-rating"
                             style="--val: 2.5"
                             oninput="this.style.setProperty('--val', this.value)"
+                            onclick="userScore(this.value)"
                             >
                            </div>
                            <br>
-                           <div class="reviewbtn">Legg til Anmeldelser</div>
+                           <div class="reviewbtn" onclick="sendReview()">Legg til Anmeldelser</div>
                            <br>
                            </div>
                            `;       

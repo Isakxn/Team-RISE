@@ -1,3 +1,4 @@
+// ISAK
 function adminControl(){
     if(model.app.adminLoggedIn === true){
       model.viewState.storeFrontPage.adminReview = "X";
