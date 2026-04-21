@@ -15,7 +15,6 @@ const model = {
       selectedStore: 0,
       adminReview: "",
       adminStore: "",
-      reviewAllergy: [],
     },
 
     writeReviewPage: {

@@ -8,6 +8,7 @@
             
             }
             
+            
             function storeFront(){
                 const storeId = model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore];
                 const app = document.getElementById("app");   
