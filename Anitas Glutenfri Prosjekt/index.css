@@ -31,7 +31,9 @@ body {
   overflow-y: auto;
   color: #3a2a18;
 }
-
+.leftside h1{
+  margin-bottom: 0.5rem;
+}
 
 .leftside p {
   line-height: 1.7;
@@ -56,6 +58,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: transform .2s ease, box-shadow .2s ease;
+  margin-top: 1rem;
 }
 
 .leftside button:hover {
@@ -75,7 +78,7 @@ body {
 .main.review{
   flex: 1 1 auto;
   max-width: 50rem;
-  background: #fff;
+  background: #f4e9dd;
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
   padding: 1rem;
@@ -108,8 +111,6 @@ body {
 /* store selector on the rightside */
 .storeBox {
   position: relative;
-  background: #fafafa;
-  border: 1px solid #e0dfe7;
   border-radius: 1rem;
   margin-bottom: 0.8rem;
   cursor: pointer;
@@ -146,7 +147,7 @@ body {
 /* Reviews in the middle*/
 .reviewBox {
   display: flex;
-  background: #fff;
+  background: #f1e9df;
   border-radius: 1.2rem;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -163,7 +164,7 @@ p.text {
   border-radius: 0.7rem;
   object-fit: cover;
   margin-right: 1rem; 
-  border: 1px solid white;
+  border: 1px solid transparent;
 }
 /* expanded */
 .reviewBox.expanded {
@@ -219,6 +220,8 @@ p.text {
   object-fit: cover;
   display: block;
   margin-bottom: 0.8rem;
+  
+  
 }
 .star-rating {
   --size: 1rem;
@@ -226,7 +229,7 @@ p.text {
   width: calc(5 * var(--size));
   border: 0;
   background: linear-gradient(90deg, gold calc(var(--val) / 5 * 100%), lightgray calc(var(--val) / 5 * 100%));
-  mask-image: url("/Anitas%20Glutenfri%20Prosjekt/media/icons/star/star.svg");
+  mask-image: url("/Anitas%20Glutenfri%20Prosjekt/media/icons/star/star2.svg");
   mask-size: contain;
 }
 #citySelectId {
@@ -337,8 +340,8 @@ p.text {
 .hometab {
   position: absolute;
   top: 0;
-  right: 1rem;
-  width: 3rem;
+  right: 0.5rem;
+  width: 5rem;
   height: auto;
   border-radius: 0.9rem;
   object-fit: cover;
@@ -349,7 +352,7 @@ p.text {
   position: absolute;
   top: 0;
   left: 0;
-  width: 3rem;
+  width: 5rem;
   height: auto;
   
   object-fit: cover;
@@ -358,9 +361,9 @@ p.text {
 }
 .backbuttonarrow {
   position: absolute;
-  top: 1%;
+  top: 0.8rem;
   left: 2%;
-  width: 1.2rem;
+  width: 2rem;
   height: auto;
   
   object-fit: cover;
@@ -370,9 +373,9 @@ p.text {
 }
 .hometabimg {
   position: absolute;
-  top: 0.8rem;
-  right: 1.9rem;
-  width: 1.2rem;
+  top: 1rem;
+  right: 2rem;
+  width: 2rem;
   height: auto;
   
   object-fit: cover;
@@ -482,7 +485,10 @@ p.text {
     border-radius: 0.8rem;
     transition: all 0.2s ease;
     cursor: pointer;
-    background-color: #dedade;
+    background-color: #979191;
+    color: #ddd;
+    font-weight: bold;
+    
 }
 .reviewbtn:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);

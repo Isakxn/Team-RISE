@@ -28,6 +28,7 @@
                             </a>
                             <h1>${storeId.info.storeName}</h5>
                             <div ><img class="pictureInfo" src="${storeId.info.pictures}"></div>
+                            <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
                                 <p>
                                 ${storeId.info.address}
                                 <br>
@@ -37,7 +38,6 @@
                                 <br>
                                 ${storeId.info.email}
                                 <br>
-                                <div class="star-rating" style="--size: 2rem; --val: ${storeId.info.averageScore};"></div> (${storeId.info.reviewAmount}) Anmeldelser
                                 </p>
                                 ${writeReviewBtn()}
                                 <div onclick="adminDeleteStore()" style="color: red; font-size: 2rem; font-weight: bold; position: absolute; cursor: pointer;">
@@ -67,16 +67,16 @@
                             
                             storeReviewsArr.push(`
                                 <div class="reviewBox" onclick="toggleCard(this)">
-                                <img class="pic" src="${r.pictures}">
+                                ${checkImage(r.pictures)}
                                 <div>
                                 <div class="review star-rating" style="--val: ${r.score}; --size: 2rem; "></div>
                                 <h2>${r.name}</h2>
                                 <h5>${r.date}</h5>
-                                (${r.likes})<button>Liker</button>
+                                (${r.likes}) <button>Liker</button>
                                 <div>${checkAllergy(r.allergyList)}</div>
                                 </div>
                                 <p class="text">${r.reviewText}</p>
-                                <br>
+                                </br>
                                 <div 
                                 style="color: red; font-size: 2rem; font-weight: bold; position: absolute; top: 1rem; right: 1rem; cursor: pointer;" 
                                 onclick="adminDeleteReview(${i})">
@@ -140,7 +140,7 @@
                             if (model.app.currentPage === "storePage")
                             {return `
                             <div onclick="goForward()">
-                            <textarea class="userReviewBox"></textarea>
+                            <textarea placeholder="Skriv her..." class="userReviewBox"></textarea>
                             <br>
                             <button>Legg til Anmeldelser</button>
                             </div>

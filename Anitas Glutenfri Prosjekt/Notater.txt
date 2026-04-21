@@ -37,3 +37,6 @@ Etter kundemøte 16.04.2026
     - review amount
     - link
 
+bigger back button, not red. top left
+fill stars
+align stars for  store

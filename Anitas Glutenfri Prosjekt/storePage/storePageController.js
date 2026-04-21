@@ -21,3 +21,6 @@ function checkAllergy(allergyList) {
 
     return icons;
 }
+function checkImage(image) {
+   return image[0] ? `<img class="pic" src="${image}">` : `<div></div>`;
+}
