@@ -1650,7 +1650,7 @@ const model = {
                     name: "Sofie Vik",
                     pictures: [""],
                     score: 4,
-                    reviewText: "God kaffe, men litt trangt lokale.",
+                    reviewText: "God kaffe, god bakst, men litt trangt lokale.",
                     date: "2026-03-10",
                     likes: 5,
                     allergyList: {
@@ -1664,7 +1664,7 @@ const model = {
                     name: "Daniel Aas",
                     pictures: [""],
                     score: 1,
-                    reviewText: "Bestilte te, fikk noe som smakte som varmt mysterium.",
+                    reviewText: "Bestilte te, fekk no som smakte som varmt katta pess.",
                     date: "2026-03-08",
                     likes: 11,
                     allergyList: {
@@ -1704,71 +1704,12 @@ const model = {
               },
 
               {
-                reviews: [
-                  {
-                    name: "Ole Strand",
-                    pictures: [""],
-                    score: 5,
-                    reviewText: "Beste sushi jeg har hatt i nord!",
-                    date: "2026-03-11",
-                    likes: 13,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
-                    name: "Kari Berg",
-                    pictures: [""],
-                    score: 2,
-                    reviewText: "Fisken var ok, men risen var litt… kreativ.",
-                    date: "2026-03-09",
-                    likes: 6,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
-                    name: "Jon Moe",
-                    pictures: [""],
-                    score: 3,
-                    reviewText: "Helt greit, men ikke wow.",
-                    date: "2026-03-07",
-                    likes: 2,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                ],
-                info: {
-                  city: "Alta",
-                  storeName: "Nord Sushi",
-                  type: "restaurant",
-                  pictures: [""],
-                  address: "Markedsgata 20",
-                  phone: 78457700,
-                  email: "post@nordsushi.no",
-                  averageScore: 3.7,
-                  reviewAmount: 111,
-                  link: "https://nordsushi.no",
-                },
-              },
-
-              {
                 reviews: [],
                 info: {
                   city: "Alta",
                   storeName: "Vaffelhjørnet Alta",
                   type: "cafe",
-                  pictures: [""],
+                  pictures: ["Media/Cities/Alta/Bakeri/Bakeri17.jpg"],
                   address: "Elvebakken 4",
                   phone: 78453322,
                   email: "hei@vaffelalta.no",
@@ -1781,22 +1722,8 @@ const model = {
               {
                 reviews: [
                   {
-                    name: "Lise Moe",
-                    pictures: [""],
-                    score: 1,
-                    reviewText: "Pastaen var så myk at den ikke trengte tenner.",
-                    date: "2026-03-08",
-                    likes: 10,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
                     name: "Per Vik",
-                    pictures: [""],
+                    pictures: ["Media/Cities/Alta/Resturant/Kundebilder/Kundebilde14.jpg"],
                     score: 4,
                     reviewText: "God smak, men litt dyrt.",
                     date: "2026-03-07",
@@ -1827,7 +1754,7 @@ const model = {
                   city: "Alta",
                   storeName: "Pastahuset Nord",
                   type: "restaurant",
-                  pictures: [""],
+                  pictures: ["Media/Cities/Alta/Resturant/Resturant9.jpg"],
                   address: "Sentrum 15",
                   phone: 78456611,
                   email: "kontakt@pastahusetnord.no",
