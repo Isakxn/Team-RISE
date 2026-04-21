@@ -63,14 +63,16 @@
                         
                         for (let i = 0; i < storeReviews.length; i++) {
                             const r = storeReviews[i]
+                            
                             storeReviewsArr.push(`
                                 <div class="reviewBox" onclick="toggleCard(this)">
-                                <img src="${r.pictures}">
+                                <img class="pic" src="${r.pictures}">
                                 <div>
                                 <div class="review star-rating" style="--val: ${r.score}; --size: 2rem; "></div>
                                 <h2>${r.name}</h2>
                                 <h5>${r.date}</h5>
                                 (${r.likes})<button>Liker</button>
+                                <div>${checkAllergy(r.allergyList)}</div>
                                 </div>
                                 <p class="text">${r.reviewText}</p>
                                 <br>

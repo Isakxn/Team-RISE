@@ -9,15 +9,13 @@ const model = {
   },
 
   viewState: {
-    selectionPage: {
-      storeType: "",
-    },
 
     storeFrontPage: {
       selectedCity: 0,
       selectedStore: 0,
       adminReview: "",
       adminStore: "",
+      reviewAllergy: [],
     },
 
     writeReviewPage: {
@@ -25,6 +23,12 @@ const model = {
       userReview: "",
       userName: "",
       userPicture: [],
+      allergyList: {
+        vegan: false,
+        milk: false,
+        nuts: false,
+        wheat: false,
+      },
     },
 
     loginPage: {
@@ -61,6 +65,12 @@ const model = {
                   reviewText: "Fantastisk kaffe og hyggelig atmosfære!",
                   date: "2026-02-14",
                   likes: 12,
+                  allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: false,
+                        wheat: false,
+                               },
                 },
                 {
                   name: "Jonas Berg",
@@ -69,6 +79,12 @@ const model = {
                   reviewText: "God cappuccino, men litt dyrt.",
                   date: "2026-02-10",
                   likes: 5,
+                  allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: false,
+                        wheat: false,
+                               },
                 },
             ],
               
@@ -97,6 +113,12 @@ const model = {
                 reviewText: "Ok plass for lunch!",
                 date: "2026-01-20",
                 likes: 20,
+                allergyList: {
+                        vegan: true,
+                        milk: false,
+                        nuts: true,
+                        wheat: false,
+                               },
               },
             ],
             
@@ -125,6 +147,12 @@ const model = {
                 reviewText: "Greit sted, men pizzaen var litt tørr.",
                 date: "2026-03-01",
                 likes: 2,
+                allergyList: {
+                        vegan: true,
+                        milk: false,
+                        nuts: false,
+                        wheat: true,
+                               },
               },
               {
                 name: "Lise Nilsen",
@@ -133,6 +161,12 @@ const model = {
                 reviewText: "God service og hyggelig personale.",
                 date: "2026-03-03",
                 likes: 4,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             
@@ -161,6 +195,12 @@ const model = {
                 reviewText: "Utrolig gode kaker og flott presentasjon!",
                 date: "2026-02-25",
                 likes: 15,
+                allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: true,
+                        wheat: false,
+                               },
               },
             ],
             
@@ -189,6 +229,12 @@ const model = {
                 reviewText: "Veldig bra burger og fries!",
                 date: "2026-03-10",
                 likes: 6,
+                allergyList: {
+                        vegan: true,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             
@@ -217,6 +263,12 @@ const model = {
                 reviewText: "Perfekt sted for å jobbe og slappe av.",
                 date: "2026-03-15",
                 likes: 9,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             
@@ -249,6 +301,12 @@ const model = {
                 reviewText: "Fantastiske boller og hyggelig personale!",
                 date: "2026-02-12",
                 likes: 3,
+                allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: false,
+                        wheat: true,
+                               },
               },
               {
                 name: "Jonas K.",
@@ -257,6 +315,12 @@ const model = {
                 reviewText: "God kaker her, litt travelt.",
                 date: "2026-01-20",
                 likes: 1,
+                allergyList: {
+                        vegan: true,
+                        milk: true,
+                        nuts: true,
+                        wheat: false,
+                               },
               },
               {
                 name: "Ingrid S.",
@@ -265,6 +329,12 @@ const model = {
                 reviewText: "Elsker croissantene her!",
                 date: "2026-03-02",
                 likes: 4,
+                allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: true,
+                        wheat: true,
+                               },
               },
               {
                 name: "Per H.",
@@ -273,6 +343,12 @@ const model = {
                 reviewText: "Koselig sted og gode priser.",
                 date: "2026-02-25",
                 likes: 2,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             info: {
@@ -298,6 +374,12 @@ const model = {
                 reviewText: "Beste cappuccino i byen.",
                 date: "2026-03-01",
                 likes: 5,
+                allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
               {
                 name: "Lars E.",
@@ -306,6 +388,12 @@ const model = {
                 reviewText: "Veldig bra atmosfære.",
                 date: "2026-02-14",
                 likes: 2,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
               {
                 name: "Ole M.",
@@ -314,6 +402,12 @@ const model = {
                 reviewText: "Perfekt sted å jobbe fra.",
                 date: "2026-02-18",
                 likes: 3,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             info: {
@@ -339,6 +433,12 @@ const model = {
                 reviewText: "Utrolig god pizza!",
                 date: "2026-03-03",
                 likes: 6,
+                allergyList: {
+                        vegan: true,
+                        milk: true,
+                        nuts: false,
+                        wheat: true,
+                               },
               },
               {
                 name: "Daniel W.",
@@ -347,6 +447,12 @@ const model = {
                 reviewText: "God mat, litt lang ventetid.",
                 date: "2026-02-27",
                 likes: 2,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
               {
                 name: "Emma R.",
@@ -355,6 +461,12 @@ const model = {
                 reviewText: "Fantastisk service.",
                 date: "2026-02-10",
                 likes: 4,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             info: {
@@ -380,6 +492,12 @@ const model = {
                 reviewText: "Veldig gode kaker.",
                 date: "2026-02-05",
                 likes: 2,
+                allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: true,
+                        wheat: false,
+                               },
               },
               {
                 name: "Elise V.",
@@ -388,6 +506,12 @@ const model = {
                 reviewText: "Beste bakeriet i Bergen!",
                 date: "2026-03-04",
                 likes: 5,
+                allergyList: {
+                        vegan: false,
+                        milk: true,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
               {
                 name: "Thomas G.",
@@ -396,6 +520,12 @@ const model = {
                 reviewText: "God kvalitet, litt dyrt.",
                 date: "2026-02-19",
                 likes: 1,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
               {
                 name: "Nora P.",
@@ -404,6 +534,12 @@ const model = {
                 reviewText: "Elsker utvalget her.",
                 date: "2026-01-28",
                 likes: 3,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             info: {
@@ -429,6 +565,12 @@ const model = {
                 reviewText: "Fantastisk burger!",
                 date: "2026-03-06",
                 likes: 4,
+                allergyList: {
+                        vegan: true,
+                        milk: false,
+                        nuts: false,
+                        wheat: true,
+                               },
               },
               {
                 name: "Sara D.",
@@ -437,6 +579,12 @@ const model = {
                 reviewText: "God mat og hyggelig sted.",
                 date: "2026-02-16",
                 likes: 2,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
               {
                 name: "Kristian F.",
@@ -445,6 +593,12 @@ const model = {
                 reviewText: "Bra service.",
                 date: "2026-01-19",
                 likes: 1,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
               {
                 name: "Julie A.",
@@ -453,6 +607,12 @@ const model = {
                 reviewText: "Kommer definitivt tilbake.",
                 date: "2026-02-28",
                 likes: 3,
+                allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
               },
             ],
             info: {
@@ -482,6 +642,12 @@ const model = {
               reviewText: "Veldig koselig sted og god kaffe!",
               date: "2026-03-01",
               likes: 8,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
             {
               name: "Ingrid Solberg",
@@ -490,6 +656,12 @@ const model = {
               reviewText: "Hyggelig service, men litt travelt.",
               date: "2026-02-25",
               likes: 3,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
           ],
           info: {
@@ -515,6 +687,12 @@ const model = {
               reviewText: "Beste bakverk i byen!",
               date: "2026-03-05",
               likes: 15,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
           ],
           info: {
@@ -540,6 +718,12 @@ const model = {
               reviewText: "Fantastisk pizza!",
               date: "2026-03-02",
               likes: 11,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
           ],
           info: {
@@ -565,6 +749,12 @@ const model = {
               reviewText: "God kaffe, litt lite sitteplasser.",
               date: "2026-03-03",
               likes: 4,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
             {
               name: "Henrik Dahl",
@@ -573,6 +763,12 @@ const model = {
               reviewText: "Perfekt sted for studier.",
               date: "2026-03-01",
               likes: 7,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
           ],
           info: {
@@ -598,6 +794,12 @@ const model = {
               reviewText: "Utrolig gode burgere!",
               date: "2026-03-06",
               likes: 13,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
             {
               name: "Ida Moe",
@@ -606,6 +808,12 @@ const model = {
               reviewText: "Saftig burger, men litt ventetid.",
               date: "2026-03-04",
               likes: 6,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
           ],
           info: {
@@ -631,6 +839,12 @@ const model = {
               reviewText: "Beste kaffebønnene jeg har smakt!",
               date: "2026-03-07",
               likes: 10,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
             {
               name: "Maria Haug",
@@ -639,6 +853,12 @@ const model = {
               reviewText: "Fantastisk kvalitet og service.",
               date: "2026-03-05",
               likes: 8,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
             {
               name: "Thomas Bye",
@@ -647,6 +867,12 @@ const model = {
               reviewText: "Litt dyrt, men verdt det.",
               date: "2026-03-02",
               likes: 5,
+              allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
             },
           ],
           info: {
@@ -675,6 +901,12 @@ const model = {
                       reviewText: "Helt fantastisk kaffe og utsikt!",
                       date: "2026-03-10",
                       likes: 14,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                     {
                       name: "Henrik Johansen",
@@ -683,6 +915,12 @@ const model = {
                       reviewText: "Altfor dyrt for det du får.",
                       date: "2026-03-08",
                       likes: 3,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                     {
                       name: "Silje Nilsen",
@@ -691,6 +929,12 @@ const model = {
                       reviewText: "God stemning, men litt kaldt inne.",
                       date: "2026-03-06",
                       likes: 6,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                   ],
                   info: {
@@ -716,6 +960,12 @@ const model = {
                       reviewText: "Dårlig service og kald mat.",
                       date: "2026-03-11",
                       likes: 9,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                     {
                       name: "Anna Berg",
@@ -724,6 +974,12 @@ const model = {
                       reviewText: "Helt ok, men ikke noe spesielt.",
                       date: "2026-03-09",
                       likes: 4,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                   ],
                   info: {
@@ -749,6 +1005,12 @@ const model = {
                       reviewText: "Veldig god mat, litt lang ventetid.",
                       date: "2026-03-10",
                       likes: 7,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                     {
                       name: "Jonas Dahl",
@@ -757,6 +1019,12 @@ const model = {
                       reviewText: "Bra, men ikke wow.",
                       date: "2026-03-08",
                       likes: 2,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                     {
                       name: "Kari Lie",
@@ -765,6 +1033,12 @@ const model = {
                       reviewText: "Elsker dette stedet!",
                       date: "2026-03-07",
                       likes: 11,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                   ],
                   info: {
@@ -790,6 +1064,12 @@ const model = {
                       reviewText: "Utrolig gode kaker!",
                       date: "2026-03-11",
                       likes: 12,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                     {
                       name: "Mats Eriksen",
@@ -798,6 +1078,12 @@ const model = {
                       reviewText: "God smak, men litt dyrt.",
                       date: "2026-03-09",
                       likes: 4,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                     {
                       name: "Ida Hansen",
@@ -806,6 +1092,12 @@ const model = {
                       reviewText: "Tørr kake og dårlig service.",
                       date: "2026-03-06",
                       likes: 7,
+                      allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                     },
                   ],
                   info: {
@@ -834,6 +1126,12 @@ const model = {
                     reviewText: "Kaffen var så god at jeg glemte å sjekke mobilen. Det skjer aldri.",
                     date: "2026-03-12",
                     likes: 19,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Emma Berg",
@@ -842,6 +1140,12 @@ const model = {
                     reviewText: "Bestilte latte, fikk noe som smakte som mandag morgen.",
                     date: "2026-03-10",
                     likes: 7,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Jonas Moe",
@@ -850,6 +1154,12 @@ const model = {
                     reviewText: "Veldig bra, men køen ga meg tid til å reflektere over livet.",
                     date: "2026-03-08",
                     likes: 6,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -875,6 +1185,12 @@ const model = {
                     reviewText: "Baksten var så god at jeg vurderte å gifte meg med en bolle.",
                     date: "2026-03-11",
                     likes: 25,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Per Johansen",
@@ -883,6 +1199,12 @@ const model = {
                     reviewText: "God smak, men jeg spiste for mye og skylder på dem.",
                     date: "2026-03-09",
                     likes: 10,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -924,6 +1246,12 @@ const model = {
                     reviewText: "Maten kom sent. Jeg rakk å bli eldre.",
                     date: "2026-03-07",
                     likes: 14,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Ole Strand",
@@ -932,6 +1260,12 @@ const model = {
                     reviewText: "God burger, men litt mye saus. Jeg svømmer fortsatt.",
                     date: "2026-03-06",
                     likes: 8,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Nora Aas",
@@ -940,6 +1274,12 @@ const model = {
                     reviewText: "Elsker dette stedet! Kom sulten, dro trillet ut.",
                     date: "2026-03-05",
                     likes: 12,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -965,6 +1305,12 @@ const model = {
                     reviewText: "Smoothien ga meg energi og falsk tro på at jeg er sunn.",
                     date: "2026-03-12",
                     likes: 11,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Henrik Vik",
@@ -973,6 +1319,12 @@ const model = {
                     reviewText: "God, men jeg savnet noe å tygge på.",
                     date: "2026-03-10",
                     likes: 4,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -998,6 +1350,12 @@ const model = {
                     reviewText: "God pizza, men jeg brente tunga. Igjen.",
                     date: "2026-03-11",
                     likes: 6,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Lars Hansen",
@@ -1006,6 +1364,12 @@ const model = {
                     reviewText: "Perfekt bunn og masse smak!",
                     date: "2026-03-09",
                     likes: 9,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Jon Eriksen",
@@ -1014,6 +1378,12 @@ const model = {
                     reviewText: "Helt greit, men ikke revolusjonerende.",
                     date: "2026-03-08",
                     likes: 3,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1055,6 +1425,12 @@ const model = {
                     reviewText: "Fisken var god, men så på meg som om den visste noe.",
                     date: "2026-03-10",
                     likes: 10,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Maria Lie",
@@ -1063,6 +1439,12 @@ const model = {
                     reviewText: "Beste sushi i byen!",
                     date: "2026-03-08",
                     likes: 13,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Eva Strand",
@@ -1071,6 +1453,12 @@ const model = {
                     reviewText: "Veldig bra, men litt små biter.",
                     date: "2026-03-06",
                     likes: 5,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1096,6 +1484,12 @@ const model = {
                     reviewText: "Vaflene var så gode at jeg glemte hva jeg skulle gjøre etterpå.",
                     date: "2026-03-11",
                     likes: 15,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Nora Hansen",
@@ -1104,6 +1498,12 @@ const model = {
                     reviewText: "God smak, men litt lite topping.",
                     date: "2026-03-09",
                     likes: 4,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1129,6 +1529,12 @@ const model = {
                     reviewText: "Pastaen var overkokt. Den hadde gitt opp før jeg gjorde det.",
                     date: "2026-03-08",
                     likes: 12,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Lise Vik",
@@ -1137,6 +1543,12 @@ const model = {
                     reviewText: "God smak, men litt dyrt.",
                     date: "2026-03-07",
                     likes: 6,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Kari Nilsen",
@@ -1145,6 +1557,12 @@ const model = {
                     reviewText: "Fantastisk pasta! Kommer tilbake.",
                     date: "2026-03-06",
                     likes: 9,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1173,6 +1591,12 @@ const model = {
                     reviewText: "Kaffen var så sterk at jeg fortsatt er våken siden tirsdag.",
                     date: "2026-03-12",
                     likes: 16,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Mia Berg",
@@ -1181,6 +1605,12 @@ const model = {
                     reviewText: "Koselig sted, men jeg frøs litt… eller det er kanskje bare Alta.",
                     date: "2026-03-10",
                     likes: 8,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1206,6 +1636,12 @@ const model = {
                     reviewText: "Pizzaen var kald. Jeg ble kald. Alt var kaldt.",
                     date: "2026-03-11",
                     likes: 12,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Anna Nilsen",
@@ -1214,6 +1650,12 @@ const model = {
                     reviewText: "God smak, bare litt treg servering.",
                     date: "2026-03-09",
                     likes: 5,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Jonas Vik",
@@ -1222,6 +1664,12 @@ const model = {
                     reviewText: "Elsker dette stedet! Kommer tilbake (med jakke).",
                     date: "2026-03-08",
                     likes: 9,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1263,6 +1711,12 @@ const model = {
                     reviewText: "Burgeren var så stor at jeg måtte ta pause halvveis.",
                     date: "2026-03-12",
                     likes: 14,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Lars Strand",
@@ -1271,6 +1725,12 @@ const model = {
                     reviewText: "God burger, men fikk mer saus enn jeg fikk kontroll over livet mitt.",
                     date: "2026-03-10",
                     likes: 7,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Nora Moe",
@@ -1279,6 +1739,12 @@ const model = {
                     reviewText: "Veldig bra, men litt rotete bord.",
                     date: "2026-03-09",
                     likes: 3,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1304,6 +1770,12 @@ const model = {
                     reviewText: "Kakene var så gode at jeg glemte nyttårsforsettet mitt.",
                     date: "2026-03-11",
                     likes: 18,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Henrik Berg",
@@ -1312,6 +1784,12 @@ const model = {
                     reviewText: "Bra smak, men litt små porsjoner.",
                     date: "2026-03-09",
                     likes: 4,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1353,6 +1831,12 @@ const model = {
                     reviewText: "God kaffe, men litt trangt lokale.",
                     date: "2026-03-10",
                     likes: 5,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Daniel Aas",
@@ -1361,6 +1845,12 @@ const model = {
                     reviewText: "Bestilte te, fikk noe som smakte som varmt mysterium.",
                     date: "2026-03-08",
                     likes: 11,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Mats Nilsen",
@@ -1369,6 +1859,12 @@ const model = {
                     reviewText: "Perfekt sted å varme seg etter kulda!",
                     date: "2026-03-07",
                     likes: 9,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1394,6 +1890,12 @@ const model = {
                     reviewText: "Beste sushi jeg har hatt i nord!",
                     date: "2026-03-11",
                     likes: 13,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Kari Berg",
@@ -1402,6 +1904,12 @@ const model = {
                     reviewText: "Fisken var ok, men risen var litt… kreativ.",
                     date: "2026-03-09",
                     likes: 6,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Jon Moe",
@@ -1410,6 +1918,12 @@ const model = {
                     reviewText: "Helt greit, men ikke wow.",
                     date: "2026-03-07",
                     likes: 2,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
@@ -1451,6 +1965,12 @@ const model = {
                     reviewText: "Pastaen var så myk at den ikke trengte tenner.",
                     date: "2026-03-08",
                     likes: 10,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Per Vik",
@@ -1459,6 +1979,12 @@ const model = {
                     reviewText: "God smak, men litt dyrt.",
                     date: "2026-03-07",
                     likes: 4,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                   {
                     name: "Emma Lie",
@@ -1467,6 +1993,12 @@ const model = {
                     reviewText: "Fantastisk middag! Kommer igjen.",
                     date: "2026-03-06",
                     likes: 7,
+                    allergyList: {
+                        vegan: false,
+                        milk: false,
+                        nuts: false,
+                        wheat: false,
+                               },
                   },
                 ],
                 info: {
