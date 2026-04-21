@@ -1120,7 +1120,7 @@ const model = {
                 reviews: [
                   {
                     name: "Lars Nilsen",
-                    pictures: [],
+                    pictures: ["Media/Cities/Stavanger/Bakeri/Kundebilder/Kundebilde12.jpg"],
                     score: 5,
                     reviewText: "Kaffen var så god at jeg glemte å sjekke mobilen. Det skjer aldri.",
                     date: "2026-03-12",
@@ -1134,25 +1134,11 @@ const model = {
                   },
                   {
                     name: "Emma Berg",
-                    pictures: [],
+                    pictures: [""],
                     score: 2,
                     reviewText: "Bestilte latte, fikk noe som smakte som mandag morgen.",
                     date: "2026-03-10",
                     likes: 7,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
-                    name: "Jonas Moe",
-                    pictures: [],
-                    score: 4,
-                    reviewText: "Veldig bra, men køen ga meg tid til å reflektere over livet.",
-                    date: "2026-03-08",
-                    likes: 6,
                     allergyList: {
                         vegan: false,
                         milk: false,
@@ -1165,7 +1151,7 @@ const model = {
                   city: "Stavanger",
                   storeName: "Kaffekroken",
                   type: "cafe",
-                  pictures: [],
+                  pictures: ["Media/Cities/Stavanger/Bakeri/Bakeri21.jpg"],
                   address: "Øvre Holmegate 10",
                   phone: 51881212,
                   email: "hei@kaffekroken.no",
@@ -1179,9 +1165,9 @@ const model = {
                 reviews: [
                   {
                     name: "Mia Hansen",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
-                    reviewText: "Baksten var så god at jeg vurderte å gifte meg med en bolle.",
+                    reviewText: "Baksten er så god!",
                     date: "2026-03-11",
                     likes: 25,
                     allergyList: {
@@ -1193,7 +1179,7 @@ const model = {
                   },
                   {
                     name: "Per Johansen",
-                    pictures: [],
+                    pictures: [""],
                     score: 3,
                     reviewText: "God smak, men jeg spiste for mye og skylder på dem.",
                     date: "2026-03-09",
@@ -1210,7 +1196,7 @@ const model = {
                   city: "Stavanger",
                   storeName: "Bolle & Bønner",
                   type: "bakery",
-                  pictures: [],
+                  pictures: ["Media/Cities/Stavanger/Bakeri/Bakeri10.jpg"],
                   address: "Breigata 14",
                   phone: 51887755,
                   email: "post@bollebonner.no",
@@ -1226,7 +1212,7 @@ const model = {
                   city: "Stavanger",
                   storeName: "HavSmak Restaurant",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: ["Media/Cities/Stavanger/Resturant/Resturant10.jpg"],
                   address: "Skagenkaien 6",
                   phone: 51990022,
                   email: "kontakt@havsmak.no",
@@ -1239,12 +1225,12 @@ const model = {
               {
                 reviews: [
                   {
-                    name: "Kari Lie",
-                    pictures: [],
+                    name: "Karen Lie",
+                    pictures: [""],
                     score: 1,
-                    reviewText: "Maten kom sent. Jeg rakk å bli eldre.",
+                    reviewText: "Maten kom sent.",
                     date: "2026-03-07",
-                    likes: 14,
+                    likes: 1,
                     allergyList: {
                         vegan: false,
                         milk: false,
@@ -1254,9 +1240,9 @@ const model = {
                   },
                   {
                     name: "Ole Strand",
-                    pictures: [],
+                    pictures: ["Media/Cities/Bergen/Resturant/Kundebilder/Kundebilde11.jpg"],
                     score: 4,
-                    reviewText: "God burger, men litt mye saus. Jeg svømmer fortsatt.",
+                    reviewText: "God burger, men litt mye saus.",
                     date: "2026-03-06",
                     likes: 8,
                     allergyList: {
@@ -1268,9 +1254,9 @@ const model = {
                   },
                   {
                     name: "Nora Aas",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
-                    reviewText: "Elsker dette stedet! Kom sulten, dro trillet ut.",
+                    reviewText: "Elsker dette stedet! Kom sulten, trillet ut.",
                     date: "2026-03-05",
                     likes: 12,
                     allergyList: {
@@ -1285,7 +1271,7 @@ const model = {
                   city: "Stavanger",
                   storeName: "BurgerBrygga",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: ["Media/Cities/Stavanger/Resturant/Resturant12.jpg"],
                   address: "Verksgata 9",
                   phone: 51776677,
                   email: "hei@burgerbrygga.no",
@@ -1298,53 +1284,8 @@ const model = {
               {
                 reviews: [
                   {
-                    name: "Ida Moe",
-                    pictures: [],
-                    score: 5,
-                    reviewText: "Smoothien ga meg energi og falsk tro på at jeg er sunn.",
-                    date: "2026-03-12",
-                    likes: 11,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
-                    name: "Henrik Vik",
-                    pictures: [],
-                    score: 2,
-                    reviewText: "God, men jeg savnet noe å tygge på.",
-                    date: "2026-03-10",
-                    likes: 4,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                ],
-                info: {
-                  city: "Stavanger",
-                  storeName: "Grønn Pause",
-                  type: "cafe",
-                  pictures: [],
-                  address: "Nygata 5",
-                  phone: 51883300,
-                  email: "post@gronnpause.no",
-                  averageScore: 3.6,
-                  reviewAmount: 74,
-                  link: "https://gronnpause.no",
-                },
-              },
-
-              {
-                reviews: [
-                  {
                     name: "Sofie Berg",
-                    pictures: [],
+                    pictures: [""],
                     score: 4,
                     reviewText: "God pizza, men jeg brente tunga. Igjen.",
                     date: "2026-03-11",
@@ -1358,7 +1299,7 @@ const model = {
                   },
                   {
                     name: "Lars Hansen",
-                    pictures: [],
+                    pictures: ["Media/Cities/Alta/Resturant/Kundebilder/Kundebilde1.jpg"],
                     score: 5,
                     reviewText: "Perfekt bunn og masse smak!",
                     date: "2026-03-09",
@@ -1372,7 +1313,7 @@ const model = {
                   },
                   {
                     name: "Jon Eriksen",
-                    pictures: [],
+                    pictures: [""],
                     score: 3,
                     reviewText: "Helt greit, men ikke revolusjonerende.",
                     date: "2026-03-08",
@@ -1389,7 +1330,7 @@ const model = {
                   city: "Stavanger",
                   storeName: "Steinovn Pizza",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: ["Media/Cities/Stavanger/Resturant/Resturant11.jpg"],
                   address: "Kirkegata 3",
                   phone: 51994411,
                   email: "hei@steinovnpizza.no",
@@ -1405,7 +1346,7 @@ const model = {
                   city: "Stavanger",
                   storeName: "Søt Fristelse Stavanger",
                   type: "bakery",
-                  pictures: [],
+                  pictures: ["Media/Cities/Stavanger/Bakeri/Bakeri11.jpg"],
                   address: "Pedersgata 20",
                   phone: 51885522,
                   email: "kontakt@sotfristelse.no",
@@ -1418,112 +1359,8 @@ const model = {
               {
                 reviews: [
                   {
-                    name: "Thomas Aas",
-                    pictures: [],
-                    score: 2,
-                    reviewText: "Fisken var god, men så på meg som om den visste noe.",
-                    date: "2026-03-10",
-                    likes: 10,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
-                    name: "Maria Lie",
-                    pictures: [],
-                    score: 5,
-                    reviewText: "Beste sushi i byen!",
-                    date: "2026-03-08",
-                    likes: 13,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
-                    name: "Eva Strand",
-                    pictures: [],
-                    score: 4,
-                    reviewText: "Veldig bra, men litt små biter.",
-                    date: "2026-03-06",
-                    likes: 5,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                ],
-                info: {
-                  city: "Stavanger",
-                  storeName: "SushiHavna",
-                  type: "restaurant",
-                  pictures: [],
-                  address: "Skippergata 4",
-                  phone: 51993322,
-                  email: "post@sushihavna.no",
-                  averageScore: 3.9,
-                  reviewAmount: 121,
-                  link: "https://sushihavna.no",
-                },
-              },
-
-              {
-                reviews: [
-                  {
-                    name: "Ole Berg",
-                    pictures: [],
-                    score: 5,
-                    reviewText: "Vaflene var så gode at jeg glemte hva jeg skulle gjøre etterpå.",
-                    date: "2026-03-11",
-                    likes: 15,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
-                    name: "Nora Hansen",
-                    pictures: [],
-                    score: 3,
-                    reviewText: "God smak, men litt lite topping.",
-                    date: "2026-03-09",
-                    likes: 4,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                ],
-                info: {
-                  city: "Stavanger",
-                  storeName: "Vaffelhjørnet",
-                  type: "cafe",
-                  pictures: [],
-                  address: "Langgata 7",
-                  phone: 51887788,
-                  email: "hei@vaffelhjorne.no",
-                  averageScore: 4.1,
-                  reviewAmount: 83,
-                  link: "https://vaffelhjorne.no",
-                },
-              },
-
-              {
-                reviews: [
-                  {
                     name: "Henrik Moe",
-                    pictures: [],
+                    pictures: [""],
                     score: 1,
                     reviewText: "Pastaen var overkokt. Den hadde gitt opp før jeg gjorde det.",
                     date: "2026-03-08",
@@ -1536,22 +1373,8 @@ const model = {
                                },
                   },
                   {
-                    name: "Lise Vik",
-                    pictures: [],
-                    score: 4,
-                    reviewText: "God smak, men litt dyrt.",
-                    date: "2026-03-07",
-                    likes: 6,
-                    allergyList: {
-                        vegan: false,
-                        milk: false,
-                        nuts: false,
-                        wheat: false,
-                               },
-                  },
-                  {
                     name: "Kari Nilsen",
-                    pictures: [],
+                    pictures: ["Media/Cities/Trondheim/Resturant/Kundebilder/Kundebilde6.jpg"],
                     score: 5,
                     reviewText: "Fantastisk pasta! Kommer tilbake.",
                     date: "2026-03-06",
@@ -1568,7 +1391,7 @@ const model = {
                   city: "Stavanger",
                   storeName: "Pastahuset",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: ["Media/Cities/Stavanger/Resturant/Resturant13.jpg"],
                   address: "Kongsgata 18",
                   phone: 51775500,
                   email: "kontakt@pastahuset.no",
@@ -1585,9 +1408,9 @@ const model = {
                 reviews: [
                   {
                     name: "Ole Hansen",
-                    pictures: [],
+                    pictures: ["Media/Cities/Trondheim/Bakeri/Kundebilder/Kundebilde20.jpg"],
                     score: 5,
-                    reviewText: "Kaffen var så sterk at jeg fortsatt er våken siden tirsdag.",
+                    reviewText: "Kaffen var så sterk at jeg fortsatt er våken siden tirsdag, gudd stuff!.",
                     date: "2026-03-12",
                     likes: 16,
                     allergyList: {
@@ -1599,7 +1422,7 @@ const model = {
                   },
                   {
                     name: "Mia Berg",
-                    pictures: [],
+                    pictures: [""],
                     score: 3,
                     reviewText: "Koselig sted, men jeg frøs litt… eller det er kanskje bare Alta.",
                     date: "2026-03-10",
@@ -1616,7 +1439,7 @@ const model = {
                   city: "Alta",
                   storeName: "Nordlys Kaffehus",
                   type: "cafe",
-                  pictures: [],
+                  pictures: ["Media/Cities/Alta/Bakeri/Bakeri20.jpg"],
                   address: "Markedsgata 12",
                   phone: 78451234,
                   email: "hei@nordlyskaffe.no",
@@ -1630,7 +1453,7 @@ const model = {
                 reviews: [
                   {
                     name: "Per Johansen",
-                    pictures: [],
+                    pictures: [""],
                     score: 1,
                     reviewText: "Pizzaen var kald. Jeg ble kald. Alt var kaldt.",
                     date: "2026-03-11",
@@ -1644,7 +1467,7 @@ const model = {
                   },
                   {
                     name: "Anna Nilsen",
-                    pictures: [],
+                    pictures: ["Media/Cities/Bergen/Resturant/Kundebilder/Kundebilde9.jpg"],
                     score: 4,
                     reviewText: "God smak, bare litt treg servering.",
                     date: "2026-03-09",
@@ -1658,7 +1481,7 @@ const model = {
                   },
                   {
                     name: "Jonas Vik",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
                     reviewText: "Elsker dette stedet! Kommer tilbake (med jakke).",
                     date: "2026-03-08",
@@ -1675,7 +1498,7 @@ const model = {
                   city: "Alta",
                   storeName: "Arktisk Pizza",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: ["Media/Cities/Tromsø/Resturant/Resturant15.jpg"],
                   address: "Altaveien 5",
                   phone: 78459876,
                   email: "post@arktiskpizza.no",
@@ -1691,7 +1514,7 @@ const model = {
                   city: "Alta",
                   storeName: "Bakst & Kulde",
                   type: "bakery",
-                  pictures: [],
+                  pictures: ["Media/Cities/Alta/Bakeri/Bakeri13.jpg"],
                   address: "Løkkeveien 3",
                   phone: 78457788,
                   email: "kontakt@bakstkulde.no",
@@ -1705,7 +1528,7 @@ const model = {
                 reviews: [
                   {
                     name: "Kari Lie",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
                     reviewText: "Burgeren var så stor at jeg måtte ta pause halvveis.",
                     date: "2026-03-12",
@@ -1719,9 +1542,9 @@ const model = {
                   },
                   {
                     name: "Lars Strand",
-                    pictures: [],
+                    pictures: ["Media/Cities/Alta/Resturant/Kundebilder/Kundebilde3.jpg"],
                     score: 2,
-                    reviewText: "God burger, men fikk mer saus enn jeg fikk kontroll over livet mitt.",
+                    reviewText: "God burger, max saus!!",
                     date: "2026-03-10",
                     likes: 7,
                     allergyList: {
@@ -1733,7 +1556,7 @@ const model = {
                   },
                   {
                     name: "Nora Moe",
-                    pictures: [],
+                    pictures: [""],
                     score: 4,
                     reviewText: "Veldig bra, men litt rotete bord.",
                     date: "2026-03-09",
@@ -1750,7 +1573,7 @@ const model = {
                   city: "Alta",
                   storeName: "BurgerBasen",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: ["Media/Cities/Alta/Resturant/Resturant4.jpg"],
                   address: "Sentrumsgata 8",
                   phone: 78456677,
                   email: "hei@burgerbasen.no",
@@ -1764,7 +1587,7 @@ const model = {
                 reviews: [
                   {
                     name: "Emma Hansen",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
                     reviewText: "Kakene var så gode at jeg glemte nyttårsforsettet mitt.",
                     date: "2026-03-11",
@@ -1778,7 +1601,7 @@ const model = {
                   },
                   {
                     name: "Henrik Berg",
-                    pictures: [],
+                    pictures: ["Media/Cities/Alta/Bakeri/Kundebilder/Kundebilde10.jpg"],
                     score: 3,
                     reviewText: "Bra smak, men litt små porsjoner.",
                     date: "2026-03-09",
@@ -1795,7 +1618,7 @@ const model = {
                   city: "Alta",
                   storeName: "Søt Nord",
                   type: "bakery",
-                  pictures: [],
+                  pictures: ["Media/Cities/Alta/Bakeri/Bakeri9.jpg"],
                   address: "Parkveien 2",
                   phone: 78459911,
                   email: "post@sotnord.no",
@@ -1811,7 +1634,7 @@ const model = {
                   city: "Alta",
                   storeName: "FjordSmak",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: ["Media/Cities/Alta/Resturant/Resturant8.jpg"],
                   address: "Havneveien 6",
                   phone: 78452233,
                   email: "kontakt@fjordsmak.no",
@@ -1825,7 +1648,7 @@ const model = {
                 reviews: [
                   {
                     name: "Sofie Vik",
-                    pictures: [],
+                    pictures: [""],
                     score: 4,
                     reviewText: "God kaffe, men litt trangt lokale.",
                     date: "2026-03-10",
@@ -1839,7 +1662,7 @@ const model = {
                   },
                   {
                     name: "Daniel Aas",
-                    pictures: [],
+                    pictures: [""],
                     score: 1,
                     reviewText: "Bestilte te, fikk noe som smakte som varmt mysterium.",
                     date: "2026-03-08",
@@ -1853,7 +1676,7 @@ const model = {
                   },
                   {
                     name: "Mats Nilsen",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
                     reviewText: "Perfekt sted å varme seg etter kulda!",
                     date: "2026-03-07",
@@ -1870,7 +1693,7 @@ const model = {
                   city: "Alta",
                   storeName: "Varm Kopp",
                   type: "cafe",
-                  pictures: [],
+                  pictures: ["Media/Cities/Alta/Bakeri/Bakeri19.png"],
                   address: "Torget 1",
                   phone: 78458899,
                   email: "hei@varmkopp.no",
@@ -1884,7 +1707,7 @@ const model = {
                 reviews: [
                   {
                     name: "Ole Strand",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
                     reviewText: "Beste sushi jeg har hatt i nord!",
                     date: "2026-03-11",
@@ -1898,7 +1721,7 @@ const model = {
                   },
                   {
                     name: "Kari Berg",
-                    pictures: [],
+                    pictures: [""],
                     score: 2,
                     reviewText: "Fisken var ok, men risen var litt… kreativ.",
                     date: "2026-03-09",
@@ -1912,7 +1735,7 @@ const model = {
                   },
                   {
                     name: "Jon Moe",
-                    pictures: [],
+                    pictures: [""],
                     score: 3,
                     reviewText: "Helt greit, men ikke wow.",
                     date: "2026-03-07",
@@ -1929,7 +1752,7 @@ const model = {
                   city: "Alta",
                   storeName: "Nord Sushi",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: [""],
                   address: "Markedsgata 20",
                   phone: 78457700,
                   email: "post@nordsushi.no",
@@ -1945,7 +1768,7 @@ const model = {
                   city: "Alta",
                   storeName: "Vaffelhjørnet Alta",
                   type: "cafe",
-                  pictures: [],
+                  pictures: [""],
                   address: "Elvebakken 4",
                   phone: 78453322,
                   email: "hei@vaffelalta.no",
@@ -1959,7 +1782,7 @@ const model = {
                 reviews: [
                   {
                     name: "Lise Moe",
-                    pictures: [],
+                    pictures: [""],
                     score: 1,
                     reviewText: "Pastaen var så myk at den ikke trengte tenner.",
                     date: "2026-03-08",
@@ -1973,7 +1796,7 @@ const model = {
                   },
                   {
                     name: "Per Vik",
-                    pictures: [],
+                    pictures: [""],
                     score: 4,
                     reviewText: "God smak, men litt dyrt.",
                     date: "2026-03-07",
@@ -1987,7 +1810,7 @@ const model = {
                   },
                   {
                     name: "Emma Lie",
-                    pictures: [],
+                    pictures: [""],
                     score: 5,
                     reviewText: "Fantastisk middag! Kommer igjen.",
                     date: "2026-03-06",
@@ -2004,7 +1827,7 @@ const model = {
                   city: "Alta",
                   storeName: "Pastahuset Nord",
                   type: "restaurant",
-                  pictures: [],
+                  pictures: [""],
                   address: "Sentrum 15",
                   phone: 78456611,
                   email: "kontakt@pastahusetnord.no",
