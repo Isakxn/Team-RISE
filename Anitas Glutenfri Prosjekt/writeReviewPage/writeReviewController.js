@@ -17,7 +17,7 @@ function sendReview() {
     const storeId = model.data.cities[model.viewState.storeFrontPage.selectedCity].store[model.viewState.storeFrontPage.selectedStore];
     let tempObj = {
         name: m.userName,
-        pictures: [],
+        pictures: [m.userPicture],
         score: m.userScore,
         reviewText: m.userReview,
         date: newDate,
@@ -112,4 +112,7 @@ function toggleAllergy(card, allergy) {
      return model.viewState.writeReviewPage.allergyList.wheat = false;
     }
   }
+}
+function handleImageUpload(images){
+model.viewState.writeReviewPage.userPicture = images[0]
 }
