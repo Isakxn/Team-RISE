@@ -40,13 +40,24 @@ function addCityList()
 }
 
 
+function viewSignedInStatus()
+{
+    if (model.viewState.loginPage.username)
+        return `<div class="frontPage_username">${model.viewState.loginPage.username}</div>`;
+    else
+        return `Not signed in`;
+}
+
 
 function viewLoginButton()
 {
     return `
+        <div class="frontPage_container_signin">
+        <h3 class="frontPage_signInStatus">${viewSignedInStatus()}</h3>
         <button class="frontPage_loginIcon" onclick="goBack()">
             <img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/login/login.svg">
         </button>
+        </div>
     `;
 }
 

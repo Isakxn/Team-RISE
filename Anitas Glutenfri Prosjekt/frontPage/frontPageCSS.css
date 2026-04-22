@@ -85,14 +85,14 @@
     font-size: 3rem;
     color: #eee;
 
-    display:flexbox;
-    transform: translate(5.75rem, 11rem);
+    display:flex;
+    transform: translate(5.5rem, 11rem);
 }
 
 
 .frontPage_search_elements
 {
-    display:flexbox;
+    display:flex;
     transform: translate(5rem, 12rem);
 }
 
@@ -108,6 +108,30 @@
 .frontPage_buttonSearch:hover
 {
     background-color: rgb(255, 235, 120)
+}
+
+
+.frontPage_signInStatus
+{
+    font-size: 0.75rem;
+    color: #eee;
+    position: absolute;
+    border: 0px;
+    top: 1.75rem;
+    right: 4.25rem;
+    width: 6rem;
+    height: auto;
+}
+
+.frontPage_username
+{
+    color: #ff8;
+    position: absolute;
+    border: 0px;
+    top: 1.75rem;
+    right: 4.25rem;
+    width: 6rem;
+    height: auto;
 }
 
 
