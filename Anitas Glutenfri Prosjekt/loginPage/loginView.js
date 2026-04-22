@@ -46,7 +46,7 @@ function viewLoginPage()
 
             ${ model.app.adminLoggedIn ? viewLoggedInAdmin() : viewLogInElements() }
 
-            <button onclick="stuff">Registrer ny bruker</button>
+            ${ model.app.adminLoggedIn ? `` : `<button onclick="stuff">Registrer ny bruker</button>` }
         </div>
     `;
 }

@@ -55,6 +55,8 @@ function buttonLogout()
 {
     model.viewState.loginPage.loginInvalid = "";
     model.app.adminLoggedIn = false;
+    model.viewState.loginPage.username = null;
+    model.viewState.loginPage.userPassword = null;
     model.app.currentPage = "frontPage";
     updateView();
 }
