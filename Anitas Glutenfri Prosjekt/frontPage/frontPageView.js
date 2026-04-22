@@ -20,7 +20,7 @@ function addCityList()
     let tempString = /*HTML*/ `
             <h2 class="frontPage_search_header">Velg by:</h2>
             <br>
-            <div class="searchElements">
+            <div class="frontPage_search_elements">
                 <div class="frontPage_cityList_dropdown">
                     <button class="frontPage_cityList_btn">${model.data.cities[model.viewState.storeFrontPage.selectedCity].name}</button>
                     <div class="frontPage_cityList_content">
