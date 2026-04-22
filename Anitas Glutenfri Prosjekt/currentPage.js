@@ -24,10 +24,10 @@ function viewCurrentPage()
     {
         return viewLoginPage();
     }
-    // else if (model.app.currentPage === "registerUserPage")
-    // {
-    //     return viewRegisterUserPage();
-    // }
+    else if (model.app.currentPage === "registerUserPage")
+    {
+        return viewRegisterUserPage();
+    }
      else if (model.app.currentPage === "writeReviewPage")
     {
         return writeReviewPage();
@@ -84,5 +84,26 @@ function changeStore(index) {
 }
 function changeCity(index) {
     model.viewState.storeFrontPage.selectedCity = index;
+}
+
+
+function updateUsername(userInput)
+{
+    switch(model.app.currentPage)
+    {
+        case "loginPage": model.viewState.loginPage.username = userInput; break;
+        case "registerUserPage": model.viewState.registerUserPage.username = userInput; break;
+        default: break;
+    }
+}
+
+function updatePassword(userInput)
+{
+    switch(model.app.currentPage)
+    {
+        case "loginPage": model.viewState.loginPage.userPassword = userInput; break;
+        case "registerUserPage": model.viewState.registerUserPage.userPassword = userInput; break;
+        default: break;
+    }
 }
 

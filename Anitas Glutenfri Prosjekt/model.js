@@ -35,6 +35,11 @@ const model = {
       userPassword: "",
       loginInvalid: "",
     },
+
+    registerUserPage:{
+      username:"",
+      userPassword: "",
+    }
   },
 
   // data

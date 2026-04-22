@@ -1,13 +1,3 @@
-function updateUsername(userInput)
-{
-    model.viewState.loginPage.username = userInput;
-}
-
-function updatePassword(userInput)
-{
-    model.viewState.loginPage.userPassword = userInput;
-}
-
 
 function buttonLogin()
 {
