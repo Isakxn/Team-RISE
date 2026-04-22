@@ -64,5 +64,5 @@ function viewLoginButton()
 
 function frontPage_logo_text()
 {
-    return `<br>Anitas</br>Glutenfrie</br>Prosjekt`;
+    return `Glutify`;
 }

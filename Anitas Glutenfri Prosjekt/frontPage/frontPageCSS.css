@@ -13,8 +13,10 @@
 {
     display: flex;
     flex-wrap: nowrap;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 7rem;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8rem;
     color: #eee;
     /* transform: translate(-3rem, 6rem); */
 }
