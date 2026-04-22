@@ -84,6 +84,16 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
     color: #eee;
+
+    display:flexbox;
+    transform: translate(5.75rem, 11rem);
+}
+
+
+.frontPage_search_elements
+{
+    display:flexbox;
+    transform: translate(5rem, 12rem);
 }
 
 
