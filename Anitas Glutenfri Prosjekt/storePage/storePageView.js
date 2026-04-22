@@ -21,7 +21,9 @@
                         <a onclick="goBack()">
                            <img class="backbuttonarrow" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/corner/arrowback.svg" >
                            </a>
-                            <select id="citySelectId"></select>
+                            <div class="citySelectId">${model.data.cities[model.viewState.storeFrontPage.selectedCity].name}
+                            <div class="dropdownCity" id="citySelectId"></div>
+                            </div>
                             <img class="hometab" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/hometab/hometabv2.svg">
                             <a onclick="goHome()">
                             <img class="hometabimg" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/hometab/homeimg.svg">
@@ -108,7 +110,7 @@
                                 <div class="storeBoxName">
                                 ${s.info.storeName} 
                                 <br>
-                                <div class="star-rating" style="--val: ${s.info.averageScore};"></div>
+                                <div class="pictureSelect star-rating" style="--val: ${s.info.averageScore};"></div>
                                 </div>
                                 
                                 <img class= "pictureSelect" src="${s.info.pictures}">
@@ -126,7 +128,7 @@
 
                             for (let index = 0; index < city.length; index++) {
                                 cityArray.push(`
-                                    <option value="${index}" ${index === model.viewState.storeFrontPage.selectedCity ? 'selected' : ''} onclick="changeCity(${index}); storePage();" >${city[index].name}</option>
+                                    <div value="${index}" ${index === model.viewState.storeFrontPage.selectedCity ? 'selected' : ''} onclick="changeCity(${index}); storePage();" >${city[index].name}</div>
 
                                     `)
                                 
@@ -140,8 +142,6 @@
                             if (model.app.currentPage === "storePage")
                             {return `
                             <div onclick="goForward()">
-                            <textarea placeholder="Skriv her..." class="userReviewBox"></textarea>
-                            <br>
                             <button>Legg til Anmeldelser</button>
                             </div>
                             `}
