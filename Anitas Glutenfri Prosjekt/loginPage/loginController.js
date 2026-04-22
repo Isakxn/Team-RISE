@@ -11,14 +11,31 @@ function updatePassword(userInput)
 
 function buttonLogin()
 {
-    if (model.viewState.loginPage.username !== model.data.credentials[0].admin.name)
+    let validUsername = false;
+    let validPassword = false;
+    for (let i = 0; i < model.data.credentials.length; i++)
+    {
+        if (model.viewState.loginPage.username === model.data.credentials[i].name)
+        {
+            validUsername = true;
+        }
+    }
+    if (!validUsername)
     {
         model.viewState.loginPage.loginInvalid = "Feil brukernavn!";
         // document.getElementById("app").innerHTML += `<div class="inputLoginFail">Feil brukernavn!</div>`;
         updateView();
         return;
     }
-    if (model.viewState.loginPage.userPassword !== model.data.credentials[0].admin.password)
+
+    for (let i = 0; i < model.data.credentials.length; i++)
+    {
+        if (model.viewState.loginPage.userPassword === model.data.credentials[i].password)
+        {
+            validPassword = true;
+        }
+    }
+    if (!validPassword)
     {
         model.viewState.loginPage.loginInvalid = "Feil passord!";
         updateView();
@@ -26,7 +43,9 @@ function buttonLogin()
     }
 
     model.viewState.loginPage.loginInvalid = "";
-    model.app.adminLoggedIn = true;
+    // forutsetter at index 0 er reservert for admin
+    if (model.viewState.loginPage.username === model.data.credentials[0].name && model.viewState.loginPage.userPassword === model.data.credentials[0].password)
+        model.app.adminLoggedIn = true;
     model.app.currentPage = "frontPage";
     updateView();
 }

@@ -13,11 +13,10 @@
 {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
     font-family: "Bebas Neue", sans-serif;
     font-size: 7rem;
     color: #eee;
-    /* transform: translate(0rem, 6rem); */
+    /* transform: translate(-3rem, 6rem); */
 }
 
 

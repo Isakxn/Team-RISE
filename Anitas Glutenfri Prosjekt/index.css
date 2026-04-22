@@ -26,7 +26,7 @@ body {
   background: linear-gradient(180deg, #f9f4ee 0%, #e8d7c2 100%);
   border-radius: 1.5rem;
   box-shadow: 0 12px 30px rgba(0,0,0,0.14);
-  padding: 1.8rem 1.4rem 1.2rem;
+  padding: 6rem 1.4rem 1.2rem;
   height: calc(100vh - 2rem);
   overflow-y: auto;
   color: #3a2a18;
@@ -241,7 +241,6 @@ p.text {
   letter-spacing: 0.01em;
   color: #333;
   cursor: pointer;
-  border: none;
   border-radius: 0.8rem;
   appearance: none;
   -webkit-appearance: none;

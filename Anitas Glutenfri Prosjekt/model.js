@@ -41,10 +41,8 @@ const model = {
   data: {
     credentials: [
       {
-        admin: {
-          name: "anita",
-          password: "anita",
-        },
+        name: "anita",
+        password: "anita",
       },
     ],
 
