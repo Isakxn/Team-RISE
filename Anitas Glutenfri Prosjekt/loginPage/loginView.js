@@ -29,12 +29,6 @@ function viewLogInElements()
 }
 
 
-function stuff()
-{
-
-}
-
-
 function viewLoginPage() 
 {
     app.innerHTML = `
@@ -46,7 +40,7 @@ function viewLoginPage()
 
             ${ model.app.adminLoggedIn ? viewLoggedInAdmin() : viewLogInElements() }
 
-            ${ model.app.adminLoggedIn ? `` : `<br><button class="loginPage_register_btn" onclick="stuff">Registrer ny bruker</button>` }
+            ${ model.app.adminLoggedIn ? `` : `<br><button class="loginPage_register_btn" onclick="goForward()">Registrer ny bruker</button>` }
         </div>
     `;
 }

@@ -3,7 +3,7 @@ const model = {
     // app: document.getElementById("app"),
     adminLoggedIn: false,
     currentPage: "frontPage", // selectionPage, storeFrontPage, writeReviewPage, loginPage, adminPage,
-    pages: ["frontPage", "selectionPage", "storeFrontPage", "writeReviewPage", "loginPage", "adminPage"],
+    pages: ["frontPage", "selectionPage", "storeFrontPage", "writeReviewPage", "loginPage", "registerUserPage", "adminPage"],
     currentCity: 0,
     // currentUser: "",
   },

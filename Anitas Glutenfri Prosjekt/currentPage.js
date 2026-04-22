@@ -24,6 +24,10 @@ function viewCurrentPage()
     {
         return viewLoginPage();
     }
+    // else if (model.app.currentPage === "registerUserPage")
+    // {
+    //     return viewRegisterUserPage();
+    // }
      else if (model.app.currentPage === "writeReviewPage")
     {
         return writeReviewPage();
@@ -41,7 +45,7 @@ function goBack (){
         model.app.currentPage = "frontPage"
         updateView();
     }
-    else if (model.app.currentPage === "loginPage")
+    else if (model.app.currentPage === "loginPage" || model.app.currentPage === "registerUserPage")
     {
         model.app.currentPage = "frontPage"
         updateView();
@@ -67,10 +71,9 @@ function goForward() {
     }
     else if (model.app.currentPage === "loginPage")
     {
-        model.app.currentPage = "frontPage"
+        model.app.currentPage = "registerUserPage";
         updateView();
     }
-
 }
 function goHome (){
         model.app.currentPage = "frontPage"
