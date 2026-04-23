@@ -47,7 +47,7 @@ const model = {
   data: {
     credentials: [
       {
-        name: "anita",
+        name: "Anita",
         password: "anita",
       },
     ],
