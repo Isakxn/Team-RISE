@@ -79,7 +79,7 @@ body {
     height: 20rem;
     width: 20rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: -3rem;
     left: 50%;
     transform: translateX(-50%);
 
@@ -94,7 +94,8 @@ body {
     height: 10rem;
     width: 10rem;
     position: absolute;
-    left: 85%;
+    bottom: -2rem;
+    right: -3rem;
     transform: translateX(-50%);
 
     mask-image: url("/Anitas%20Glutenfri%20Prosjekt/media/icons/allergy/wheat.svg");
@@ -353,6 +354,9 @@ p.text {
     margin-left: 10rem;
   }
 
+  .wheatlogo {
+    display: none;
+  }
   .main {
     order: 2;
     flex: 1;
