@@ -44,15 +44,15 @@
                                 ${writeReviewBtn()}
                                 <div onclick="adminDeleteStore()" style="color: red; font-size: 2rem; font-weight: bold; position: absolute; cursor: pointer;">
                                         ${model.viewState.storeFrontPage.adminStore}
-                                </div>
-                                </div>
+                                        </div>
+                                        <img class="wheatlogo">
+                                        </div>
                                 <div class="main" id="storeReviews">
                                 <div class="mainreview" id="storeReviews">
                                 </div>
                                 </div>
                                 
                                 <div class="rightside" id="storeSelection">
-                                
                                 </div>
                         </div>
                         
@@ -84,6 +84,7 @@
                                 onclick="adminDeleteReview(${i})">
                                 ${model.viewState.storeFrontPage.adminReview}
                                 </div>
+                                <img class="wheatlogoreview">
                                 </div>
                                 
                                 `);
@@ -128,7 +129,7 @@
 
                             for (let index = 0; index < city.length; index++) {
                                 cityArray.push(`
-                                    <div value="${index}" ${index === model.viewState.storeFrontPage.selectedCity ? 'selected' : ''} onclick="changeCity(${index}); storePage();" >${city[index].name}</div>
+                                    <div class="cityoption" value="${index}" ${index === model.viewState.storeFrontPage.selectedCity ? 'selected' : ''} onclick="changeCity(${index}); storePage();" >${city[index].name}</div>
 
                                     `)
                                 
