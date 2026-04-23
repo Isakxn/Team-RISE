@@ -51,12 +51,19 @@ function viewSignedInStatus()
 
 function viewLoginButton()
 {
+    let loggedIn = model.viewState.loginPage.username;
+
     return `
         <div class="frontPage_container_signin">
         <h3 class="frontPage_signInStatus">${viewSignedInStatus()}</h3>
+        ${ loggedIn ? `
+        <button class="frontPage_loginIcon" onclick="buttonLogout()">
+            <img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/login/logout.svg">
+        </button>`
+        : `
         <button class="frontPage_loginIcon" onclick="goBack()">
             <img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/login/login.svg">
-        </button>
+        </button>`}
         </div>
     `;
 }
