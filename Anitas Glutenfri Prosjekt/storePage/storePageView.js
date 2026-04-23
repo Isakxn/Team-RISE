@@ -83,7 +83,7 @@
                                 <p class="text">${r.reviewText}</p>
                                 </br>
                                 <div 
-                                style="color: red; font-size: 2rem; font-weight: bold; position: absolute; top: 1rem; right: 1rem; cursor: pointer;" 
+                                style="color: red; font-size: 2rem; font-weight: bold; position: absolute; top: 1rem; right: 1rem; cursor: pointer;" z-index: 9999
                                 onclick="adminDeleteReview(${i})">
                                 ${model.viewState.storeFrontPage.adminReview}
                                 </div>
