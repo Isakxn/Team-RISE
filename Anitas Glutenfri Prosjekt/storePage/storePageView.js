@@ -77,7 +77,7 @@
                                 <div class="review star-rating" style="--val: ${r.score}; --size: 2rem; "></div>
                                 <h2>${r.name}</h2>
                                 <h5>${r.date}</h5>
-                                (${r.likes}) <button>Liker</button>
+                                (${r.likes}) <button onclick="likeBtn(${r.likes})">Liker</button>
                                 <div>${checkAllergy(r.allergyList)}</div>
                                 </div>
                                 <p class="text">${r.reviewText}</p>
