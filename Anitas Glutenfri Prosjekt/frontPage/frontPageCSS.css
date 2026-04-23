@@ -19,7 +19,7 @@
     font-size: 8rem;
     color: #eee;
     position: absolute;
-    /* transform: translate(-3rem, 6rem); */
+    animation: opac 0.175s;
 }
 
 
@@ -97,6 +97,7 @@
 
     display:flex;
     transform: translate(5.5rem, 11rem);
+    animation: opac 0.25s;
     
 }
 
@@ -105,7 +106,7 @@
 {
     display:flex;
     transform: translate(5rem, 12rem);
-    
+    animation: opac 0.325s;
 }
 
 
