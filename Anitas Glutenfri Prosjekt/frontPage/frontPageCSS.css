@@ -18,6 +18,7 @@
     font-style: normal;
     font-size: 8rem;
     color: #eee;
+    position: absolute;
     /* transform: translate(-3rem, 6rem); */
 }
 
@@ -30,6 +31,7 @@
     padding: 6px 8px;
     font-size: 22px;
     appearance: none;
+    
 }
 
 .frontPage_cityList_btn
@@ -39,12 +41,16 @@
     padding: 16px;
     font-size: 20px;
     border: none;
+    width: 10rem;
+    border-radius: 1rem;
+
 }
 
 .frontPage_cityList_dropdown
 {
     position: relative;
     display: inline-block;
+    border-radius: 1rem;
 }
 
 .frontPage_cityList_content
@@ -55,6 +61,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 1rem;
 }
 
 .frontPage_cityList_content a
@@ -68,6 +75,7 @@
 .frontPage_cityList_content a:hover
 {
     background-color: #ddd;
+    border-radius: 1rem;
 }
 
 .frontPage_cityList_dropdown:hover .frontPage_cityList_content
@@ -89,6 +97,7 @@
 
     display:flex;
     transform: translate(5.5rem, 11rem);
+    
 }
 
 
@@ -96,6 +105,7 @@
 {
     display:flex;
     transform: translate(5rem, 12rem);
+    
 }
 
 
@@ -105,6 +115,9 @@
     padding: 16px;
     font-size: 20px;
     border: none;
+    border-radius: 1rem;
+    width: 5rem;
+    margin-left: 0.3rem;
 }
 
 .frontPage_buttonSearch:hover

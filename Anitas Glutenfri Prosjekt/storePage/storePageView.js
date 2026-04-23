@@ -5,6 +5,7 @@
                 showStoreReviews()
                 showStoreSelections()
                 selectCity()
+                
             
             }
             
@@ -21,6 +22,8 @@
                         <a onclick="goBack()">
                            <img class="backbuttonarrow" src="/Anitas%20Glutenfri%20Prosjekt/media/icons/corner/arrowback.svg" >
                            </a>
+                                        <h1>${model.viewState.loginPage.username}</h1>
+
                             <div class="citySelectId">${model.data.cities[model.viewState.storeFrontPage.selectedCity].name}
                             <div class="dropdownCity" id="citySelectId"></div>
                             </div>
@@ -42,7 +45,7 @@
                                 <br>
                                 </p>
                                 ${writeReviewBtn()}
-                                <div onclick="adminDeleteStore()" style="color: red; font-size: 2rem; font-weight: bold; position: absolute; cursor: pointer;">
+                                <div onclick="adminDeleteStore()" style="color: red; font-size: 2rem; font-weight: bold; position: absolute; bottom: 5rem; cursor: pointer;">
                                         ${model.viewState.storeFrontPage.adminStore}
                                         </div>
                                         <img class="wheatlogo">

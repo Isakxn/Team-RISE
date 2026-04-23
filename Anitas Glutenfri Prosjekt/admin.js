@@ -2,7 +2,7 @@
 function adminControl(){
     if(model.app.adminLoggedIn === true){
       model.viewState.storeFrontPage.adminReview = "X";
-      model.viewState.storeFrontPage.adminStore = "Slette meg"; 
+      model.viewState.storeFrontPage.adminStore = "Slett meg"; 
     }
 }
 
