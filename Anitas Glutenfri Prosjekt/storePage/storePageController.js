@@ -24,3 +24,8 @@ function checkAllergy(allergyList) {
 function checkImage(image) {
    return image[0] ? `<img class="pic" src="${image}">` : `<div></div>`;
 }
+function likeBtn(like) {
+    like = like + 1;
+    console.log(like);
+    updateView();
+}
