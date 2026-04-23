@@ -39,6 +39,7 @@ const model = {
     registerUserPage:{
       username:"",
       userPassword: "",
+      confirmPassword: "",
     }
   },
 
