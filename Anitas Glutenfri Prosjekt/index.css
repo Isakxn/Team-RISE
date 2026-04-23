@@ -294,7 +294,7 @@ p.text {
   display: block;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #efddc6;
+  background-color: #f6f6f5fa;
   border-radius: 0.4rem;
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;

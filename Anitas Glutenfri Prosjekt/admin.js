@@ -4,6 +4,10 @@ function adminControl(){
       model.viewState.storeFrontPage.adminReview = "X";
       model.viewState.storeFrontPage.adminStore = "Slett meg"; 
     }
+    if(model.app.adminLoggedIn === false){
+      model.viewState.storeFrontPage.adminReview = "";
+      model.viewState.storeFrontPage.adminStore = "";
+    }
 }
 
 function adminDeleteReview(index){
