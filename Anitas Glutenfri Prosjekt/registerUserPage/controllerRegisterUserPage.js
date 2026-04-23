@@ -17,6 +17,7 @@ function confirmRegistrationButton()
         if (model.viewState.registerUserPage.userPassword !== model.viewState.registerUserPage.confirmPassword)
         {
             alert("Passordene matcher ikke.");
+            return;
         }
         if (model.viewState.registerUserPage.username === model.data.credentials[i].name)
         {
@@ -32,10 +33,9 @@ function confirmRegistrationButton()
     }
 
     model.data.credentials.push(tempObj);
-    model.app.currentPage = "frontPage";
     model.viewState.loginPage.username = tempObj.name;
     model.viewState.loginPage.userPassword = tempObj.password;
     model.viewState.registerUserPage.username = null;
     model.viewState.registerUserPage.userPassword = null;
-    updateView();
+    goBack();
 }

@@ -18,13 +18,13 @@ function viewRegisterUserPage()
         <div>
             <br>
             <div style="color: #feffa6;">Velg ditt brukernavn:</div>
-            <input type="text" class="inputLogin" oninput="updateUsername(this.value)">
+            <input type="text" class="inputLogin" oninput="updateUsername(this.value)" onkeydown="if(event.key==='Enter'){ confirmRegistrationButton(); }">
             <br>
             <div style="color: #feffa6;">Velg ditt passord:</div>
-            <input type="password" placeholder="passord" class="inputLogin" type="password" oninput="updatePassword(this.value)"> 
+            <input type="password" placeholder="passord" class="inputLogin" type="password" oninput="updatePassword(this.value)" onkeydown="if(event.key==='Enter'){ confirmRegistrationButton(); }"> 
             <br>
             <div style="color: #feffa6;">Bekreft passord:</div>
-            <input type="password" placeholder="passord" class="inputLogin" type="password" oninput="confirmPassword(this.value)"> 
+            <input type="password" placeholder="passord" class="inputLogin" type="password" oninput="confirmPassword(this.value)" onkeydown="if(event.key==='Enter'){ confirmRegistrationButton(); }"> 
             <br>
             <button class="buttonLogin" onclick="confirmRegistrationButton()">Bekreft</button>
         </div>
