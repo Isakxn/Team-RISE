@@ -79,7 +79,7 @@ body {
     height: 20rem;
     width: 20rem;
     position: absolute;
-    bottom: 0rem;
+    bottom: -3rem;
     left: 50%;
     transform: translateX(-50%);
 
@@ -87,7 +87,7 @@ body {
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
-
+    z-index: 0;
     background-color: #8c743217;
 }
 .wheatlogoreview {

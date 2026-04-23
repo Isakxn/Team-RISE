@@ -45,7 +45,7 @@
                                 <br>
                                 </p>
                                 ${writeReviewBtn()}
-                                <div onclick="adminDeleteStore()" style="color: red; font-size: 2rem; font-weight: bold; position: absolute; bottom: 5rem; cursor: pointer;">
+                                <div onclick="adminDeleteStore()" style="color: red; font-size: 2rem; font-weight: bold; position: absolute; bottom: 5rem; cursor: pointer; z-index: 9999;">
                                         ${model.viewState.storeFrontPage.adminStore}
                                         </div>
                                         <img class="wheatlogo">
