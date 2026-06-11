@@ -7,16 +7,16 @@ function checkAllergy(allergyList) {
     let icons = '';
 
     if (allergyList.vegan) {
-        icons += `<img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/allergy/vegan.svg" class="allergyIcon">`;
+        icons += `<img src="media/icons/allergy/vegan.svg" class="allergyIcon">`;
     }
     if (allergyList.milk) {
-        icons += `<img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/allergy/milk.svg" class="allergyIcon">`;
+        icons += `<img src="media/icons/allergy/milk.svg" class="allergyIcon">`;
     }
     if (allergyList.nuts) {
-        icons += `<img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/allergy/nuts1.svg" class="allergyIcon">`;
+        icons += `<img src="media/icons/allergy/nuts1.svg" class="allergyIcon">`;
     }
     if (allergyList.wheat) {
-        icons += `<img src="/Anitas%20Glutenfri%20Prosjekt/media/icons/allergy/wheat.svg" class="allergyIcon">`;
+        icons += `<img src="media/icons/allergy/wheat.svg" class="allergyIcon">`;
     }
 
     return icons;
